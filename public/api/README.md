@@ -1,1 +1,6817 @@
 文档来源 https://developer.mozilla.org/zh-CN/docs/Web/API
+
+本插件已开源 https://github.com/itldg/utools-mdn-doc
+
+插件代码改自 https://github.com/in3102/utools-mdn-doc
+
+最后更新: 2024-08-13
+
+文档数量: 6803 篇
+
+> 若您发现官方文档已更新,可提交问题来告知我 https://github.com/itldg/utools-mdn-doc/issues
+
+文档目录: 
+
+- Web API
+- Attribution Reporting API
+- 音频输出设备 API
+- Background Fetch API
+- Background Synchronization API
+- Background Tasks API
+- Badging API
+- Barcode Detection API
+- Battery Status API
+- Beacon API
+- Bluetooth API
+- Broadcast Channel API
+- CSS Counter Styles
+- CSS 自定义高亮 API
+- CSS Font Loading API
+- CSS Painting API
+- CSS 属性和值 API
+- CSS Typed Object Model API
+- CSS 对象模型（CSSOM）
+- Canvas API
+- Channel Messaging API
+- Clipboard API
+- Compression Streams API
+- Compute Pressure API
+- Console API
+- Contact Picker API
+- Content Index API
+- Cookie Store API
+- Credential Management API
+- 文档对象模型（DOM）
+- 设备内存 API
+- 设备方向事件
+- Document Picture-in-Picture API
+- EditContext API
+- Encoding API
+- 加密媒体扩展 API
+- EyeDropper API
+- Federated Credential Management (FedCM) API
+- Fenced Frame API
+- Fetch API
+- 文件 API
+- 文件系统 API
+- 文件与目录条目 API
+- Force Touch events
+- 全屏 API
+- Gamepad API
+- 地理位置 API
+- Geometry interfaces
+- HTML DOM API
+- HTML 拖放 API
+- History API
+- Houdini API
+- Idle Detection API
+- MediaStream Image Capture API
+- IndexedDB
+- Ink API
+- InputDeviceCapabilities API
+- Insertable Streams for MediaStreamTrack API
+- Intersection Observer API
+- Keyboard API
+- Launch Handler API
+- Local Font Access API
+- Media Capabilities API
+- 媒体捕捉与媒体流 API（媒体流）
+- Media Session API
+- Media Source Extensions API
+- MediaStream Recording API
+- Navigation API
+- 网络信息 API
+- 页面可见性 API
+- Payment Handler API
+- 支付请求接口
+- Performance API
+- Web Periodic Background Synchronization API
+- 权限 API
+- Picture-in-Picture API
+- Pointer events 指针事件
+- Pointer Lock API
+- Popover API
+- Presentation API
+- Prioritized Task Scheduling API
+- Push API
+- 远程回放 API
+- Reporting API
+- Resize Observer API
+- SVG API
+- 屏幕捕捉 API
+- Screen Orientation API
+- Screen Wake Lock API
+- Selection API
+- Sensor APIs
+- 服务器发送事件
+- Service Worker API
+- Shared Storage API
+- Speculation Rules API
+- Storage API
+- Storage Access API
+- Stream API
+- Topics API
+- 触摸事件
+- Trusted Types API
+- UI Events
+- URL API
+- URL Pattern API
+- 用户代理客户端提示 API
+- 振动 API
+- View Transitions API
+- 虚拟键盘 API
+- Visual Viewport API
+- Web Animations API
+- Web Audio API
+- Web Authentication API
+- Web Component
+- Web Crypto API
+- Web Locks API
+- Web MIDI API
+- Web NFC API
+- Notifications API
+- Web Serial API
+- Web 共享 API
+- Web Speech API
+- Web Storage API
+- Web Worker API
+- WebCodecs API
+- WebGL：web 中的 2D 的 3D 图形
+- WebGPU API
+- WebHID API
+- WebOTP API
+- WebRTC API
+- WebSockets API
+- WebTransport API
+- WebUSB API
+- WebVR API
+- Web 视频文本轨格式（WebVTT）
+- WebXR 设备 接口参考
+- Window Controls Overlay API
+- Window Management API
+- XMLHttpRequest API
+- AbortController
+- AbortSignal
+- AbsoluteOrientationSensor
+- AbstractRange
+- Accelerometer
+- AesCbcParams
+- AesCtrParams
+- AesGcmParams
+- AesKeyGenParams
+- AmbientLightSensor
+- AnalyserNode
+- ANGLE_instanced_arrays
+- Animation
+- AnimationEffect
+- AnimationEvent
+- AnimationPlaybackEvent
+- AnimationTimeline
+- Attr
+- AudioBuffer
+- AudioBufferSourceNode
+- AudioContext
+- AudioData
+- AudioDecoder
+- AudioDestinationNode
+- AudioEncoder
+- AudioListener
+- AudioNode
+- AudioParam
+- AudioParamDescriptor
+- AudioParamMap
+- AudioProcessingEvent
+- AudioScheduledSourceNode
+- AudioSinkInfo
+- AudioTrack
+- AudioTrackList
+- AudioWorklet
+- AudioWorkletGlobalScope
+- AudioWorkletNode
+- AudioWorkletProcessor
+- AuthenticatorAssertionResponse
+- AuthenticatorAttestationResponse
+- AuthenticatorResponse
+- BackgroundFetchEvent
+- BackgroundFetchManager
+- BackgroundFetchRecord
+- BackgroundFetchRegistration
+- BackgroundFetchUpdateUIEvent
+- BarcodeDetector
+- BarProp
+- BaseAudioContext
+- BatteryManager
+- BeforeInstallPrompt
+- BeforeUnloadEvent
+- BiquadFilterNode
+- Blob
+- BlobEvent
+- Bluetooth
+- BluetoothCharacteristicProperties
+- BluetoothDevice
+- BluetoothRemoteGATTCharacteristic
+- BluetoothRemoteGATTDescriptor
+- BluetoothRemoteGATTServer
+- BluetoothRemoteGATTService
+- BluetoothUUID
+- BroadcastChannel
+- ByteLengthQueuingStrategy
+- Cache
+- CacheStorage
+- CanMakePaymentEvent
+- CanvasCaptureMediaStream
+- CanvasGradient
+- CanvasPattern
+- CanvasRenderingContext2D
+- CaptureController
+- CaretPosition
+- CDATASection
+- ChannelMergerNode
+- ChannelSplitterNode
+- ChapterInformation
+- CharacterBoundsUpdateEvent
+- CharacterData
+- Client
+- Clients
+- Clipboard
+- ClipboardEvent
+- ClipboardItem
+- CloseEvent
+- CloseWatcher
+- Comment
+- CompositionEvent
+- CompressionStream
+- console
+- ConstantSourceNode
+- ContactAddress
+- ContactsManager
+- ContentIndex
+- ContentIndexEvent
+- ContentVisibilityAutoStateChangeEvent
+- ConvolverNode
+- CookieChangeEvent
+- CookieStore
+- CookieStoreManager
+- CountQueuingStrategy
+- Credential
+- CredentialsContainer
+- Crypto
+- CryptoKey
+- CryptoKeyPair
+- CSPViolationReportBody
+- CSS
+- CSSAnimation
+- CSSConditionRule
+- CSSContainerRule
+- CSSCounterStyleRule
+- CSSFontFaceRule
+- CSSFontFeatureValuesRule
+- CSSFontPaletteValuesRule
+- CSSGroupingRule
+- CSSImageValue
+- CSSImportRule
+- CSSKeyframeRule
+- CSSKeyframesRule
+- CSSKeywordValue
+- CSSLayerBlockRule
+- CSSLayerStatementRule
+- CSSMathInvert
+- CSSMathMax
+- CSSMathMin
+- CSSMathNegate
+- CSSMathProduct
+- CSSMathSum
+- CSSMathValue
+- CSSMatrixComponent
+- CSSMediaRule
+- CSSNamespaceRule
+- CSSNumericArray
+- CSSNumericValue
+- CSSPageDescriptors
+- CSS 分页规则
+- CSSPerspective
+- CSSPositionTryDescriptors
+- CSSPositionTryRule
+- CSSPositionValue
+- CSSPrimitiveValue
+- CSSPropertyRule
+- CSSPseudoElement
+- CSSRotate
+- CSSRule
+- CSSRuleList
+- CSSScale
+- CSSScopeRule
+- CSSSkew
+- CSSSkewX
+- CSSSkewY
+- CSSStartingStyleRule
+- CSSStyleDeclaration
+- CSSStyleRule
+- CSSStyleSheet
+- CSSStyleValue
+- CSSSupportsRule
+- CSSTransformComponent
+- CSSTransformValue
+- CSSTransition
+- CSSTranslate
+- CSSUnitValue
+- CSSUnparsedValue
+- CSSValue
+- CSSValueList
+- CSSVariableReferenceValue
+- CustomElementRegistry
+- CustomEvent
+- CustomStateSet
+- DataTransfer
+- DataTransferItem
+- DataTransferItemList
+- DecompressionStream
+- DedicatedWorkerGlobalScope
+- DelayNode
+- DeprecationReportBody
+- DeviceMotionEvent
+- DeviceAcceleration
+- DeviceMotionEventRotationRate
+- DeviceOrientationEvent
+- DirectoryEntrySync
+- DirectoryReaderSync
+- Document
+- DocumentFragment
+- DocumentPictureInPicture
+- DocumentPictureInPictureEvent
+- DocumentTimeline
+- DocumentType
+- DOMError
+- DOMException
+- DOMHighResTimeStamp
+- DOMImplementation
+- DOMMatrix
+- DOMMatrixReadOnly
+- DOMParser
+- DOMPoint
+- DOMPointReadOnly
+- DOMQuad
+- DOMRect
+- DOMRectReadOnly
+- DOMStringList
+- DOMStringMap
+- DOMTokenList
+- DragEvent
+- DynamicsCompressorNode
+- EcdhKeyDeriveParams
+- EcdsaParams
+- EcKeyGenParams
+- EcKeyImportParams
+- EditContext
+- Element
+- ElementInternals
+- EncodedAudioChunk
+- EncodedVideoChunk
+- ErrorEvent
+- Event
+- EventCounts
+- EventSource
+- EventTarget
+- ExtendableCookieChangeEvent
+- ExtendableEvent
+- ExtendableMessageEvent
+- EyeDropper
+- FeaturePolicy
+- FederatedCredential
+- FederatedCredentialInit
+- Fence
+- FencedFrameConfig
+- FetchEvent
+- File
+- FileEntrySync
+- FileList
+- FileReader
+- FileReaderSync
+- FileSystem
+- FileSystemDirectoryEntry
+- FileSystemDirectoryHandle
+- FileSystemDirectoryReader
+- FileSystemEntry
+- FileSystemFileEntry
+- FileSystemFileHandle
+- FileSystemHandle
+- FileSystemSync
+- FileSystemSyncAccessHandle
+- FileSystemWritableFileStream
+- FocusEvent
+- FontData
+- FontFace
+- FontFaceSet
+- FontFaceSetLoadEvent
+- FormData
+- FormDataEvent
+- FragmentDirective
+- GainNode
+- Gamepad
+- GamepadButton
+- GamepadEvent
+- GamepadHapticActuator
+- GamepadPose
+- Geolocation
+- Coordinates
+- Position
+- PositionError
+- GestureEvent
+- GPU
+- GPUAdapter
+- GPUAdapterInfo
+- GPUBindGroup
+- GPUBindGroupLayout
+- GPUBuffer
+- GPUCanvasContext
+- GPUCommandBuffer
+- GPUCommandEncoder
+- GPUCompilationInfo
+- GPUCompilationMessage
+- GPUComputePassEncoder
+- GPUComputePipeline
+- GPUDevice
+- GPUDeviceLostInfo
+- GPUError
+- GPUExternalTexture
+- GPUInternalError
+- GPUOutOfMemoryError
+- GPUPipelineError
+- GPUPipelineLayout
+- GPUQuerySet
+- GPUQueue
+- GPURenderBundle
+- GPURenderBundleEncoder
+- GPURenderPassEncoder
+- GPURenderPipeline
+- GPUSampler
+- GPUShaderModule
+- GPUSupportedFeatures
+- GPUSupportedLimits
+- GPUTexture
+- GPUTextureView
+- GPUUncapturedErrorEvent
+- GPUValidationError
+- GravitySensor
+- Gyroscope
+- HashChangeEvent
+- Headers
+- HID
+- HIDConnectionEvent
+- HIDDevice
+- HIDInputReportEvent
+- Highlight
+- HighlightRegistry
+- History
+- HkdfParams
+- HmacImportParams
+- HmacKeyGenParams
+- HMDVRDevice
+- HTMLAllCollection
+- HTMLAnchorElement
+- HTMLAreaElement
+- HTMLAudioElement
+- HTMLBaseElement
+- HTMLBodyElement
+- HTMLBRElement
+- HTMLButtonElement
+- HTMLCanvasElement
+- HTMLCollection
+- HTMLDataElement
+- HTMLDataListElement
+- HTMLDetailsElement
+- HTMLDialogElement
+- HTMLDivElement
+- HTMLDListElement
+- HTMLDocument
+- HTMLElement
+- HTMLEmbedElement
+- HTMLFencedFrameElement
+- HTMLFieldSetElement
+- HTMLFontElement
+- HTMLFormControlsCollection
+- HTMLFormElement
+- HTMLFrameSetElement
+- HTMLHeadElement
+- HTMLHeadingElement
+- HTMLHRElement
+- HTMLHtmlElement
+- HTMLIFrameElement
+- HTMLImageElement
+- HTMLInputElement
+- HTMLLabelElement
+- HTMLLegendElement
+- HTMLLIElement
+- HTMLLinkElement
+- HTMLMapElement
+- HTMLMarqueeElement
+- HTMLMediaElement
+- HTMLMenuElement
+- HTMLMetaElement
+- HTMLMeterElement
+- HTMLModElement
+- HTMLObjectElement
+- HTMLOListElement
+- HTMLOptGroupElement
+- HTMLOptionElement
+- HTMLOptionsCollection
+- HTMLOutputElement
+- HTMLParagraphElement
+- HTMLParamElement
+- HTMLPictureElement
+- HTMLPreElement
+- HTMLProgressElement
+- HTMLQuoteElement
+- HTMLScriptElement
+- HTMLSelectElement
+- HTMLSlotElement
+- HTMLSourceElement
+- HTMLSpanElement
+- HTMLStyleElement
+- HTMLTableCaptionElement
+- HTMLTableCellElement
+- HTMLTableColElement
+- HTMLTableElement
+- HTMLTableRowElement
+- HTMLTableSectionElement
+- HTMLTemplateElement
+- HTMLTextAreaElement
+- HTMLTimeElement
+- HTMLTitleElement
+- HTMLTrackElement
+- HTMLUListElement
+- HTMLUnknownElement
+- HTMLVideoElement
+- IDBCursor
+- IDBCursorWithValue
+- IDBDatabase
+- IDBFactory
+- IDBIndex
+- IDBKeyRange
+- IDBObjectStore
+- IDBOpenDBRequest
+- IDBRequest
+- IDBTransaction
+- IDBVersionChangeEvent
+- IdentityCredential
+- IdentityCredentialRequestOptions
+- IdentityProvider
+- IdleDeadline
+- IdleDetector
+- IIRFilterNode
+- ImageBitmap
+- ImageBitmapRenderingContext
+- ImageCapture
+- ImageData
+- ImageDecoder
+- ImageTrack
+- ImageTrackList
+- Ink
+- InkPresenter
+- InputDeviceCapabilities
+- InputDeviceInfo
+- InputEvent
+- InstallEvent
+- IntersectionObserver
+- IntersectionObserverEntry
+- InterventionReportBody
+- Keyboard
+- KeyboardEvent
+- KeyboardLayoutMap
+- KeyframeEffect
+- LargestContentfulPaint
+- LaunchParams
+- LaunchQueue
+- LayoutShift
+- LayoutShiftAttribution
+- LinearAccelerationSensor
+- Location
+- Lock
+- LockManager
+- Magnetometer
+- MathMLElement
+- MediaCapabilities
+- MediaDeviceInfo
+- MediaDevices
+- MediaElementAudioSourceNode
+- MediaEncryptedEvent
+- MediaError
+- MediaKeyMessageEvent
+- MediaKeys
+- MediaKeySession
+- MediaKeyStatusMap
+- MediaKeySystemAccess
+- MediaList
+- MediaMetadata
+- MediaQueryList
+- MediaQueryListEvent
+- MediaRecorder
+- MediaRecorderErrorEvent
+- MediaSession
+- MediaSource
+- MediaSourceHandle
+- 媒体流 (MediaStream)
+- MediaStreamAudioDestinationNode
+- MediaStreamAudioSourceNode
+- MediaStreamEvent
+- MediaStreamTrack
+- MediaStreamTrackAudioSourceNode
+- MediaStreamTrackEvent
+- MediaStreamTrackGenerator
+- MediaStreamTrackProcessor
+- 媒体追踪约束
+- MediaTrackSettings
+- MediaTrackSupportedConstraints
+- MerchantValidationEvent
+- MessageChannel
+- MessageEvent
+- MessagePort
+- Metadata
+- MIDIAccess
+- MIDIConnectionEvent
+- MIDIInput
+- MIDIInputMap
+- MIDIMessageEvent
+- MIDIOutput
+- MIDIOutputMap
+- MIDIPort
+- MimeType
+- MimeTypeArray
+- MouseEvent
+- MouseScrollEvent
+- MutationEvent
+- MutationObserver
+- MutationRecord
+- NamedNodeMap
+- NavigateEvent
+- Navigation
+- NavigationActivation
+- NavigationCurrentEntryChangeEvent
+- NavigationDestination
+- NavigationHistoryEntry
+- NavigationPreloadManager
+- NavigationTransition
+- Navigator
+- NavigatorLogin
+- NavigatorUAData
+- NDEFMessage
+- NDEFReader
+- NDEFReadingEvent
+- NDEFRecord
+- NetworkInformation
+- Node
+- NodeIterator
+- NodeList
+- Notification
+- NotificationEvent
+- NotRestoredReasonDetails
+- NotRestoredReasons
+- OES_draw_buffers_indexed
+- OfflineAudioCompletionEvent
+- OfflineAudioContext
+- OffscreenCanvas
+- OffscreenCanvasRenderingContext2D
+- OrientationSensor
+- OscillatorNode
+- OTPCredential
+- OverconstrainedError
+- PageRevealEvent
+- PageSwapEvent
+- PageTransitionEvent
+- PaintWorkletGlobalScope
+- PannerNode
+- PasswordCredential
+- PasswordCredentialInit
+- Path2D
+- PaymentAddress
+- PaymentManager
+- PaymentMethodChangeEvent
+- PaymentRequest
+- PaymentRequestEvent
+- PaymentRequestUpdateEvent
+- PaymentResponse
+- Pbkdf2Params
+- Performance
+- PerformanceElementTiming
+- PerformanceEntry
+- PerformanceEventTiming
+- PerformanceLongAnimationFrameTiming
+- Long Tasks API
+- PerformanceMark
+- PerformanceMeasure
+- PerformanceNavigation
+- PerformanceNavigationTiming
+- 性能监测对象
+- PerformanceObserverEntryList
+- PerformancePaintTiming
+- PerformanceResourceTiming
+- PerformanceScriptTiming
+- PerformanceServerTiming
+- PerformanceTiming
+- PeriodicSyncEvent
+- PeriodicSyncManager
+- PeriodicWave
+- Permissions
+- PermissionStatus
+- PictureInPictureEvent
+- PictureInPictureWindow
+- Plugin
+- PluginArray
+- Point
+- PointerEvent
+- PopStateEvent
+- PositionSensorVRDevice
+- Presentation
+- PresentationAvailability
+- PresentationConnection
+- PresentationConnectionAvailableEvent
+- PresentationConnectionCloseEvent
+- PresentationConnectionList
+- PresentationReceiver
+- PresentationRequest
+- PressureObserver
+- PressureRecord
+- ProcessingInstruction
+- ProgressEvent
+- PromiseRejectionEvent
+- PublicKeyCredential
+- PublicKeyCredentialCreationOptions
+- PublicKeyCredentialRequestOptions
+- PushEvent
+- PushManager
+- PushMessageData
+- PushSubscription
+- PushSubscriptionOptions
+- RadioNodeList
+- Range
+- ReadableByteStreamController
+- ReadableStream
+- ReadableStreamBYOBReader
+- ReadableStreamBYOBRequest
+- ReadableStreamDefaultController
+- ReadableStreamDefaultReader
+- RelativeOrientationSensor
+- RemotePlayback
+- Report
+- ReportBody
+- ReportingObserver
+- Request
+- RequestInit
+- ResizeObserver
+- ResizeObserverEntry
+- ResizeObserverSize
+- Response
+- RsaHashedImportParams
+- RsaHashedKeyGenParams
+- RsaOaepParams
+- RsaPssParams
+- RTCAudioSourceStats
+- RTCCertificate
+- RTCCertificateStats
+- RTCCodecStats
+- RTCDataChannel
+- RTCDataChannelEvent
+- RTCDataChannelStats
+- RTCDtlsTransport
+- RTCDTMFSender
+- RTCDTMFToneChangeEvent
+- RTCEncodedAudioFrame
+- RTCEncodedVideoFrame
+- RTCError
+- RTCErrorEvent
+- RTCIceCandidate
+- RTCIceCandidatePair
+- RTCIceCandidatePairStats
+- RTCIceCandidateStats
+- RTCIceParameters
+- RTCIceTransport
+- RTCIdentityAssertion
+- RTCInboundRtpStreamStats
+- RTCOutboundRtpStreamStats
+- RTCPeerConnection
+- RTCPeerConnectionIceErrorEvent
+- RTCPeerConnectionIceEvent
+- RTCPeerConnectionStats
+- RTCRemoteInboundRtpStreamStats
+- RTCRemoteOutboundRtpStreamStats
+- RTCRtpReceiver
+- RTCRtpScriptTransform
+- RTCRtpScriptTransformer
+- RTCRtpSender
+- RTCRtpStreamStats
+- RTCRtpTransceiver
+- RTCSctpTransport
+- RTCSessionDescription
+- RTCStatsReport
+- RTCTrackEvent
+- RTCTransformEvent
+- RTCTransportStats
+- RTCVideoSourceStats
+- Scheduler
+- Scheduling
+- Screen
+- ScreenDetailed
+- ScreenDetails
+- ScreenOrientation
+- ScriptProcessorNode
+- ScrollTimeline
+- SecurePaymentConfirmationRequest
+- SecurityPolicyViolationEvent
+- Selection
+- Sensor
+- SensorErrorEvent
+- Serial
+- SerialPort
+- ServiceWorker
+- ServiceWorkerContainer
+- ServiceWorkerGlobalScope
+- ServiceWorkerRegistration
+- ShadowRoot
+- SharedStorage
+- SharedStorageOperation
+- SharedStorageRunOperation
+- SharedStorageSelectURLOperation
+- SharedStorageWorklet
+- SharedStorageWorkletGlobalScope
+- SharedWorker
+- SharedWorkerGlobalScope
+- SourceBuffer
+- SourceBufferList
+- SpeechGrammar
+- SpeechGrammarList
+- SpeechRecognition
+- SpeechRecognitionAlternative
+- SpeechRecognitionErrorEvent
+- SpeechRecognitionEvent
+- SpeechRecognitionResult
+- SpeechRecognitionResultList
+- SpeechSynthesis
+- SpeechSynthesisErrorEvent
+- SpeechSynthesisEvent
+- SpeechSynthesisUtterance
+- SpeechSynthesisVoice
+- StaticRange
+- StereoPannerNode
+- Storage
+- StorageAccessHandle
+- StorageEvent
+- StorageManager
+- StylePropertyMap
+- StylePropertyMapReadOnly
+- StyleSheet
+- StyleSheetList
+- SubmitEvent
+- SubtleCrypto
+- SVGAElement
+- SVGAngle
+- SVGAnimateColorElement
+- SVGAnimatedAngle
+- SVGAnimatedBoolean
+- SVGAnimatedEnumeration
+- SVGAnimatedInteger
+- SVGAnimatedLength
+- SVGAnimatedLengthList
+- SVGAnimatedNumber
+- SVGAnimatedNumberList
+- SVGAnimatedPreserveAspectRatio
+- SVGAnimatedRect
+- SVGAnimatedString
+- SVGAnimatedTransformList
+- SVGAnimateElement
+- SVGAnimateMotionElement
+- SVGAnimateTransformElement
+- SVGAnimationElement
+- SVGCircleElement
+- SVGClipPathElement
+- SVGComponentTransferFunctionElement
+- SVGCursorElement
+- SVGDefsElement
+- SVGDescElement
+- SVGElement
+- SVGEllipseElement
+- SVGEvent
+- SVGFEBlendElement
+- SVGFEColorMatrixElement
+- SVGFEComponentTransferElement
+- SVGFECompositeElement
+- SVGFEConvolveMatrixElement
+- SVGFEDiffuseLightingElement
+- SVGFEDisplacementMapElement
+- SVGFEDistantLightElement
+- SVGFEDropShadowElement
+- SVGFEFloodElement
+- SVGFEFuncAElement
+- SVGFEFuncBElement
+- SVGFEFuncGElement
+- SVGFEFuncRElement
+- SVGFEGaussianBlurElement
+- SVGFEImageElement
+- SVGFEMergeElement
+- SVGFEMergeNodeElement
+- SVGFEMorphologyElement
+- SVGFEOffsetElement
+- SVGFEPointLightElement
+- SVGFESpecularLightingElement
+- SVGFESpotLightElement
+- SVGFETileElement
+- SVGFETurbulenceElement
+- SVGFilterElement
+- SVGFontElement
+- SVGFontFaceElement
+- SVGFontFaceFormatElement
+- SVGFontFaceNameElement
+- SVGFontFaceSrcElement
+- SVGFontFaceUriElement
+- SVGForeignObjectElement
+- SVGGElement
+- SVGGeometryElement
+- SVGGlyphElement
+- SVGGlyphRefElement
+- SVGGradientElement
+- SVGGraphicsElement
+- SVGHKernElement
+- SVGImageElement
+- SVGLength
+- SVGLengthList
+- SVGLinearGradientElement
+- SVGLineElement
+- SVGMarkerElement
+- SVGMaskElement
+- SVGMetadataElement
+- SVGMissingGlyphElement
+- SVGMPathElement
+- SVGNumber
+- SVGNumberList
+- SVGPathElement
+- SVGPatternElement
+- SVGPoint
+- SVGPointList
+- SVGPolygonElement
+- SVGPolylineElement
+- SVGPreserveAspectRatio
+- SVGRadialGradientElement
+- SVGRect
+- SVGRectElement
+- SVGRenderingIntent
+- SVGScriptElement
+- SVGSetElement
+- SVGStopElement
+- SVGStringList
+- SVGStyleElement
+- SVGSVGElement
+- SVGSwitchElement
+- SVGSymbolElement
+- SVGTextContentElement
+- SVGTextElement
+- SVGTextPathElement
+- SVGTextPositioningElement
+- SVGTitleElement
+- SVGTransform
+- SVGTransformList
+- SVGTRefElement
+- SVGTSpanElement
+- SVGUnitTypes
+- SVGUseElement
+- SVGViewElement
+- SVGVKernElement
+- SyncEvent
+- SyncManager
+- TaskAttributionTiming
+- TaskController
+- TaskPriorityChangeEvent
+- TaskSignal
+- Text
+- TextDecoder
+- TextDecoderStream
+- TextEncoder
+- TextEncoderStream
+- TextEvent
+- TextFormat
+- TextFormatUpdateEvent
+- TextMetrics
+- TextTrack
+- TextTrackCue
+- TextTrackCueList
+- TextTrackList
+- TextUpdateEvent
+- TimeEvent
+- TimeRanges
+- ToggleEvent
+- Touch
+- TouchEvent
+- TouchList
+- TrackEvent
+- TransformStream
+- TransformStreamDefaultController
+- TransitionEvent
+- TreeWalker
+- TrustedHTML
+- TrustedScript
+- TrustedScriptURL
+- TrustedTypePolicy
+- TrustedTypePolicyFactory
+- UIEvent
+- URL
+- URLPattern
+- URLSearchParams
+- USB
+- USBAlternateInterface
+- USBConfiguration
+- USBConnectionEvent
+- USBDevice
+- USBEndpoint
+- USBInterface
+- USBInTransferResult
+- USBIsochronousInTransferPacket
+- USBIsochronousInTransferResult
+- USBIsochronousOutTransferPacket
+- USBIsochronousOutTransferResult
+- USBOutTransferResult
+- UserActivation
+- ValidityState
+- VideoColorSpace
+- VideoDecoder
+- VideoEncoder
+- VideoFrame
+- VideoPlaybackQuality
+- VideoTrack
+- VideoTrackList
+- ViewTimeline
+- ViewTransition
+- VirtualKeyboard
+- VisibilityStateEntry
+- VisualViewport
+- VRDisplay
+- VRDisplayCapabilities
+- VRDisplayEvent
+- VREyeParameters
+- VRFieldOfView
+- VRFrameData
+- VRLayerInit
+- VRPose
+- VRStageParameters
+- VTTCue
+- VTTRegion
+- WakeLock
+- WakeLockSentinel
+- WaveShaperNode
+- WebGL2RenderingContext
+- WebGLActiveInfo
+- WebGLBuffer
+- WebGLContextEvent
+- WebGLFramebuffer
+- WebGLObject
+- WebGLProgram
+- WebGLQuery
+- WebGLRenderbuffer
+- WebGLRenderingContext
+- WebGLSampler
+- WebGLShader
+- WebGLShaderPrecisionFormat
+- WebGLSync
+- WebGLTexture
+- WebGLTransformFeedback
+- WebGLUniformLocation
+- WebGLVertexArrayObject
+- WebSocket
+- WebTransport
+- WebTransportBidirectionalStream
+- WebTransportDatagramDuplexStream
+- WebTransportError
+- WebTransportReceiveStream
+- WebTransportSendStream
+- WGSLLanguageFeatures
+- WheelEvent
+- Window
+- WindowClient
+- WindowControlsOverlay
+- WindowControlsOverlayGeometryChangeEvent
+- WindowSharedStorage
+- Worker
+- WorkerGlobalScope
+- WorkerLocation
+- WorkerNavigator
+- Worklet
+- WorkletGlobalScope
+- WorkletSharedStorage
+- WritableStream
+- WritableStreamDefaultController
+- WritableStreamDefaultWriter
+- XMLDocument
+- XMLHttpRequest
+- XMLHttpRequestEventTarget
+- XMLHttpRequestUpload
+- XMLSerializer
+- XPathEvaluator
+- XPathException
+- XPathExpression
+- XPathResult
+- XRAnchor
+- XRAnchorSet
+- XRBoundedReferenceSpace
+- XRCompositionLayer
+- XRCPUDepthInformation
+- XRCubeLayer
+- XRCylinderLayer
+- XRDepthInformation
+- XREquirectLayer
+- XRFrame
+- XRHand
+- XRHitTestResult
+- XRHitTestSource
+- XRInputSource
+- XRInputSourceArray
+- XRInputSourceEvent
+- XRInputSourcesChangeEvent
+- XRJointPose
+- XRJointSpace
+- XRLayer
+- XRLayerEvent
+- XRLightEstimate
+- XRLightProbe
+- XRMediaBinding
+- XRPose
+- XRProjectionLayer
+- XRQuadLayer
+- XRRay
+- XRReferenceSpace
+- XRReferenceSpaceEvent
+- XRRenderState
+- XRRigidTransform
+- XRSession
+- XRSessionEvent
+- XRSpace
+- XRSubImage
+- XRSystem
+- XRTransientInputHitTestResult
+- XRTransientInputHitTestSource
+- XRView
+- XRViewerPose
+- XRViewport
+- XRWebGLBinding
+- XRWebGLDepthInformation
+- XRWebGLLayer
+- XRWebGLSubImage
+- XSLTProcessor
+- Registering attribution sources
+- Registering attribution triggers
+- Generating attribution reports
+- HTMLAnchorElement: attributionSrc property
+- HTMLImageElement: attributionSrc property
+- HTMLScriptElement: attributionSrc property
+- Window.fetch()
+- XMLHttpRequest: setAttributionReporting() method
+- Window：open() 方法
+- HTMLMediaElement：sinkId 属性
+- MediaDevices：selectAudioOutput() 方法
+- HTMLMediaElement：setSinkId() 方法
+- ServiceWorkerRegistration.backgroundFetch
+- ServiceWorkerRegistration.sync
+- window.cancelIdleCallback()
+- requestIdleCallback
+- Navigator：clearAppBadge() 方法
+- Navigator：setAppBadge() 方法
+- WorkerNavigator：clearAppBadge() 方法
+- WorkerNavigator：setAppBadge() 方法
+- Navigator：getBattery() 方法
+- Navigator.sendBeacon()
+- Navigator.bluetooth
+- CSS.highlights_static
+- fonts
+- WorkerGlobalScope: fonts property
+- Using the CSS Painting API
+- CSS.paintWorklet_static
+- Using the CSS properties and values API
+- CSS.registerProperty_static
+- Using the CSS Typed Object Model
+- CSS Declaration
+- CSS Declaration Block
+- Determining the dimensions of elements
+- Managing screen orientation
+- 关于使用动态样式的信息
+- 使用 canvas 处理视频
+- Canvas 教程
+- Canvas 的基本用法
+- 使用 canvas 来绘制图形
+- 应用样式和色彩
+- 绘制文本
+- 使用图像
+- 变形 Transformations
+- 组合 Compositing
+- 基本的动画
+- 高级动画
+- 像素操作
+- canvas 的优化
+- 终曲
+- self.createImageBitmap()
+- 使用 channel messaging
+- Navigator：clipboard 属性
+- Window：console 属性
+- Navigator.contacts
+- ServiceWorkerRegistration: index property
+- Window：cookieStore 属性
+- ServiceWorkerGlobalScope：cookieStore 属性
+- ServiceWorkerRegistration：cookies 属性
+- Navigator：credentials 属性
+- DOM 概述
+- 使用文档对象模型
+- 使用 JavaScript 和 DOM 接口遍历 HTML 表格
+- 使用选择器定位 DOM 元素
+- HTML、CSS 和 DOM 中的空白符是如何处理的
+- 使用 DOM 进行 web 和 XML 开发的示例
+- Navigator：deviceMemory 属性
+- WorkerNavigator：deviceMemory 属性
+- 检测设备方向
+- Orientation 和 motion 数据解释
+- Using device orientation with 3D transforms
+- Using the Document Picture-in-Picture API
+- Window.documentPictureInPicture
+- Using the EditContext API
+- Encoding API 编码
+- HTMLMediaElement: mediaKeys property
+- Navigator: requestMediaKeySystemAccess() method
+- HTMLMediaElement: setMediaKeys() method
+- Identity provider integration with FedCM
+- Relying party federated sign-in
+- Navigator：login 属性
+- CredentialsContainer: get() method
+- Communication with embedded frames
+- Window: fence property
+- Navigator: deprecatedReplaceInURN() method
+- 使用 Fetch
+- WorkerGlobalScope.fetch()
+- 在 web 应用程序中使用文件
+- URL：createObjectURL() 静态方法
+- URL：revokeObjectURL() 静态方法
+- 源私有文件系统
+- Window：showOpenFilePicker() 方法
+- Window：showSaveFilePicker() 方法
+- Window：showDirectoryPicker() 方法
+- DataTransferItem：getAsFileSystemHandle() 方法
+- StorageManager.getDirectory()
+- 文件系统 API 的基本概念
+- File and Directory Entries API support in Firefox
+- 全屏指南
+- Document：fullscreen 属性
+- Document.fullscreenElement
+- Document.exitFullscreen()
+- Element.requestFullscreen()
+- 使用 Gamepad API
+- Navigator：getGamepads() 方法
+- 使用地理位置 API
+- Navigator：geolocation 属性
+- reportError() global function
+- File drag and drop
+- 拖拽操作
+- 推荐拖动类型
+- 使用历史记录 API
+- Window.history
+- Worklet: addModule() method
+- 使用 IndexedDB
+- IndexedDB key characteristics and basic terminology
+- IndexedDB 浏览器存储限制和清理标准
+- Checking when a deadline is due
+- Window：indexedDB 属性
+- WorkerGlobalScope: indexedDB property
+- Navigator：ink 属性
+- UIEvent: sourceCapabilities property
+- Timing element visibility with the Intersection Observer API
+- Navigator.keyboard
+- Window: launchQueue property
+- Window：queryLocalFonts() 方法
+- Using the Media Capabilities API
+- Navigator：mediaCapabilities 属性
+- WorkerNavigator: mediaCapabilities property
+- Capabilities, constraints, and settings
+- 使用 getUserMedia() 拍摄静态照片
+- Navigator：mediaDevices 属性
+- HTMLCanvasElement.captureStream()
+- HTMLMediaElement: captureStream() method
+- Navigator：mediaSession 属性
+- VideoTrack: sourceBuffer property
+- HTMLVideoElement: getVideoPlaybackQuality() method
+- 使用 MediaStream 的录制 API
+- Recording a media element
+- Window.navigation
+- Navigator：connection 属性
+- WorkerNavigator：connection 属性
+- Document：hidden 属性
+- Document.visibilityState
+- ServiceWorkerRegistration: paymentManager property
+- Using the Payment Request API
+- 交易过程的基本概念
+- Using Secure Payment Confirmation
+- HTMLIFrameElement：allowPaymentRequest 属性
+- Performance data
+- High precision timing
+- Long animation frame timing
+- Resource Timing API
+- Navigation Timing API
+- 自定义时间测量 API
+- Server timing
+- Monitoring bfcache blocking reasons
+- Window：performance 属性
+- WorkerGlobalScope：performance 属性
+- ServiceWorkerRegistration: periodicSync property
+- 使用 Permissions API
+- Navigator.permissions
+- WorkerNavigator：permissions 属性
+- HTMLVideoElement.disablePictureInPicture
+- Document.pictureInPictureEnabled
+- Document.pictureInPictureElement
+- HTMLVideoElement.requestPictureInPicture()
+- Document.exitPictureInPicture()
+- Using Pointer Events
+- Multi-touch interaction
+- Pinch zoom gestures
+- Navigator：maxTouchPoints 属性
+- Element: hasPointerCapture() method
+- Element: releasePointerCapture() method
+- Element.setPointerCapture()
+- Document.pointerLockElement
+- MouseEvent.movementX
+- MouseEvent.movementY
+- ShadowRoot: pointerLockElement property
+- Element.requestPointerLock()
+- Document.exitPointerLock()
+- Using the Popover API
+- HTMLButtonElement.popoverTargetAction
+- HTMLButtonElement.popoverTargetElement
+- HTMLElement.popover
+- HTMLInputElement.popoverTargetAction
+- HTMLInputElement.popoverTargetElement
+- HTMLElement.hidePopover()
+- HTMLElement.showPopover()
+- HTMLElement.togglePopover()
+- Navigator：presentation 属性
+- Navigator：scheduling 属性
+- Window.scheduler
+- WorkerGlobalScope.scheduler
+- ServiceWorkerRegistration.pushManager
+- HTMLMediaElement: disableRemotePlayback property
+- HTMLMediaElement: remote property
+- Using the Screen Capture API
+- MediaTrackConstraints: displaySurface property
+- MediaTrackConstraints: logicalSurface property
+- MediaTrackConstraints: suppressLocalAudioPlayback property
+- MediaTrackSettings: cursor property
+- MediaTrackSettings: displaySurface property
+- MediaTrackSettings: logicalSurface property
+- MediaTrackSettings: suppressLocalAudioPlayback property
+- MediaTrackSupportedConstraints: displaySurface property
+- MediaTrackSupportedConstraints: logicalSurface property
+- MediaTrackSupportedConstraints: suppressLocalAudioPlayback property
+- MediaDevices.getDisplayMedia()
+- Screen.orientation
+- Navigator.wakeLock
+- Document: getSelection() method
+- Window.getSelection
+- 使用服务器发送事件
+- 使用 Service Worker
+- Window：caches 属性
+- WorkerGlobalScope：caches 属性
+- Navigator.serviceWorker
+- WorkerNavigator: serviceWorker property
+- Window: sharedStorage property
+- Document: prerendering property
+- PerformanceNavigationTiming: activationStart property
+- PerformanceResourceTiming: deliveryType property
+- Navigator：storage 属性
+- WorkerNavigator: storage property
+- Using the Storage Access API
+- Related Website Sets
+- Document.hasStorageAccess()
+- Document: hasUnpartitionedCookieAccess() method
+- Document.requestStorageAccess()
+- Document: requestStorageAccessFor() method
+- Stream API 概念
+- 使用可读流
+- Using readable byte streams
+- Using writable streams
+- Response.body
+- Using the Topics API
+- HTMLIFrameElement：browsingTopics 属性
+- Document: browsingTopics() method
+- 使用触摸事件
+- Multi-touch interaction
+- Window.trustedTypes
+- WorkerGlobalScope.trustedTypes
+- Code values for keyboard events
+- Key values for keyboard events
+- Resolving relative references to a URL
+- Navigator：userAgentData 属性
+- WorkerNavigator：userAgentData 属性
+- Navigator：vibrate() 方法
+- Using the View Transitions API
+- Document.startViewTransition()
+- HTMLElement：virtualKeyboardPolicy 属性
+- Navigator：virtualKeyboard 属性
+- Window.visualViewport
+- Using the Web Animations API
+- Web Animations API Concepts
+- 关键帧格式
+- Document.timeline
+- Document.getAnimations()
+- Element.animate()
+- Element: getAnimations() method
+- Web Audio API 的运用
+- 网页音频接口的基本概念
+- Web Audio API 最佳实践
+- Advanced techniques: Creating and sequencing audio
+- Background audio processing using AudioWorklet
+- Controlling multiple parameters with ConstantSourceNode
+- Example and tutorial: Simple synth keyboard
+- Tools for analyzing Web Audio usage
+- Using IIR filters
+- 基于 Web Audio API 实现音频可视化效果
+- Web audio 空间化基础
+- Attestation and Assertion
+- Authenticator data
+- Web Authentication extensions
+- CredentialsContainer: create() method
+- 使用自定义元素
+- 使用影子 DOM
+- 使用模板和插槽
+- Element.shadowRoot
+- Element.slot
+- Event.composed
+- Event.composedPath
+- Node.isConnected
+- Window.customElements
+- Document.createElement()
+- Element.attachShadow()
+- HTMLElement.attachInternals()
+- Node.getRootNode()
+- Non-cryptographic uses of SubtleCrypto
+- Window：crypto 属性
+- WorkerGlobalScope：crypto 属性
+- Navigator.locks
+- WorkerNavigator.locks
+- Navigator.requestMIDIAccess()
+- 使用 Notifications API
+- ServiceWorkerRegistration：showNotification() 方法
+- ServiceWorkerRegistration：getNotifications() 方法
+- Navigator：serial 属性
+- WorkerNavigator: serial property
+- Navigator：canShare() 方法
+- Navigator：share() 方法
+- 使用 Web Speech API
+- 使用 Web Storage API
+- Window.sessionStorage
+- Window.localStorage
+- 使用 Web Workers
+- Web Workers 可以使用的函数和类
+- 结构化克隆算法
+- 可转移对象
+- WebGL 相关常量
+- WebGL types
+- WebGL model view projection
+- WebGL best practices
+- WebGL 的例子
+- 一个 2D WebGL 动画的基础示例
+- Compressed texture formats
+- Data in WebGL
+- Matrix math for the web
+- 使用 WebGL 扩展
+- WebGL 教程
+- 初识 WebGL
+- 使用 WebGL 创建 2D 内容
+- 使用着色器将颜色应用于 WebGL
+- 用 WebGL 让目标动起来
+- 使用 WebGL 创建 3D 对象
+- 在 WebGL 中使用纹理
+- Lighting in WebGL
+- 动画纹理
+- WEBGL_compressed_texture_s3tc extension
+- WEBGL_compressed_texture_s3tc_srgb extension
+- WEBGL_compressed_texture_etc1 extension
+- WEBGL_compressed_texture_pvrtc extension
+- WEBGL_debug_renderer_info extension
+- WEBGL_debug_shaders extension
+- WEBGL_depth_texture extension
+- OES_element_index_uint extension
+- EXT_frag_depth extension
+- WEBGL_lose_context
+- EXT_texture_filter_anisotropic extension
+- EXT_sRGB extension
+- OES_standard_derivatives extension
+- OES_texture_float extension
+- WEBGL_draw_buffers extension
+- OES_texture_float_linear extension
+- EXT_shader_texture_lod extension
+- OES_texture_half_float extension
+- OES_texture_half_float_linear extension
+- WEBGL_color_buffer_float extension
+- EXT_color_buffer_half_float extension
+- OES_vertex_array_object
+- EXT_blend_minmax extension
+- EXT_disjoint_timer_query extension
+- Navigator：gpu 属性
+- WorkerNavigator：gpu 属性
+- HTMLCanvasElement.getContext()
+- Navigator.hid
+- WebRTC 协议介绍
+- Introduction to the Real-time Transport Protocol (RTP)
+- WebRTC connectivity
+- 建立连接：WebRTC 完美协商模式
+- WebRTC 介绍
+- 信令与视频通话
+- 使用 WebRTC 数据通道
+- 在 WebRTC 中使用 DTMF
+- 使用 WebRTC 编码转换
+- RTCDataChannel 简单示例
+- 使用 PeerJS 构建一部联网电话
+- RTCRtpReceiver.transform
+- RTCRtpSender.transform
+- MediaDevices.getUserMedia()
+- 编写 WebSocket 客户端应用
+- 编写 WebSocket 服务器
+- 用 C＃来编写 WebSocket 服务器
+- 用 Java 编写 WebSocket 服务器
+- Writing a WebSocket server in JavaScript (Deno)
+- Navigator.usb
+- WorkerNavigator: usb property
+- Using the WebVR API
+- WebVR 的概念
+- Using VR controllers with WebVR
+- Gamepad: displayId property
+- Navigator：activeVRDisplays 属性
+- Navigator：getVRDisplays() 方法
+- Web Video Text Tracks Format (WebVTT)
+- Fundamentals of WebXR
+- WebXR application life cycle
+- Starting up and shutting down a WebXR session
+- Geometry and reference spaces in WebXR
+- Spaces and reference spaces: Spatial tracking in WebXR
+- Rendering and the WebXR frame animation callback
+- Viewpoints and viewers: Simulating cameras in WebXR
+- A perspective retrospective for WebXR developers
+- Lighting a WebXR setting
+- Using bounded reference spaces
+- Movement, orientation, and motion: A WebXR example
+- Inputs and input sources
+- Targeting and hit detection
+- WebXR performance guide
+- WebXR permissions and security
+- Navigator：xr 属性
+- WebGLRenderingContext: makeXRCompatible() method
+- Navigator：windowControlsOverlay 属性
+- Using the Window Management API
+- Multi-screen origin
+- Screen: isExtended property
+- Window: getScreenDetails() method
+- Using XMLHttpRequest
+- HTML in XMLHttpRequest
+- Synchronous and asynchronous requests
+- Sending and Receiving Binary Data
+- Using FormData Objects
+- AbortController()
+- signal
+- abort()
+- aborted
+- AbortSignal.reason
+- AbortSignal：abort() 静态方法
+- any()
+- AbortSignal.timeout()
+- AbortSignal.throwIfAborted()
+- abort
+- AbsoluteOrientationSensor()
+- AbstractRange: collapsed property
+- AbstractRange: endContainer property
+- AbstractRange: endOffset property
+- AbstractRange: startContainer property
+- AbstractRange: startOffset property
+- Accelerometer()
+- x
+- y
+- z
+- AmbientLightSensor.AmbientLightSensor()
+- reading
+- AnalyserNode()
+- fftSize
+- frequencyBinCount
+- maxDecibels
+- minDecibels
+- smoothingTimeConstant
+- getByteFrequencyData()
+- getByteTimeDomainData()
+- getFloatFrequencyData()
+- getFloatTimeDomainData()
+- ANGLE_instanced_arrays: drawArraysInstancedANGLE() method
+- ANGLE_instanced_arrays: drawElementsInstancedANGLE() method
+- ANGLE_instanced_arrays: vertexAttribDivisorANGLE() method
+- Animation()
+- currentTime
+- effect
+- finished
+- id
+- pending
+- playbackRate
+- playState
+- ready
+- replaceState
+- startTime
+- timeline
+- cancel()
+- commitStyles()
+- finish()
+- pause()
+- persist()
+- play()
+- reverse()
+- updatePlaybackRate()
+- cancel
+- finish
+- remove
+- getComputedTiming()
+- getTiming()
+- updateTiming()
+- AnimationEvent: AnimationEvent() constructor
+- AnimationEvent: animationName property
+- AnimationEvent: elapsedTime property
+- AnimationEvent: pseudoElement property
+- AnimationPlaybackEvent()
+- currentTime
+- timelineTime
+- currentTime
+- Attr.localName
+- Attr: name property
+- Attr.namespaceURI
+- Attr: ownerElement property
+- Attr.prefix
+- Attr: specified property
+- Attr: value property
+- AudioBuffer()
+- duration
+- length
+- numberOfChannels
+- sampleRate
+- copyFromChannel()
+- copyToChannel()
+- getChannelData()
+- AudioBufferSourceNode()
+- buffer
+- detune
+- loop
+- loopEnd
+- loopStart
+- playbackRate
+- start()
+- AudioContext()
+- baseLatency
+- AudioContext: outputLatency property
+- AudioContext: sinkId property
+- close()
+- createMediaElementSource()
+- createMediaStreamDestination()
+- createMediaStreamSource()
+- AudioContext: createMediaStreamTrackSource() method
+- getOutputTimestamp()
+- resume()
+- AudioContext: setSinkId() method
+- suspend()
+- AudioContext: sinkchange event
+- AudioData()
+- duration
+- format
+- numberOfChannels
+- numberOfFrames
+- sampleRate
+- timestamp
+- allocationSize()
+- clone()
+- close()
+- copyTo()
+- AudioDecoder()
+- decodeQueueSize
+- state
+- isConfigSupported()
+- close()
+- configure()
+- decode()
+- flush()
+- reset()
+- dequeue
+- maxChannelCount
+- AudioEncoder()
+- encodeQueueSize
+- state
+- isConfigSupported()
+- close()
+- configure()
+- encode()
+- flush()
+- reset()
+- dequeue
+- AudioListener: forwardX property
+- AudioListener：forwardY 属性
+- AudioListener: forwardZ property
+- AudioListener: positionX property
+- AudioListener: positionY property
+- AudioListener: positionZ property
+- AudioListener: upX property
+- AudioListener: upY property
+- AudioListener: upZ property
+- AudioListener: setOrientation() method
+- AudioListener: setPosition() method
+- channelCount
+- channelCountMode
+- channelInterpretation
+- context
+- numberOfInputs
+- numberOfOutputs
+- connect()
+- disconnect()
+- defaultValue
+- maxValue
+- minValue
+- value
+- AudioParam: cancelAndHoldAtTime() method
+- cancelScheduledValues()
+- AudioParam: exponentialRampToValueAtTime() method
+- AudioParam: linearRampToValueAtTime() method
+- setTargetAtTime()
+- setValueAtTime()
+- setValueCurveAtTime()
+- AudioProcessingEvent: AudioProcessingEvent() constructor
+- AudioProcessingEvent: inputBuffer property
+- AudioProcessingEvent: outputBuffer property
+- AudioProcessingEvent: playbackTime property
+- start()
+- stop()
+- ended
+- AudioSinkInfo: type property
+- enabled
+- id
+- kind
+- label
+- language
+- AudioTrack: sourceBuffer property
+- length
+- getTrackById()
+- addtrack
+- change
+- removetrack
+- currentFrame
+- currentTime
+- sampleRate
+- registerProcessor()
+- AudioWorkletNode()
+- parameters
+- port
+- processorerror
+- AudioWorkletProcessor()
+- AudioWorkletProcessor: parameterDescriptors property
+- port
+- AudioWorkletProcessor: process() method
+- AuthenticatorAssertionResponse: authenticatorData property
+- AuthenticatorAssertionResponse: signature property
+- AuthenticatorAssertionResponse: userHandle property
+- AuthenticatorAttestationResponse: attestationObject property
+- getAuthenticatorData()
+- getPublicKey()
+- getPublicKeyAlgorithm()
+- AuthenticatorAttestationResponse: getTransports() method
+- AuthenticatorResponse: clientDataJSON property
+- BackgroundFetchEvent()
+- registration
+- fetch()
+- get()
+- getIds()
+- request
+- responseReady
+- downloaded
+- downloadTotal
+- failureReason
+- id
+- recordsAvailable
+- result
+- uploaded
+- uploadTotal
+- abort()
+- match()
+- matchAll()
+- progress
+- BackgroundFetchUpdateUIEvent()
+- updateUI()
+- BarcodeDetector：BarcodeDetector() 构造方法
+- BarcodeDetector：getSupportedFormats() 静态方法
+- BarcodeDetector：detect() 方法
+- BarProp：visible 属性
+- audioWorklet
+- currentTime
+- destination
+- listener
+- sampleRate
+- state
+- createAnalyser()
+- createBiquadFilter()
+- createBuffer()
+- createBufferSource()
+- createChannelMerger()
+- createChannelSplitter()
+- createConstantSource()
+- createConvolver()
+- createDelay()
+- createDynamicsCompressor()
+- createGain()
+- createIIRFilter()
+- createOscillator()
+- createPanner()
+- createPeriodicWave()
+- BaseAudioContext: createScriptProcessor() method
+- createStereoPanner()
+- createWaveShaper()
+- decodeAudioData()
+- statechange
+- BatteryManager：charging 属性
+- BatteryManager：chargingTime 属性
+- BatteryManager：dischargingTime 属性
+- BatteryManager：level 属性
+- BatteryManager：chargingchange 事件
+- BatteryManager：chargingtimechange 事件
+- BatteryManager：dischargingtimechange 事件
+- BatteryManager：levelchange 事件
+- BeforeInstallPromptEvent: BeforeInstallPromptEvent() constructor
+- BeforeInstallPromptEvent: platforms property
+- BeforeInstallPromptEvent: userChoice property
+- BeforeInstallPromptEvent：prompt() 方法
+- BeforeUnloadEvent: returnValue property
+- BiquadFilterNode()
+- detune
+- frequency
+- gain
+- Q
+- type
+- getFrequencyResponse()
+- Blob：Blob() 构造函数
+- Blob：size 属性
+- Blob：type 属性
+- Blob：arrayBuffer() 方法
+- Blob: bytes() method
+- Blob：slice() 方法
+- Blob：stream() 方法
+- Blob：text() 方法
+- BlobEvent：BlobEvent() 构造函数
+- BlobEvent：data 属性
+- BlobEvent：timecode 属性
+- getAvailability()
+- getDevices()
+- requestDevice()
+- authenticatedSignedWrites
+- broadcast
+- indicate
+- notify
+- read
+- reliableWrite
+- writableAuxiliaries
+- write
+- writeWithoutResponse
+- gatt
+- id
+- name
+- properties
+- service
+- uuid
+- value
+- getDescriptor()
+- getDescriptors()
+- readValue()
+- startNotifications()
+- stopNotifications()
+- BluetoothRemoteGATTCharacteristic: writeValue() method
+- writeValueWithoutResponse()
+- writeValueWithResponse()
+- characteristic
+- uuid
+- value
+- readValue()
+- writeValue()
+- connected
+- device
+- connect()
+- disconnect()
+- getPrimaryService()
+- getPrimaryServices()
+- device
+- isPrimary
+- uuid
+- getCharacteristic()
+- getCharacteristics()
+- canonicalUUID()
+- getCharacteristic()
+- getDescriptor()
+- getService()
+- BroadcastChannel()
+- name
+- close()
+- postMessage()
+- message
+- messageerror
+- ByteLengthQueuingStrategy()
+- ByteLengthQueuingStrategy：highWaterMark 属性
+- ByteLengthQueuingStrategy.size()
+- Cache.add()
+- Cache.addAll()
+- Cache.delete()
+- Cache.keys()
+- Cache.match()
+- Cache.matchAll()
+- Cache.put()
+- CacheStorage.delete()
+- CacheStorage.has()
+- CacheStorage.keys()
+- CacheStorage.match()
+- CacheStorage.open()
+- CanMakePaymentEvent: CanMakePaymentEvent() constructor
+- CanMakePaymentEvent: respondWith() method
+- CanvasCaptureMediaStreamTrack: canvas property
+- CanvasCaptureMediaStreamTrack: requestFrame() method
+- CanvasGradient：addColorStop() 方法
+- CanvasPattern：setTransform() 方法
+- CanvasRenderingContext2D：canvas 属性
+- CanvasRenderingContext2D：direction 属性
+- CanvasRenderingContext2D：fillStyle 属性
+- CanvasRenderingContext2D：filter 属性
+- CanvasRenderingContext2D：font 属性
+- CanvasRenderingContext2D：fontKerning 属性
+- CanvasRenderingContext2D：fontStretch 属性
+- CanvasRenderingContext2D：fontVariantCaps 属性
+- CanvasRenderingContext2D：globalAlpha 属性
+- CanvasRenderingContext2D：globalCompositeOperation 属性
+- CanvasRenderingContext2D：imageSmoothingEnabled 属性
+- CanvasRenderingContext2D：imageSmoothingQuality 属性
+- CanvasRenderingContext2D：letterSpacing 属性
+- CanvasRenderingContext2D：lineCap 属性
+- CanvasRenderingContext2D：lineDashOffset 属性
+- CanvasRenderingContext2D：lineJoin 属性
+- CanvasRenderingContext2D：lineWidth 属性
+- CanvasRenderingContext2D：miterLimit 属性
+- CanvasRenderingContext2D：shadowBlur 属性
+- CanvasRenderingContext2D：shadowColor 属性
+- CanvasRenderingContext2D：shadowOffsetX 属性
+- CanvasRenderingContext2D：shadowOffsetY 属性
+- CanvasRenderingContext2D：strokeStyle 属性
+- textAlign
+- textBaseline
+- CanvasRenderingContext2D：textRendering 属性
+- CanvasRenderingContext2D：wordSpacing 属性
+- CanvasRenderingContext2D：arc() 方法
+- CanvasRenderingContext2D：arcTo() 方法
+- CanvasRenderingContext2D：beginPath() 方法
+- CanvasRenderingContext2D：bezierCurveTo() 方法
+- CanvasRenderingContext2D：clearRect() 方法
+- CanvasRenderingContext2D：clip() 方法
+- CanvasRenderingContext2D：closePath() 方法
+- createConicGradient()
+- CanvasRenderingContext2D.createImageData()
+- CanvasRenderingContext2D：createLinearGradient() 方法
+- CanvasRenderingContext2D：createPattern() 方法
+- CanvasRenderingContext2D：createRadialGradient() 方法
+- CanvasRenderingContext2D：drawFocusIfNeeded() 方法
+- CanvasRenderingContext2D：drawImage() 方法
+- CanvasRenderingContext2D：ellipse() 方法
+- CanvasRenderingContext2D：fill() 方法
+- CanvasRenderingContext2D：fillRect() 方法
+- fillText()
+- CanvasRenderingContext2D：getContextAttributes() 方法
+- CanvasRenderingContext2D：getImageData() 方法
+- CanvasRenderingContext2D：getLineDash() 方法
+- CanvasRenderingContext2D：getTransform() 方法
+- isContextLost()
+- CanvasRenderingContext2D：isPointInPath() 方法
+- CanvasRenderingContext2D：isPointInStroke() 方法
+- CanvasRenderingContext2D：lineTo() 方法
+- measureText()
+- CanvasRenderingContext2D：moveTo() 方法
+- CanvasRenderingContext2D：putImageData() 方法
+- CanvasRenderingContext2D：quadraticCurveTo() 方法
+- CanvasRenderingContext2D：rect() 方法
+- reset()
+- CanvasRenderingContext2D：resetTransform() 方法
+- CanvasRenderingContext2D：restore() 方法
+- CanvasRenderingContext2D：rotate() 方法
+- roundRect()
+- CanvasRenderingContext2D：save() 方法
+- CanvasRenderingContext2D：scale() 方法
+- CanvasRenderingContext2D：setLineDash() 方法
+- CanvasRenderingContext2D：setTransform() 方法
+- CanvasRenderingContext2D：stroke() 方法
+- CanvasRenderingContext2D：strokeRect() 方法
+- strokeText()
+- CanvasRenderingContext2D：transform() 方法
+- CanvasRenderingContext2D：translate() 方法
+- CaptureController: CaptureController() constructor
+- CaptureController: setFocusBehavior() method
+- ChannelMergerNode()
+- ChannelSplitterNode()
+- ChapterInformation: artwork property
+- ChapterInformation: startTime property
+- ChapterInformation: title property
+- CharacterBoundsUpdateEvent()
+- rangeEnd
+- rangeStart
+- CharacterData: data property
+- CharacterData: length property
+- CharacterData: nextElementSibling property
+- CharacterData: previousElementSibling property
+- CharacterData: after() method
+- CharacterData: appendData() method
+- CharacterData: before() method
+- CharacterData: deleteData() method
+- CharacterData: insertData() method
+- CharacterData: remove() method
+- CharacterData: replaceData() method
+- CharacterData: replaceWith() method
+- CharacterData: substringData() method
+- Client: frameType property
+- Client.id
+- Client: type property
+- Client: url property
+- Client.postMessage()
+- Clients.claim()
+- Clients.get()
+- Clients.matchAll()
+- Clients.openWindow()
+- read()
+- readText()
+- write()
+- Clipboard.writeText()
+- ClipboardEvent()
+- ClipboardEvent.clipboardData
+- ClipboardItem()
+- ClipboardItem: presentationStyle property
+- types
+- supports()
+- getType()
+- CloseEvent()
+- code
+- reason
+- wasClean
+- CloseWatcher: CloseWatcher() constructor
+- CloseWatcher: close() method
+- CloseWatcher: destroy() method
+- CloseWatcher: requestClose() method
+- CloseWatcher: cancel event
+- CloseWatcher: close event
+- Comment：Comment() 构造函数
+- CompositionEvent: CompositionEvent() constructor
+- CompositionEvent: data property
+- CompositionEvent: locale property
+- CompositionEvent: initCompositionEvent() method
+- CompressionStream()
+- readable
+- writable
+- console：assert() 静态方法
+- console：clear() 静态方法
+- console：count() 静态方法
+- console：countReset() 静态方法
+- console：debug() 静态方法
+- console：dir() 静态方法
+- console：dirxml() 静态方法
+- console：error() 静态方法
+- console：group() 静态方法
+- console：groupCollapsed() 静态方法
+- console：groupEnd() 静态方法
+- console：info() 静态方法
+- console：log() 静态方法
+- console：profile() 静态方法
+- console：profileEnd() 静态方法
+- console：table() 静态方法
+- console：time() 静态方法
+- console：timeEnd() 静态方法
+- console：timeLog() 静态方法
+- console：timeStamp() 静态方法
+- console：trace() 静态方法
+- console：warn() 静态方法
+- ConstantSourceNode()
+- offset
+- addressLine
+- city
+- country
+- dependentLocality
+- organization
+- phone
+- postalCode
+- recipient
+- region
+- sortingCode
+- toJSON()
+- getProperties()
+- select()
+- ContentIndex: add() method
+- ContentIndex: delete() method
+- ContentIndex: getAll() method
+- ContentIndexEvent: ContentIndexEvent() constructor
+- ContentIndexEvent: id property
+- ContentVisibilityAutoStateChangeEvent()
+- skipped
+- ConvolverNode()
+- buffer
+- normalize
+- CookieChangeEvent：CookieChangeEvent() 构造函数
+- CookieChangeEvent：changed 属性
+- CookieChangeEvent：deleted 属性
+- CookieStore：delete() 方法
+- CookieStore：get() 方法
+- CookieStore：getAll() 方法
+- CookieStore：set() 方法
+- CookieStore：change 事件
+- CookieStoreManager：getSubscriptions() 方法
+- CookieStoreManager：subscribe() 方法
+- CookieStoreManager：unsubscribe() 方法
+- CountQueuingStrategy()
+- CountQueuingStrategy：highWaterMark 属性
+- CountQueuingStrategy.size()
+- Credential：id 属性
+- Credential：type 属性
+- CredentialsContainer: preventSilentAccess() method
+- CredentialsContainer: store() method
+- Crypto.subtle
+- Crypto.getRandomValues()
+- Crypto.randomUUID()
+- CryptoKey: algorithm property
+- CryptoKey: extractable property
+- CryptoKey: type property
+- CryptoKey: usages property
+- CSS 数字工厂函数
+- CSS：escape() 静态方法
+- CSS.supports()
+- CSSAnimation: animationName property
+- CSSConditionRule: conditionText property
+- containerName
+- containerQuery
+- additiveSymbols
+- fallback
+- name
+- negative
+- pad
+- prefix
+- range
+- speakAs
+- suffix
+- symbols
+- system
+- CSSFontFaceRule: style property
+- fontFamily
+- basePalette
+- fontFamily
+- name
+- overrideColors
+- CSSGroupingRule: cssRules property
+- CSSGroupingRule: deleteRule() method
+- CSSGroupingRule: insertRule() method
+- CSSImportRule: href property
+- layerName
+- CSSImportRule: media property
+- CSSImportRule: stylesheet property
+- CSSImportRule: supportsText property
+- CSSKeyframeRule: keyText property
+- CSSKeyframeRule: style property
+- CSSKeyframesRule: cssRules property
+- CSSKeyframesRule: name property
+- CSSKeyframesRule: appendRule() method
+- CSSKeyframesRule: deleteRule() method
+- CSSKeyframesRule: findRule() method
+- CSSKeywordValue: CSSKeywordValue() constructor
+- CSSKeywordValue: value property
+- name
+- nameList
+- CSSMathInvert: CSSMathInvert() constructor
+- CSSMathInvert: value property
+- CSSMathMax: CSSMathMax() constructor
+- CSSMathMax: values property
+- CSSMathMin: CSSMathMin() constructor
+- CSSMathMin: values property
+- CSSMathNegate: CSSMathNegate() constructor
+- CSSMathNegate: value property
+- CSSMathProduct: CSSMathProduct() constructor
+- CSSMathProduct: values property
+- CSSMathSum: CSSMathSum() constructor
+- CSSMathSum: values property
+- CSSMathValue: operator property
+- CSSMatrixComponent: CSSMatrixComponent() constructor
+- CSSMatrixComponent: matrix property
+- CSSMediaRule: media property
+- CSSNamespaceRule: namespaceURI property
+- CSSNamespaceRule: prefix property
+- CSSNumericArray: length property
+- CSSNumericValue: parse() static method
+- CSSNumericValue: add() method
+- CSSNumericValue: div() method
+- CSSNumericValue: equals() method
+- CSSNumericValue: max() method
+- CSSNumericValue: min() method
+- CSSNumericValue: mul() method
+- CSSNumericValue: sub() method
+- CSSNumericValue: to() method
+- CSSNumericValue: toSum() method
+- CSSNumericValue: type() method
+- CSSPageRule: selectorText property
+- CSSPageRule: style property
+- CSSPerspective: CSSPerspective() constructor
+- CSSPerspective: length property
+- name
+- style
+- CSSPositionValue: CSSPositionValue() constructor
+- CSSPositionValue: x property
+- CSSPositionValue: y property
+- CSSPrimitiveValue: primitiveType property
+- CSSPrimitiveValue: getCounterValue() method
+- CSSPrimitiveValue: getFloatValue() method
+- CSSPrimitiveValue: getRectValue() method
+- CSSPrimitiveValue: getRGBColorValue() method
+- CSSPrimitiveValue: getStringValue() method
+- CSSPrimitiveValue: setFloatValue() method
+- CSSPrimitiveValue: setStringValue() method
+- inherits
+- initialValue
+- name
+- syntax
+- CSSPseudoElement: element property
+- CSSPseudoElement: type property
+- CSSRotate: CSSRotate() constructor
+- CSSRotate: angle property
+- CSSRotate: x property
+- CSSRotate: y property
+- CSSRotate: z property
+- CSSRule.cssText
+- CSSRule: parentRule property
+- CSSRule.parentStyleSheet
+- CSSRule: type property
+- CSSRuleList: length property
+- CSSRuleList: item() method
+- CSSScale: CSSScale() constructor
+- CSSScale: x property
+- CSSScale: y property
+- CSSScale: z property
+- end
+- start
+- CSSSkew: CSSSkew() constructor
+- CSSSkew: ax property
+- CSSSkew: ay property
+- CSSSkewX: CSSSkewX() constructor
+- CSSSkewX: ax property
+- CSSSkewY: CSSSkewY() constructor
+- CSSSkewY: ay property
+- CSSStyleDeclaration: cssFloat property
+- CSSStyleDeclaration: cssText property
+- CSSStyleDeclaration.length
+- CSSStyleDeclaration: parentRule property
+- CSSStyleDeclaration.getPropertyCSSValue()
+- CSSStyleDeclaration.getPropertyPriority()
+- CSSStyleDeclaration.getPropertyValue()
+- CSSStyleDeclaration.item()
+- CSSStyleDeclaration.removeProperty()
+- CSSStyleDeclaration.setProperty()
+- CSSStyleRule.selectorText
+- style
+- CSSStyleRule: styleMap property
+- CSSStyleSheet()
+- CSSStyleSheet: cssRules property
+- CSSStyleSheet: ownerRule property
+- CSSStyleSheet: rules property
+- CSSStyleSheet: addRule() method
+- CSSStyleSheet.deleteRule()
+- CSSStyleSheet.insertRule()
+- CSSStyleSheet: removeRule() method
+- replace()
+- replaceSync()
+- CSSStyleValue: parse() static method
+- CSSStyleValue: parseAll() static method
+- CSSTransformComponent: is2D property
+- CSSTransformComponent: toMatrix() method
+- CSSTransformComponent: toString() method
+- CSSTransformValue: CSSTransformValue() constructor
+- CSSTransformValue: is2D property
+- CSSTransformValue: length property
+- CSSTransformValue: entries() method
+- CSSTransformValue: forEach() method
+- CSSTransformValue: keys() method
+- CSSTransformValue: toMatrix() method
+- CSSTransformValue: values() method
+- CSSTransition: transitionProperty property
+- CSSTranslate: CSSTranslate() constructor
+- CSSTranslate: x property
+- CSSTranslate: y property
+- CSSTranslate: z property
+- CSSUnitValue: CSSUnitValue() constructor
+- CSSUnitValue: unit property
+- CSSUnitValue: value property
+- CSSUnparsedValue: CSSUnparsedValue() constructor
+- CSSUnparsedValue: length property
+- CSSUnparsedValue: entries() method
+- CSSUnparsedValue: forEach() method
+- CSSUnparsedValue: keys() method
+- CSSUnparsedValue: values() method
+- CSSValue: cssText property
+- CSSValue: cssValueType property
+- CSSValueList.length
+- CSSValueList: item() method
+- CSSVariableReferenceValue: CSSVariableReferenceValue() constructor
+- CSSVariableReferenceValue: fallback property
+- CSSVariableReferenceValue: variable property
+- CustomEvent：CustomEvent() 构造函数
+- CustomEvent：detail 属性
+- CustomEvent.initCustomEvent()
+- size
+- add()
+- clear()
+- delete()
+- entries()
+- forEach()
+- has()
+- keys()
+- values()
+- DataTransfer()
+- DataTransfer.dropEffect
+- DataTransfer.effectAllowed
+- DataTransfer.files
+- DataTransfer.items
+- DataTransfer.types
+- DataTransfer: addElement() method
+- DataTransfer.clearData()
+- DataTransfer.getData()
+- DataTransfer.setData()
+- DataTransfer.setDragImage()
+- DataTransferItem：kind 属性
+- DataTransferItem：type 属性
+- DataTransferItem.getAsFile()
+- DataTransferItem.getAsString()
+- DataTransferItem.webkitGetAsEntry()
+- DataTransferItemList.length
+- DataTransferItemList: add() method
+- DataTransferItemList: clear() method
+- DataTransferItemList: remove() method
+- DecompressionStream()
+- readable
+- writable
+- DedicatedWorkerGlobalScope: name property
+- cancelAnimationFrame()
+- DedicatedWorkerGlobalScope: close() method
+- DedicatedWorkerGlobalScope: postMessage() method
+- requestAnimationFrame()
+- DedicatedWorkerGlobalScope: message event
+- messageerror
+- rtctransform
+- DelayNode()
+- delayTime
+- DeprecationReportBody: anticipatedRemoval property
+- DeprecationReportBody: columnNumber property
+- DeprecationReportBody: id property
+- DeprecationReportBody: lineNumber property
+- DeprecationReportBody: message property
+- DeprecationReportBody: sourceFile property
+- DeprecationReportBody: toJSON() method
+- DeviceMotionEvent.DeviceMotionEvent()
+- acceleration
+- accelerationIncludingGravity
+- interval
+- rotationRate
+- DeviceMotionEventAcceleration: x property
+- DeviceMotionEventAcceleration: y property
+- DeviceMotionEventAcceleration: z property
+- DeviceMotionEventRotationRate: alpha property
+- DeviceMotionEventRotationRate: beta property
+- DeviceMotionEventRotationRate: gamma property
+- DeviceOrientationEvent: DeviceOrientationEvent() constructor
+- DeviceOrientationEvent.absolute
+- alpha
+- beta
+- gamma
+- Document：Document() 构造函数
+- Document：activeElement 属性
+- adoptedStyleSheets
+- Document：alinkColor 属性
+- Document：all 属性
+- Document：anchors 属性
+- Document：applets 属性
+- Document：bgColor 属性
+- Document：body 属性
+- Document：characterSet 属性
+- Document：childElementCount 属性
+- Document: children property
+- Document：compatMode 属性
+- Document：contentType 属性
+- Document.cookie
+- Document：currentScript 属性
+- Document：defaultView 属性
+- Document：designMode 属性
+- Document：dir 属性
+- Document：doctype 属性
+- Document：documentElement 属性
+- Document：documentURI 属性
+- Document.domain
+- Document：embeds 属性
+- Document：featurePolicy 属性
+- document.fgColor
+- Document：firstElementChild 属性
+- Document.forms
+- Document：fragmentDirective 属性
+- fullscreenEnabled
+- Document：head 属性
+- document.images
+- document.implementation
+- Document: lastElementChild property
+- document.lastModified
+- Document.lastStyleSheetSet
+- document.linkColor
+- Document.links
+- Document.location
+- Document.plugins
+- Document.preferredStyleSheetSet
+- document.readyState
+- Document.referrer
+- Document: rootElement property
+- Document：scripts 属性
+- Document.scrollingElement
+- Document：selectedStyleSheetSet 属性
+- DocumentOrShadowRoot.styleSheets
+- Document：styleSheetSets 属性
+- Document.title
+- Document：URL 属性
+- Document: vlinkColor property
+- Document: xmlEncoding property
+- Document: xmlVersion property
+- parseHTMLUnsafe()
+- Document：adoptNode() 方法
+- Document：append() 方法
+- caretPositionFromPoint()
+- Document：caretRangeFromPoint() 方法
+- Document：clear() 方法
+- Document：close() 方法
+- document.createAttribute()
+- Document: createAttributeNS() method
+- Document.createCDATASection()
+- document.createComment
+- Document.createDocumentFragment()
+- Document.createElementNS()
+- Document：createEvent() 方法
+- document.createExpression
+- Document：createNodeIterator() 方法
+- Document：createNSResolver() 方法
+- Document：createProcessingInstruction() 方法
+- Document：createRange() 方法
+- Document：createTextNode() 方法
+- Document: createTouch() method
+- Document: createTouchList() method
+- Document：createTreeWalker() 方法
+- Document：elementFromPoint() 方法
+- DocumentOrShadowRoot.elementsFromPoint()
+- Document: enableStyleSheetsForSet() method
+- Document.evaluate()
+- document.execCommand
+- Document：getElementById() 方法
+- Document.getElementsByClassName()
+- Document：getElementsByName() 方法
+- Document.getElementsByTagName()
+- Document.getElementsByTagNameNS()
+- document.hasFocus
+- document.importNode
+- Document: mozSetImageElement() method
+- Document：open() 方法
+- Document: prepend() method
+- Document.queryCommandEnabled()
+- Document.queryCommandState()
+- Document.queryCommandSupported()
+- document.querySelector()
+- Document.querySelectorAll
+- document.releaseCapture
+- Document: replaceChildren() method
+- Document：write() 方法
+- Document：writeln() 方法
+- Document：afterscriptexecute 事件
+- Document：beforescriptexecute 事件
+- Document：copy 事件
+- Document: cut event
+- Document：DOMContentLoaded 事件
+- fullscreenchange
+- fullscreenerror
+- Document: paste event
+- pointerlockchange
+- pointerlockerror
+- Document: prerenderingchange event
+- Document：readystatechange 事件
+- Document：scroll 事件
+- scrollend
+- Document: securitypolicyviolation event
+- Document：selectionchange 事件
+- Document：visibilitychange 事件
+- DocumentFragment：DocumentFragment() 构造函数
+- DocumentFragment: childElementCount property
+- DocumentFragment: children property
+- DocumentFragment: firstElementChild property
+- DocumentFragment: lastElementChild property
+- DocumentFragment: append() method
+- DocumentFragment: getElementById() method
+- DocumentFragment: prepend() method
+- DocumentFragment.querySelector()
+- DocumentFragment.querySelectorAll()
+- DocumentFragment: replaceChildren() method
+- window
+- requestWindow()
+- enter
+- DocumentPictureInPictureEvent()
+- window
+- DocumentTimeline()
+- DocumentType: name property
+- DocumentType: publicId property
+- DocumentType: systemId property
+- DocumentType：after() 方法
+- DocumentType: before() method
+- DocumentType: remove() method
+- DocumentType: replaceWith() method
+- DOMException()：DOMException() 构造函数
+- DOMException.code
+- DOMException.message
+- DOMException.name
+- DOMImplementation.createDocument()
+- DOMImplementation.createDocumentType()
+- DOMImplementation.createHTMLDocument
+- DOMImplementation: hasFeature() method
+- DOMMatrix: DOMMatrix() constructor
+- DOMMatrixReadOnly: DOMMatrixReadOnly() constructor
+- DOMMatrixReadOnly: flipX() method
+- DOMMatrixReadOnly: scale() method
+- DOMMatrixReadOnly: translate() method
+- DOMParser()
+- DOMParser: parseFromString() method
+- DOMPoint.DOMPoint()
+- DOMPoint.w
+- DOMPoint.x
+- DOMPoint.y
+- DOMPoint.z
+- DOMPoint: fromPoint() static method
+- DOMPointReadOnly: DOMPointReadOnly() constructor
+- DOMPointReadOnly: w property
+- DOMPointReadOnly: x property
+- DOMPointReadOnly: y property
+- DOMPointReadOnly: z property
+- DOMPointReadOnly: fromPoint() static method
+- DOMPointReadOnly: toJSON() method
+- DOMRect.DOMRect()
+- DOMRect: fromRect() static method
+- DOMRectReadOnly: DOMRectReadOnly() constructor
+- DOMRectReadOnly: bottom property
+- DOMRectReadOnly: height property
+- DOMRectReadOnly: left property
+- DOMRectReadOnly: right property
+- DOMRectReadOnly: top property
+- DOMRectReadOnly: width property
+- DOMRectReadOnly: x property
+- DOMRectReadOnly: y property
+- DOMRectReadOnly: fromRect() static method
+- DOMStringList: length property
+- DOMStringList: contains() method
+- DOMStringList: item() method
+- DOMTokenList.length
+- DOMTokenList: value property
+- DOMTokenList.add()
+- DOMTokenList.contains()
+- DOMTokenList: entries() method
+- DOMTokenList: forEach() method
+- DOMTokenList.item()
+- DOMTokenList.keys()
+- DOMTokenList.remove()
+- DOMTokenList.replace()
+- DOMTokenList.supports()
+- DOMTokenList.toggle()
+- DOMTokenList: values() method
+- DragEvent()
+- DragEvent.dataTransfer
+- DynamicsCompressorNode()
+- attack
+- knee
+- ratio
+- reduction
+- release
+- threshold
+- EditContext()
+- characterBoundsRangeStart
+- selectionEnd
+- selectionStart
+- text
+- attachedElements()
+- characterBounds()
+- updateCharacterBounds()
+- updateControlBounds()
+- updateSelection()
+- updateSelectionBounds()
+- updateText()
+- characterboundsupdate
+- compositionend
+- compositionstart
+- textformatupdate
+- textupdate
+- ariaAtomic
+- ariaAutoComplete
+- Element: ariaBrailleLabel property
+- Element: ariaBrailleRoleDescription property
+- ariaBusy
+- ariaChecked
+- ariaColCount
+- ariaColIndex
+- Element.ariaColIndexText
+- ariaColSpan
+- ariaCurrent
+- Element: ariaDescription property
+- ariaDisabled
+- ariaExpanded
+- ariaHasPopup
+- ariaHidden
+- ariaKeyShortcuts
+- ariaLabel
+- ariaLevel
+- ariaLive
+- ariaModal
+- ariaMultiLine
+- ariaMultiSelectable
+- ariaOrientation
+- ariaPlaceholder
+- ariaPosInSet
+- ariaPressed
+- ariaReadOnly
+- ariaRelevant
+- ariaRequired
+- ariaRoleDescription
+- ariaRowCount
+- ariaRowIndex
+- Element.ariaRowIndexText
+- ariaRowSpan
+- ariaSelected
+- ariaSetSize
+- ariaSort
+- ariaValueMax
+- ariaValueMin
+- ariaValueNow
+- ariaValueText
+- assignedSlot
+- Element.attributes
+- Element：childElementCount 属性
+- Element.children
+- Element.classList
+- Element.className
+- Element.clientHeight
+- Element.clientLeft
+- Element.clientTop
+- Element.clientWidth
+- Element: currentCSSZoom property
+- Element：elementTiming 属性
+- Element：firstElementChild 属性
+- Element：id 属性
+- element.innerHTML
+- Element：lastElementChild 属性
+- Element.localName
+- Element.namespaceURI
+- NonDocumentTypeChildNode.nextElementSibling
+- element.outerHTML
+- Element: part property
+- Element.prefix
+- NonDocumentTypeChildNode.previousElementSibling
+- Element.scrollHeight
+- Element.scrollLeft
+- Element.scrollLeftMax
+- Element：scrollTop 属性
+- Element.scrollTopMax
+- Element.scrollWidth
+- Element.tagName
+- Element.after()
+- Element：append() 方法
+- Element.before()
+- checkVisibility()
+- Element.closest()
+- Element: computedStyleMap() method
+- Element.getAttribute()
+- Element.getAttributeNames()
+- Element：getAttributeNode() 方法
+- Element：getAttributeNodeNS() 方法
+- Element: getAttributeNS() method
+- Element.getBoundingClientRect()
+- Element.getClientRects()
+- Element.getElementsByClassName()
+- element.getElementsByTagName
+- Element.getElementsByTagNameNS()
+- Element: getHTML() method
+- Element：hasAttribute() 方法
+- Element：hasAttributeNS() 方法
+- Node.hasAttributes
+- Element：insertAdjacentElement() 方法
+- element.insertAdjacentHTML
+- Element.insertAdjacentText()
+- Element.matches()
+- Element.prepend()
+- Element.querySelector()
+- Element.querySelectorAll()
+- Element.remove()
+- Element：removeAttribute() 方法
+- Element：removeAttributeNode() 方法
+- Element：removeAttributeNS() 方法
+- Element.replaceChildren()
+- Element.replaceWith()
+- Element.scroll()
+- Element.scrollBy()
+- scrollIntoView()
+- Element：scrollIntoViewIfNeeded() 方法
+- Element.scrollTo()
+- Element：setAttribute() 方法
+- Element：setAttributeNode() 方法
+- Element：setAttributeNodeNS() 方法
+- Element：setAttributeNS() 方法
+- Element：setCapture() 方法
+- setHTMLUnsafe()
+- Element：toggleAttribute() 方法
+- Element：afterscriptexecute 事件
+- GlobalEventHandlers.onanimationcancel
+- 元素：animationend 事件
+- GlobalEventHandlers.onanimationiteration
+- animationstart
+- GlobalEventHandlers.onauxclick
+- Element：beforeinput 事件
+- Element: beforematch event
+- Element：beforescriptexecute 事件
+- Element: beforexrselect event
+- blur (event)
+- click
+- compositionend
+- compositionstart
+- compositionupdate
+- Element：contentvisibilityautostatechange 事件
+- Element: contextmenu event
+- Element：copy 事件
+- Element：cut 事件
+- dblclick
+- Element: DOMActivate event
+- Element: DOMMouseScroll event
+- 元素：focus 事件
+- Element: focusin event
+- focusout
+- fullscreenchange
+- fullscreenerror
+- Element: gesturechange event
+- Element: gestureend event
+- Element: gesturestart event
+- Element：gotpointercapture 事件
+- Element：input 事件
+- Element：keydown 事件
+- 元素：keypress 事件
+- Element: keyup event
+- GlobalEventHandlers.onlostpointercapture
+- mousedown
+- mouseenter
+- mouseleave
+- mousemove
+- mouseout
+- mouseover
+- mouseup
+- mousewheel
+- Element: MozMousePixelScroll event
+- Element：paste 事件
+- GlobalEventHandlers.onpointercancel
+- GlobalEventHandlers.onpointerdown
+- GlobalEventHandlers.onpointerenter
+- GlobalEventHandlers.onpointerleave
+- GlobalEventHandlers.onpointermove
+- GlobalEventHandlers.onpointerout
+- Element：pointerover 事件
+- Element: pointerrawupdate event
+- GlobalEventHandlers.onpointerup
+- GlobalEventHandlers.onscroll
+- scrollend
+- Element: securitypolicyviolation event
+- Element：touchcancel 事件
+- Element：touchend 事件
+- Element：touchmove 事件
+- Element：touchstart 事件
+- Element：transitioncancel 事件
+- Element：transitionend 事件
+- Element: transitionrun event
+- HTMLElement：transitionstart 事件
+- Element: webkitmouseforcechanged event
+- Element: webkitmouseforcedown event
+- Element: webkitmouseforceup event
+- Element: webkitmouseforcewillbegin event
+- Element：滚轮事件
+- ElementInternals: ariaAtomic property
+- ElementInternals: ariaAutoComplete property
+- ElementInternals: ariaBusy property
+- ElementInternals: ariaChecked property
+- ElementInternals: ariaColCount property
+- ElementInternals: ariaColIndex property
+- ElementInternals.ariaColIndexText
+- ElementInternals: ariaColSpan property
+- ElementInternals: ariaCurrent property
+- ElementInternals: ariaDescription property
+- ElementInternals: ariaDisabled property
+- ElementInternals: ariaExpanded property
+- ElementInternals: ariaHasPopup property
+- ElementInternals: ariaHidden property
+- ElementInternals: ariaKeyShortcuts property
+- ElementInternals: ariaLabel property
+- ElementInternals: ariaLevel property
+- ElementInternals: ariaLive property
+- ElementInternals: ariaModal property
+- ElementInternals: ariaMultiLine property
+- ElementInternals: ariaMultiSelectable property
+- ElementInternals: ariaOrientation property
+- ElementInternals: ariaPlaceholder property
+- ElementInternals: ariaPosInSet property
+- ElementInternals: ariaPressed property
+- ElementInternals: ariaReadOnly property
+- ElementInternals: ariaRelevant property
+- ElementInternals: ariaRequired property
+- ElementInternals: ariaRoleDescription property
+- ElementInternals: ariaRowCount property
+- ElementInternals: ariaRowIndex property
+- ElementInternals.ariaRowIndexText
+- ElementInternals: ariaRowSpan property
+- ElementInternals: ariaSelected property
+- ElementInternals: ariaSetSize property
+- ElementInternals: ariaSort property
+- ElementInternals: ariaValueMax property
+- ElementInternals: ariaValueMin property
+- ElementInternals: ariaValueNow property
+- ElementInternals: ariaValueText property
+- form
+- labels
+- ElementInternals: role property
+- ElementInternals: shadowRoot property
+- states
+- validationMessage
+- validity
+- willValidate
+- checkValidity()
+- reportValidity()
+- setFormValue()
+- setValidity()
+- EncodedAudioChunk()
+- byteLength
+- duration
+- timestamp
+- type
+- copyTo()
+- EncodedVideoChunk()
+- byteLength
+- duration
+- timestamp
+- type
+- copyTo()
+- Event()
+- Event：bubbles 属性
+- Event.cancelable
+- Event.cancelBubble
+- Event：currentTarget 属性
+- event.defaultPrevented
+- Event.eventPhase
+- Event: explicitOriginalTarget property
+- Event：isTrusted 属性
+- Event：originalTarget 属性
+- Event.returnValue
+- Event.srcElement
+- Event.target
+- Event：timeStamp 属性
+- Event：type 属性
+- Event.initEvent()
+- Event：preventDefault() 方法
+- event.stopImmediatePropagation
+- event.stopPropagation
+- EventSource()
+- EventSource: readyState property
+- EventSource: url property
+- EventSource: withCredentials property
+- EventSource.close()
+- EventSource.onerror
+- EventSource：message 事件
+- EventSource.onopen
+- EventTarget()
+- EventTarget.addEventListener()
+- EventTarget.dispatchEvent()
+- EventTarget.removeEventListener()
+- ExtendableCookieChangeEvent: ExtendableCookieChangeEvent() constructor
+- ExtendableCookieChangeEvent: changed property
+- ExtendableCookieChangeEvent: deleted property
+- ExtendableEvent: ExtendableEvent() constructor
+- ExtendableEvent.waitUntil()
+- ExtendableMessageEvent: ExtendableMessageEvent() constructor
+- ExtendableMessageEvent: data property
+- ExtendableMessageEvent: lastEventId property
+- ExtendableMessageEvent: origin property
+- ExtendableMessageEvent: ports property
+- ExtendableMessageEvent: source property
+- EyeDropper()
+- open()
+- FeaturePolicy: allowedFeatures() method
+- FeaturePolicy: allowsFeature() method
+- FeaturePolicy: features() method
+- FeaturePolicy: getAllowlistForFeature() method
+- FederatedCredential: FederatedCredential() constructor
+- FederatedCredential: protocol property
+- FederatedCredential: provider property
+- Fence: getNestedConfigs() method
+- Fence: reportEvent() method
+- Fence: setReportEventDataForAutomaticBeacons() method
+- FencedFrameConfig: setSharedStorageContext() method
+- FetchEvent: FetchEvent() constructor
+- FetchEvent.clientId
+- FetchEvent: handled property
+- FetchEvent: isReload property
+- FetchEvent: preloadResponse property
+- FetchEvent: replacesClientId property
+- FetchEvent.request
+- FetchEvent: resultingClientId property
+- FetchEvent.respondWith()
+- File：File() 构造函数
+- File：lastModified 属性
+- File：lastModifiedDate 属性
+- File：name 属性
+- File.webkitRelativePath
+- FileList：length 属性
+- FileList：item() 方法
+- FileReader：FileReader() 构造函数
+- FileReader：error 属性
+- FileReader：readyState 属性
+- FileReader：result 属性
+- FileReader：abort() 方法
+- FileReader：readAsArrayBuffer() 方法
+- FileReader：readAsBinaryString() 方法
+- FileReader：readAsDataURL() 方法
+- FileReader：readAsText() 方法
+- FileReader：abort 事件
+- FileReader：error 事件
+- FileReader：load 事件
+- FileReader：loadend 事件
+- FileReader：loadstart 事件
+- FileReader：progress 事件
+- FileReaderSync：FileReaderSync() 构造函数
+- FileReaderSync：readAsArrayBuffer() 方法
+- FileReaderSync：readAsBinaryString() 方法
+- FileReaderSync：readAsDataURL() 方法
+- FileReaderSync：readAsText() 方法
+- FileSystem: name property
+- FileSystem: root property
+- FileSystemDirectoryEntry：createReader() 方法
+- FileSystemDirectoryEntry: getDirectory() method
+- FileSystemDirectoryEntry: getFile() method
+- FileSystemDirectoryEntry: removeRecursively() method
+- entries()
+- getDirectoryHandle()
+- getFileHandle()
+- keys()
+- removeEntry()
+- resolve()
+- values()
+- FileSystemDirectoryReader：readEntries() 方法
+- FileSystemEntry: filesystem property
+- FileSystemEntry: fullPath property
+- FileSystemEntry: isDirectory property
+- FileSystemEntry: isFile property
+- FileSystemEntry: name property
+- FileSystemEntry: copyTo() method
+- FileSystemEntry: getMetadata() method
+- FileSystemEntry: getParent() method
+- FileSystemEntry: moveTo() method
+- FileSystemEntry: remove() method
+- FileSystemEntry: toURL() method
+- FileSystemFileEntry: createWriter() method
+- FileSystemFileEntry: file() method
+- createSyncAccessHandle()
+- FileSystemFileHandle：createWritable() 方法
+- getFile()
+- kind
+- name
+- isSameEntry()
+- FileSystemHandle：queryPermission() 方法
+- FileSystemHandle：remove() 方法
+- FileSystemHandle：requestPermission() 方法
+- close()
+- flush()
+- getSize()
+- read()
+- truncate()
+- write()
+- FileSystemWritableFileStream：seek() 方法
+- FileSystemWritableFileStream：truncate() 方法
+- FileSystemWritableFileStream：write() 方法
+- FocusEvent: FocusEvent() constructor
+- FocusEvent: relatedTarget property
+- FontData：family 属性
+- FontData：fullName 属性
+- FontData：postscriptName 属性
+- FontData：style 属性
+- FontData：blob() 方法
+- FontFace: FontFace() constructor
+- FontFace: ascentOverride property
+- FontFace: descentOverride property
+- FontFace: display property
+- FontFace: family property
+- FontFace: featureSettings property
+- FontFace: lineGapOverride property
+- FontFace: loaded property
+- FontFace: status property
+- FontFace: stretch property
+- FontFace: style property
+- FontFace: unicodeRange property
+- FontFace: variant property
+- FontFace: variationSettings property
+- FontFace: weight property
+- FontFace: load() method
+- FontFaceSet: ready property
+- FontFaceSet: size property
+- FontFaceSet: status property
+- FontFaceSet: add() method
+- FontFaceSet.check()
+- FontFaceSet: clear() method
+- FontFaceSet: delete() method
+- FontFaceSet: entries() method
+- FontFaceSet: forEach() method
+- FontFaceSet: has() method
+- FontFaceSet: keys() method
+- FontFaceSet: load() method
+- FontFaceSet: values() method
+- FontFaceSet: loading event
+- FontFaceSet: loadingdone event
+- FontFaceSet: loadingerror event
+- FontFaceSetLoadEvent：FontFaceSetLoadEvent() 构造函数
+- FontFaceSetLoadEvent：fontfaces 属性
+- FormData()
+- append()
+- FormData.delete()
+- FormData.entries()
+- FormData.get()
+- FormData.getAll()
+- FormData.has()
+- FormData.keys()
+- FormData.set()
+- FormData.values()
+- FormDataEvent：FormDataEvent() 构造函数
+- FormDataEvent：formData 属性
+- GainNode()
+- gain
+- Gamepad: axes property
+- Gamepad: buttons property
+- Gamepad: connected property
+- Gamepad: hand property
+- Gamepad: hapticActuators property
+- Gamepad: id property
+- Gamepad: index property
+- Gamepad: mapping property
+- Gamepad: pose property
+- Gamepad: timestamp property
+- Gamepad: vibrationActuator property
+- GamepadButton.pressed
+- GamepadButton: touched property
+- GamepadButton.value
+- GamepadEvent()
+- GamepadEvent.gamepad
+- GamepadHapticActuator: effects property
+- GamepadHapticActuator：type 属性
+- GamepadHapticActuator：playEffect() 方法
+- GamepadHapticActuator：pulse() 方法
+- GamepadHapticActuator: reset() method
+- GamepadPose: angularAcceleration property
+- GamepadPose: angularVelocity property
+- GamepadPose: hasOrientation property
+- GamepadPose: hasPosition property
+- GamepadPose: linearAcceleration property
+- GamepadPose: linearVelocity property
+- GamepadPose: orientation property
+- GamepadPose: position property
+- Geolocation.clearWatch()
+- Geolocation.getCurrentPosition()
+- Geolocation.watchPosition()
+- GeolocationCoordinates: accuracy property
+- GeolocationCoordinates: altitude property
+- GeolocationCoordinates: altitudeAccuracy property
+- GeolocationCoordinates: heading property
+- Coordinates.latitude
+- GeolocationCoordinates: longitude property
+- GeolocationCoordinates: speed property
+- GeolocationCoordinates: toJSON() method
+- Position.coords
+- GeolocationPosition: timestamp property
+- GeolocationPosition: toJSON() method
+- GeolocationPositionError: code property
+- GeolocationPositionError: message property
+- GPU: wgslLanguageFeatures property
+- GPU：getPreferredCanvasFormat() 方法
+- GPU：requestAdapter() 方法
+- GPUAdapter: features property
+- GPUAdapter: isFallbackAdapter property
+- GPUAdapter: limits property
+- GPUAdapter: requestAdapterInfo() method
+- GPUAdapter: requestDevice() method
+- GPUAdapterInfo: architecture property
+- GPUAdapterInfo: description property
+- GPUAdapterInfo: device property
+- GPUAdapterInfo: vendor property
+- GPUBindGroup: label property
+- GPUBindGroupLayout: label property
+- GPUBuffer: label property
+- GPUBuffer: mapState property
+- GPUBuffer: size property
+- GPUBuffer: usage property
+- GPUBuffer: destroy() method
+- GPUBuffer: getMappedRange() method
+- GPUBuffer: mapAsync() method
+- GPUBuffer: unmap() method
+- GPUCanvasContext: canvas property
+- GPUCanvasContext：configure() 方法
+- GPUCanvasContext: getCurrentTexture() method
+- GPUCanvasContext: unconfigure() method
+- GPUCommandBuffer: label property
+- GPUCommandEncoder: label property
+- GPUCommandEncoder: beginComputePass() method
+- GPUCommandEncoder: beginRenderPass() method
+- GPUCommandEncoder: clearBuffer() method
+- GPUCommandEncoder: copyBufferToBuffer() method
+- GPUCommandEncoder: copyBufferToTexture() method
+- GPUCommandEncoder: copyTextureToBuffer() method
+- GPUCommandEncoder: copyTextureToTexture() method
+- GPUCommandEncoder: finish() method
+- GPUCommandEncoder: insertDebugMarker() method
+- GPUCommandEncoder: popDebugGroup() method
+- GPUCommandEncoder: pushDebugGroup() method
+- GPUCommandEncoder: resolveQuerySet() method
+- GPUCommandEncoder: writeTimestamp() method
+- GPUCompilationInfo: messages property
+- GPUCompilationMessage: length property
+- GPUCompilationMessage: lineNum property
+- GPUCompilationMessage: linePos property
+- GPUCompilationMessage: message property
+- GPUCompilationMessage: offset property
+- GPUCompilationMessage: type property
+- GPUComputePassEncoder: label property
+- GPUComputePassEncoder: dispatchWorkgroups() method
+- GPUComputePassEncoder: dispatchWorkgroupsIndirect() method
+- GPUComputePassEncoder: end() method
+- GPUComputePassEncoder: insertDebugMarker() method
+- GPUComputePassEncoder: popDebugGroup() method
+- GPUComputePassEncoder: pushDebugGroup() method
+- GPUComputePassEncoder: setBindGroup() method
+- GPUComputePassEncoder: setPipeline() method
+- GPUComputePipeline: label property
+- GPUComputePipeline: getBindGroupLayout() method
+- GPUDevice: features property
+- GPUDevice: label property
+- GPUDevice: limits property
+- GPUDevice: lost property
+- GPUDevice: queue property
+- GPUDevice: createBindGroup() method
+- GPUDevice: createBindGroupLayout() method
+- GPUDevice: createBuffer() method
+- GPUDevice: createCommandEncoder() method
+- GPUDevice: createComputePipeline() method
+- GPUDevice: createComputePipelineAsync() method
+- GPUDevice: createPipelineLayout() method
+- GPUDevice: createQuerySet() method
+- GPUDevice: createRenderBundleEncoder() method
+- GPUDevice: createRenderPipeline() method
+- GPUDevice: createRenderPipelineAsync() method
+- GPUDevice: createSampler() method
+- GPUDevice: createShaderModule() method
+- GPUDevice: createTexture() method
+- GPUDevice: destroy() method
+- GPUDevice: importExternalTexture() method
+- GPUDevice: popErrorScope() method
+- GPUDevice: pushErrorScope() method
+- GPUDevice: uncapturederror event
+- GPUDeviceLostInfo: message property
+- GPUDeviceLostInfo: reason property
+- GPUError: message property
+- GPUExternalTexture: label property
+- GPUInternalError: GPUInternalError() constructor
+- GPUOutOfMemoryError: GPUOutOfMemoryError() constructor
+- GPUPipelineError: GPUPipelineError() constructor
+- GPUPipelineError: reason property
+- GPUPipelineLayout: label property
+- GPUQuerySet: count property
+- GPUQuerySet: label property
+- GPUQuerySet: type property
+- GPUQuerySet: destroy() method
+- GPUQueue: label property
+- GPUQueue: copyExternalImageToTexture() method
+- GPUQueue: onSubmittedWorkDone() method
+- GPUQueue: submit() method
+- GPUQueue: writeBuffer() method
+- GPUQueue: writeTexture() method
+- GPURenderBundle: label property
+- GPURenderBundleEncoder: label property
+- GPURenderBundleEncoder: draw() method
+- GPURenderBundleEncoder: drawIndexed() method
+- GPURenderBundleEncoder: drawIndexedIndirect() method
+- GPURenderBundleEncoder: drawIndirect() method
+- GPURenderBundleEncoder: finish() method
+- GPURenderBundleEncoder: insertDebugMarker() method
+- GPURenderBundleEncoder: popDebugGroup() method
+- GPURenderBundleEncoder: pushDebugGroup() method
+- GPURenderBundleEncoder: setBindGroup() method
+- GPURenderBundleEncoder: setIndexBuffer() method
+- GPURenderBundleEncoder: setPipeline() method
+- GPURenderBundleEncoder: setVertexBuffer() method
+- GPURenderPassEncoder: label property
+- GPURenderPassEncoder: beginOcclusionQuery() method
+- GPURenderPassEncoder: draw() method
+- GPURenderPassEncoder: drawIndexed() method
+- GPURenderPassEncoder: drawIndexedIndirect() method
+- GPURenderPassEncoder: drawIndirect() method
+- GPURenderPassEncoder: end() method
+- GPURenderPassEncoder: endOcclusionQuery() method
+- GPURenderPassEncoder: executeBundles() method
+- GPURenderPassEncoder: insertDebugMarker() method
+- GPURenderPassEncoder: popDebugGroup() method
+- GPURenderPassEncoder: pushDebugGroup() method
+- GPURenderPassEncoder: setBindGroup() method
+- GPURenderPassEncoder: setBlendConstant() method
+- GPURenderPassEncoder: setIndexBuffer() method
+- GPURenderPassEncoder: setPipeline() method
+- GPURenderPassEncoder: setScissorRect() method
+- GPURenderPassEncoder: setStencilReference() method
+- GPURenderPassEncoder: setVertexBuffer() method
+- GPURenderPassEncoder: setViewport() method
+- GPURenderPipeline: label property
+- GPURenderPipeline: getBindGroupLayout() method
+- GPUSampler: label property
+- GPUShaderModule: label property
+- GPUShaderModule: getCompilationInfo() method
+- GPUTexture: depthOrArrayLayers property
+- GPUTexture: dimension property
+- GPUTexture: format property
+- GPUTexture: height property
+- GPUTexture: label property
+- GPUTexture: mipLevelCount property
+- GPUTexture: sampleCount property
+- GPUTexture: usage property
+- GPUTexture: width property
+- GPUTexture: createView() method
+- GPUTexture: destroy() method
+- GPUTextureView: label property
+- GPUUncapturedErrorEvent: GPUUncapturedErrorEvent() constructor
+- GPUUncapturedErrorEvent: error property
+- GPUValidationError: GPUValidationError() constructor
+- GravitySensor()
+- Gyroscope()
+- x
+- y
+- z
+- HashChangeEvent: HashChangeEvent() constructor
+- HashChangeEvent.newURL
+- HashChangeEvent.oldURL
+- Headers()
+- append()
+- delete()
+- Headers.entries()
+- Headers: forEach() method
+- get()
+- Headers: getSetCookie() method
+- has()
+- Headers.keys()
+- set()
+- Headers.values()
+- getDevices()
+- requestDevice()
+- connect
+- disconnect
+- HIDConnectionEvent()
+- device
+- collections
+- opened
+- productId
+- productName
+- vendorId
+- close()
+- HIDDevice: forget() method
+- open()
+- receiveFeatureReport()
+- sendFeatureReport()
+- sendReport()
+- inputreport
+- data
+- device
+- reportId
+- Highlight()
+- priority
+- size
+- type
+- add()
+- clear()
+- delete()
+- entries()
+- forEach()
+- has()
+- keys()
+- values()
+- size
+- clear()
+- delete()
+- entries()
+- forEach()
+- get()
+- has()
+- keys()
+- set()
+- values()
+- History.length
+- History.scrollRestoration
+- state
+- back()
+- forward()
+- go()
+- History：pushState() 方法
+- History：replaceState() 方法
+- HMDVRDevice: getEyeParameters() method
+- HMDVRDevice: setFieldOfView() method
+- HTMLAllCollection: length property
+- HTMLAllCollection: item() method
+- HTMLAllCollection: namedItem() method
+- HTMLAnchorElement: download property
+- hash
+- host
+- hostname
+- href
+- hreflang
+- origin
+- password
+- pathname
+- HTMLAnchorElement: ping property
+- port
+- protocol
+- referrerPolicy
+- rel
+- relList
+- search
+- target
+- text
+- type
+- username
+- toString()
+- hash
+- host
+- hostname
+- href
+- origin
+- password
+- pathname
+- HTMLAreaElement: ping property
+- port
+- protocol
+- referrerPolicy
+- rel
+- relList
+- search
+- target
+- username
+- toString()
+- Audio()
+- href
+- target
+- disabled
+- labels
+- type
+- height
+- HTMLCanvasElement.mozOpaque
+- width
+- toBlob()
+- toDataURL()
+- transferControlToOffscreen()
+- contextlost
+- contextrestored
+- HTMLCanvasElement: webglcontextcreationerror event
+- HTMLCanvasElement: webglcontextlost event
+- HTMLCanvasElement: webglcontextrestored event
+- HTMLCollection.length
+- HTMLCollection.item
+- HTMLCollection.namedItem()
+- value
+- open
+- HTMLDetailsElement: toggle event
+- open
+- returnValue
+- close()
+- show()
+- showModal()
+- close
+- HTMLElement：accessKey 属性
+- accessKeyLabel
+- HTMLElement: anchorElement property
+- HTMLElement: attributeStyleMap property
+- HTMLElement: autocapitalize property
+- HTMLElement: autofocus property
+- HTMLElement.contentEditable
+- HTMLElement.dataset
+- HTMLElement.dir
+- HTMLElement: draggable property
+- editContext
+- HTMLElement: enterKeyHint property
+- HTMLElement.hidden
+- inert
+- HTMLElement：innerText 属性
+- HTMLElement: inputMode property
+- HTMLElement.isContentEditable
+- HTMLElement.lang
+- HTMLElement.nonce
+- HTMLElement.offsetHeight
+- HTMLElement.offsetLeft
+- HTMLElement.offsetParent
+- HTMLElement.offsetTop
+- HTMLElement.offsetWidth
+- HTMLElement.outerText
+- HTMLElement: spellcheck property
+- HTMLElement：style 属性
+- tabIndex
+- HTMLElement：title 属性
+- translate
+- HTMLElement: blur() method
+- HTMLElement.click()
+- HTMLElement: focus() method
+- beforetoggle
+- HTMLElement: cancel event
+- HTML 元素：change 事件
+- HTMLElement：copy 事件
+- HTMLElement：cut 事件
+- HTMLElement：drag 事件
+- Document：dragend 事件
+- HTMLElement：dragenter 事件
+- HTMLElement：dragleave 事件
+- HTMLElement：dragover 事件
+- HTMLElement：dragstart 事件
+- HTMLElement：drop 事件
+- error
+- HTMLElement: load event
+- HTMLElement：paste 事件
+- toggle
+- height
+- src
+- width
+- HTMLFencedFrameElement: allow property
+- HTMLFencedFrameElement: config property
+- HTMLFencedFrameElement: height property
+- HTMLFencedFrameElement: width property
+- HTMLFontElement: color property
+- HTMLFontElement: face property
+- HTMLFontElement: size property
+- HTMLFormControlsCollection：namedItem() 方法
+- HTMLFormElement: acceptCharset property
+- HTMLFormElement.action
+- HTMLFormElement：elements 属性
+- HTMLFormElement: encoding property
+- HTMLFormElement.enctype
+- HTMLFormElement: length property
+- HTMLFormElement: method property
+- HTMLFormElement: name property
+- HTMLFormElement: target property
+- reportValidity()
+- HTMLFormElement.requestSubmit()
+- form.reset
+- form.submit
+- GlobalEventHandlers.onformdata
+- reset
+- HTMLFormElement: submit event
+- HTMLHtmlElement.version
+- allow
+- allowFullscreen
+- contentDocument
+- contentWindow
+- credentialless
+- HTMLIFrameElement：csp 属性
+- HTMLIFrameElement：featurePolicy 属性
+- height
+- loading
+- name
+- referrerPolicy
+- HTMLIFrameElement：sandbox 属性
+- src
+- HTMLIFrameElement：srcdoc 属性
+- width
+- Image()
+- HTMLImageElement: align property
+- alt
+- HTMLImageElement: border property
+- complete
+- crossOrigin
+- HTMLImageElement: currentSrc property
+- decoding
+- fetchPriority
+- height
+- HTMLImageElement: hspace property
+- isMap
+- loading
+- HTMLImageElement: longDesc property
+- HTMLImageElement: name property
+- naturalHeight
+- naturalWidth
+- referrerPolicy
+- HTMLImageElement: sizes property
+- src
+- HTMLImageElement.srcset
+- useMap
+- HTMLImageElement: vspace property
+- width
+- HTMLImageElement: x property
+- HTMLImageElement: y property
+- decode()
+- HTMLInputElement: disabled property
+- HTMLInputElement: files property
+- HTMLInputElement.labels
+- HTMLInputElement.multiple
+- HTMLInputElement: selectionDirection property
+- HTMLInputElement: selectionEnd property
+- HTMLInputElement: selectionStart property
+- HTMLInputElement: type property
+- HTMLInputElement：webkitdirectory 属性
+- HTMLInputElement: webkitEntries property
+- checkValidity()
+- reportValidity()
+- HTMLInputElement.select()
+- setCustomValidity()
+- HTMLInputElement: setRangeText() method
+- HTMLInputElement：setSelectionRange() 方法
+- HTMLInputElement.showPicker()
+- HTMLInputElement: stepDown() method
+- HTMLInputElement: stepUp() method
+- HTMLInputElement: invalid event
+- HTMLInputElement: search event
+- select
+- GlobalEventHandlers.onselectionchange
+- HTMLLabelElement：control 属性
+- HTMLLabelElement：form 属性
+- HTMLLabelElement：htmlFor 属性
+- HTMLLinkElement: as property
+- blocking
+- HTMLLinkElement: crossOrigin property
+- HTMLLinkElement: disabled property
+- fetchPriority
+- HTMLLinkElement: href property
+- HTMLLinkElement: hreflang property
+- HTMLLinkElement: integrity property
+- HTMLLinkElement: media property
+- referrerPolicy
+- HTMLLinkElement: rel property
+- HTMLLinkElement: relList property
+- HTMLLinkElement: sheet property
+- HTMLLinkElement: type property
+- areas
+- name
+- audioTracks
+- autoplay
+- buffered
+- HTMLMediaElement.controller
+- controls
+- controlsList
+- crossOrigin
+- currentSrc
+- currentTime
+- defaultMuted
+- defaultPlaybackRate
+- duration
+- ended
+- error
+- loop
+- HTMLMediaElement: mediaGroup property
+- muted
+- networkState
+- paused
+- HTMLMediaElement.playbackRate
+- preload
+- preservesPitch
+- readyState
+- seekable
+- src
+- HTMLMediaElement：srcObject 属性
+- HTMLMediaElement: textTracks property
+- videoTracks
+- HTMLMediaElement.volume
+- canPlayType()
+- fastSeek()
+- load()
+- pause()
+- play()
+- HTMLMediaElement: seekToNextFrame() method
+- abort
+- canplay
+- canplaythrough
+- durationchange
+- emptied
+- HTMLMediaElement: encrypted event
+- ended
+- error
+- loadeddata
+- loadedmetadata
+- loadstart
+- pause
+- play
+- playing
+- progress
+- ratechange
+- seeked
+- seeking
+- stalled
+- suspend
+- timeupdate
+- volumechange
+- waiting
+- content
+- httpEquiv
+- HTMLMetaElement：media 属性
+- name
+- HTMLMetaElement：scheme 属性
+- HTMLMeterElement: labels property
+- contentDocument
+- contentWindow
+- data
+- form
+- height
+- name
+- type
+- HTMLObjectElement：useMap 属性
+- validationMessage
+- validity
+- width
+- willValidate
+- checkValidity()
+- setCustomValidity()
+- reversed
+- start
+- type
+- Option()
+- labels
+- labels
+- max
+- position
+- value
+- HTMLScriptElement: async property
+- blocking
+- HTMLScriptElement: crossOrigin property
+- HTMLScriptElement: defer property
+- fetchPriority
+- HTMLScriptElement: integrity property
+- HTMLScriptElement: noModule property
+- referrerPolicy
+- HTMLScriptElement: src property
+- HTMLScriptElement: text property
+- HTMLScriptElement: type property
+- HTMLScriptElement: supports() static method
+- HTMLSelectElement: disabled property
+- HTMLSelectElement: form property
+- HTMLSelectElement: labels property
+- HTMLSelectElement: options property
+- HTMLSelectElement: selectedIndex property
+- HTMLSelectElement: selectedOptions property
+- HTMLSelectElement: type property
+- HTMLSelectElement: value property
+- HTMLSelectElement: add() method
+- checkValidity()
+- HTMLSelectElement: item() method
+- HTMLSelectElement: namedItem() method
+- HTMLSelectElement: remove() method
+- setCustomValidity()
+- showPicker()
+- name
+- assign()
+- assignedElements()
+- assignedNodes()
+- slotchange
+- HTMLSourceElement: height property
+- HTMLSourceElement: width property
+- blocking
+- disabled
+- media
+- HTMLStyleElement: sheet property
+- HTMLStyleElement: type property
+- HTMLTableCaptionElement: align property
+- abbr
+- HTMLTableCellElement: align property
+- HTMLTableCellElement: bgColor property
+- cellIndex
+- HTMLTableCellElement: ch property
+- HTMLTableCellElement: chOff property
+- colSpan
+- headers
+- HTMLTableCellElement: noWrap property
+- rowSpan
+- scope
+- HTMLTableCellElement: vAlign property
+- HTMLTableColElement: align property
+- HTMLTableColElement: ch property
+- HTMLTableColElement: chOff property
+- span
+- HTMLTableColElement: vAlign property
+- HTMLTableElement: align property
+- HTMLTableElement: bgColor property
+- HTMLTableElement: border property
+- caption
+- HTMLTableElement: cellPadding property
+- HTMLTableElement: cellSpacing property
+- HTMLTableElement: frame property
+- rows
+- HTMLTableElement: rules property
+- HTMLTableElement: summary property
+- tBodies
+- tFoot
+- tHead
+- HTMLTableElement: width property
+- createCaption()
+- createTBody()
+- createTFoot()
+- createTHead()
+- deleteCaption()
+- deleteRow()
+- deleteTFoot()
+- deleteTHead()
+- insertRow()
+- HTMLTableRowElement: align property
+- HTMLTableRowElement: bgColor property
+- cells
+- HTMLTableRowElement: ch property
+- HTMLTableRowElement: chOff property
+- rowIndex
+- sectionRowIndex
+- HTMLTableRowElement: vAlign property
+- deleteCell()
+- insertCell()
+- HTMLTableSectionElement: align property
+- HTMLTableSectionElement: ch property
+- HTMLTableSectionElement: chOff property
+- rows
+- HTMLTableSectionElement: vAlign property
+- deleteRow()
+- insertRow()
+- content
+- HTMLTemplateElement: shadowRootSerializable property
+- HTMLTemplateElement: shadowRootClonable property
+- HTMLTemplateElement: shadowRootDelegatesFocus property
+- shadowRootMode
+- labels
+- type
+- select
+- HTMLTextAreaElement: selectionchange event
+- dateTime
+- text
+- src
+- cuechange
+- height
+- poster
+- videoHeight
+- videoWidth
+- width
+- cancelVideoFrameCallback()
+- requestVideoFrameCallback()
+- enterpictureinpicture
+- leavepictureinpicture
+- resize
+- IDBCursor.direction
+- IDBCursor.key
+- IDBCursor: primaryKey property
+- IDBCursor: request property
+- IDBCursor: source property
+- IDBCursor: advance() method
+- IDBCursor: continue() method
+- IDBCursor: continuePrimaryKey() method
+- IDBCursor: delete() method
+- IDBCursor: update() method
+- IDBCursorWithValue: value property
+- IDBDatabase: name property
+- IDBDatabase: objectStoreNames property
+- IDBDatabase: version property
+- IDBDatabase: close() method
+- IDBDatabase.createObjectStore()
+- IDBDatabase.deleteObjectStore()
+- IDBDatabase: transaction() method
+- IDBDatabase: close event
+- IDBDatabase.onversionchange
+- IDBFactory: cmp() method
+- IDBFactory: databases() method
+- IDBFactory: deleteDatabase() method
+- IDBFactory.open
+- IDBIndex: isAutoLocale property
+- IDBIndex: keyPath property
+- IDBIndex: locale property
+- IDBIndex: multiEntry property
+- IDBIndex: name property
+- IDBIndex: objectStore property
+- IDBIndex: unique property
+- IDBIndex: count() method
+- IDBIndex: get() method
+- IDBIndex: getAll() method
+- IDBIndex: getAllKeys() method
+- IDBIndex: getKey() method
+- IDBIndex: openCursor() method
+- IDBIndex: openKeyCursor() method
+- IDBKeyRange: lower property
+- IDBKeyRange: lowerOpen property
+- IDBKeyRange: upper property
+- IDBKeyRange: upperOpen property
+- IDBKeyRange: bound() static method
+- IDBKeyRange.lowerBound()
+- IDBKeyRange: only() static method
+- IDBKeyRange: upperBound() static method
+- IDBKeyRange: includes() method
+- IDBObjectStore.autoIncrement
+- IDBObjectStore.indexNames
+- IDBObjectStore.keyPath
+- IDBObjectStore: name property
+- IDBObjectStore: transaction property
+- IDBObjectStore.add()
+- IDBObjectStore: clear() method
+- IDBObjectStore: count() method
+- IDBObjectStore: createIndex() method
+- IDBObjectStore: delete() method
+- IDBObjectStore: deleteIndex() method
+- IDBObjectStore.get()
+- IDBObjectStore: getAll() method
+- IDBObjectStore: getAllKeys() method
+- IDBObjectStore: getKey() method
+- IDBObjectStore: index() method
+- IDBObjectStore.openCursor
+- IDBObjectStore: openKeyCursor() method
+- IDBObjectStore.put()
+- IDBOpenDBRequest: blocked event
+- IDBOpenDBRequest: upgradeneeded event
+- IDBRequest: error property
+- IDBRequest: readyState property
+- IDBRequest: result property
+- IDBRequest: source property
+- IDBRequest: transaction property
+- IDBRequest: error event
+- IDBRequest: success event
+- IDBTransaction: db property
+- IDBTransaction: durability property
+- IDBTransaction: error property
+- IDBTransaction: mode property
+- IDBTransaction: objectStoreNames property
+- IDBTransaction: abort() method
+- IDBTransaction: commit() method
+- IDBTransaction: objectStore() method
+- IDBTransaction: abort event
+- IDBTransaction: complete event
+- IDBTransaction: error event
+- IDBVersionChangeEvent: IDBVersionChangeEvent() constructor
+- IDBVersionChangeEvent: newVersion property
+- IDBVersionChangeEvent: oldVersion property
+- IdentityCredential: isAutoSelected property
+- IdentityCredential: token property
+- IdentityProvider: close() static method
+- IdentityProvider: getUserInfo() static method
+- IdleDeadline: didTimeout property
+- IdleDeadline.timeRemaining()
+- IdleDetector()
+- screenState
+- userState
+- requestPermission()
+- start()
+- change
+- IIRFilterNode()
+- getFrequencyResponse()
+- ImageBitmap.height
+- ImageBitmap.width
+- ImageBitmap: close() method
+- ImageBitmapRenderingContext: transferFromImageBitmap() method
+- ImageCapture: ImageCapture() constructor
+- ImageCapture: track property
+- ImageCapture: getPhotoCapabilities() method
+- ImageCapture: getPhotoSettings() method
+- ImageCapture: grabFrame() method
+- ImageCapture: takePhoto() method
+- ImageData()
+- ImageData: colorSpace property
+- ImageData.data
+- ImageData.height
+- ImageData.width
+- ImageDecoder()
+- complete
+- completed
+- tracks
+- type
+- isTypeSupported()
+- close()
+- decode()
+- reset()
+- animated
+- frameCount
+- repetitionCount
+- selected
+- length
+- ready
+- selectedIndex
+- selectedTrack
+- Ink: requestPresenter() method
+- InkPresenter: expectedImprovement property
+- InkPresenter: presentationArea property
+- InkPresenter: updateInkTrailStartPoint() method
+- InputDeviceCapabilities: InputDeviceCapabilities() constructor
+- InputDeviceCapabilities: firesTouchEvents property
+- InputDeviceInfo: getCapabilities() method
+- InputEvent：InputEvent() 构造函数
+- InputEvent：data 属性
+- InputEvent：dataTransfer 属性
+- InputEvent：inputType 属性
+- isComposing
+- InputEvent：getTargetRanges() 方法
+- InstallEvent: InstallEvent() constructor
+- InstallEvent: addRoutes() method
+- IntersectionObserver()
+- root
+- rootMargin
+- thresholds
+- disconnect()
+- observe()
+- takeRecords()
+- unobserve()
+- boundingClientRect
+- intersectionRatio
+- intersectionRect
+- isIntersecting
+- rootBounds
+- target
+- time
+- InterventionReportBody: columnNumber property
+- InterventionReportBody: id property
+- InterventionReportBody: lineNumber property
+- InterventionReportBody: message property
+- InterventionReportBody: sourceFile property
+- InterventionReportBody: toJSON() method
+- getLayoutMap()
+- lock()
+- unlock()
+- 键盘事件 KeyboardEvent()
+- KeyboardEvent.altKey
+- KeyboardEvent.charCode
+- KeyboardEvent.code
+- KeyboardEvent.ctrlKey
+- KeyboardEvent.isComposing
+- KeyboardEvent.key
+- KeyboardEvent.keyCode
+- KeyboardEvent: keyIdentifier property
+- KeyboardEvent: location property
+- KeyboardEvent.metaKey
+- KeyboardEvent.repeat
+- KeyboardEvent.shiftKey
+- KeyboardEvent: getModifierState() method
+- KeyboardEvent: initKeyboardEvent() method
+- KeyboardEvent.initKeyEvent()
+- KeyboardLayoutMap: size property
+- KeyboardLayoutMap: entries() method
+- KeyboardLayoutMap: forEach() method
+- KeyboardLayoutMap: get() method
+- KeyboardLayoutMap: has() method
+- KeyboardLayoutMap: keys() method
+- KeyboardLayoutMap: values() method
+- KeyframeEffect()
+- KeyframeEffect: composite property
+- KeyframeEffect: iterationComposite property
+- pseudoElement
+- target
+- getKeyframes()
+- setKeyframes()
+- LargestContentfulPaint: element property
+- LargestContentfulPaint: id property
+- LargestContentfulPaint: loadTime property
+- LargestContentfulPaint: renderTime property
+- LargestContentfulPaint: size property
+- LargestContentfulPaint: url property
+- LargestContentfulPaint: toJSON() method
+- LaunchParams: files property
+- LaunchParams: targetURL property
+- LaunchQueue: setConsumer() method
+- LayoutShift: hadRecentInput property
+- LayoutShift: lastInputTime property
+- LayoutShift: sources property
+- LayoutShift: value property
+- LayoutShift: toJSON() method
+- LayoutShiftAttribution: currentRect property
+- LayoutShiftAttribution: node property
+- LayoutShiftAttribution: previousRect property
+- LayoutShiftAttribution: toJSON() method
+- LinearAccelerationSensor()
+- Location: ancestorOrigins
+- Location: hash
+- Location: host
+- Location：hostname 属性
+- Location: href
+- Location: origin property
+- Location: pathname property
+- Location: port property
+- location：protocol 属性
+- location：search 属性
+- Location.assign()
+- location.reload()
+- Location.replace()
+- Location：toString() 方法
+- mode
+- name
+- query()
+- request()
+- Magnetometer: Magnetometer() constructor
+- Magnetometer: x property
+- Magnetometer: y property
+- Magnetometer: z property
+- MathMLElement: attributeStyleMap property
+- MathMLElement: style property
+- MediaCapabilities: decodingInfo() method
+- MediaCapabilities: encodingInfo() method
+- deviceId
+- groupId
+- kind
+- label
+- MediaDeviceInfo: toJSON() method
+- MediaDevices.enumerateDevices()
+- MediaDevices.getSupportedConstraints()
+- devicechange
+- MediaElementAudioSourceNode()
+- mediaElement
+- MediaEncryptedEvent: MediaEncryptedEvent() constructor
+- MediaEncryptedEvent: initData property
+- MediaEncryptedEvent: initDataType property
+- MediaError: code property
+- MediaError: message property
+- MediaKeyMessageEvent: MediaKeyMessageEvent() constructor
+- MediaKeyMessageEvent: message property
+- MediaKeyMessageEvent: messageType property
+- MediaKeys: createSession() method
+- MediaKeys: getStatusForPolicy() method
+- MediaKeys: setServerCertificate() method
+- MediaKeySession: closed property
+- MediaKeySession: expiration property
+- MediaKeySession: keyStatuses property
+- MediaKeySession: sessionId property
+- MediaKeySession: close() method
+- MediaKeySession: generateRequest() method
+- MediaKeySession: load() method
+- MediaKeySession: remove() method
+- MediaKeySession: update() method
+- MediaKeySession: keystatuseschange event
+- MediaKeySession: message event
+- MediaKeyStatusMap: size property
+- MediaKeyStatusMap: entries() method
+- MediaKeyStatusMap: forEach() method
+- MediaKeyStatusMap: get() method
+- MediaKeyStatusMap: has() method
+- MediaKeyStatusMap: keys() method
+- MediaKeyStatusMap: values() method
+- MediaKeySystemAccess: keySystem property
+- MediaKeySystemAccess: createMediaKeys() method
+- MediaKeySystemAccess: getConfiguration() method
+- MediaList: length property
+- MediaList: mediaText property
+- MediaList: appendMedium() method
+- MediaList: deleteMedium() method
+- MediaList: item() method
+- MediaMetadata: MediaMetadata() constructor
+- MediaMetadata: album property
+- MediaMetadata: artist property
+- MediaMetadata: artwork property
+- MediaMetadata: chapterInfo property
+- MediaMetadata: title property
+- MediaQueryList.matches
+- MediaQueryList: media property
+- MediaQueryList.addListener()
+- MediaQueryList: removeListener() method
+- MediaQueryList: change event
+- MediaQueryListEvent()
+- MediaQueryListEvent: matches property
+- MediaQueryListEvent: media property
+- MediaRecorder()
+- MediaRecorder: audioBitrateMode property
+- MediaRecorder.audioBitsPerSecond
+- MediaRecorder: mimeType property
+- MediaRecorder: state property
+- MediaRecorder: stream property
+- MediaRecorder: videoBitsPerSecond property
+- MediaRecorder.isTypeSupported
+- MediaRecorder: pause() method
+- MediaRecorder: requestData() method
+- MediaRecorder: resume() method
+- MediaRecorder: start() method
+- MediaRecorder: stop() method
+- MediaRecorder.ondataavailable
+- MediaRecorder: error event
+- MediaRecorder: pause event
+- MediaRecorder: resume event
+- MediaRecorder: start event
+- MediaRecorder: stop event
+- MediaRecorderErrorEvent: MediaRecorderErrorEvent() constructor
+- MediaRecorderErrorEvent: error property
+- metadata
+- playbackState
+- setActionHandler()
+- MediaSession: setCameraActive() method
+- MediaSession: setMicrophoneActive() method
+- MediaSession: setPositionState() method
+- MediaSource.MediaSource()
+- MediaSource: canConstructInDedicatedWorker static property
+- MediaSource.activeSourceBuffers
+- MediaSource.duration
+- MediaSource: handle property
+- MediaSource.readyState
+- MediaSource.sourceBuffers
+- MediaSource.isTypeSupported()
+- MediaSource.addSourceBuffer()
+- MediaSource: clearLiveSeekableRange() method
+- MediaSource.endOfStream()
+- MediaSource.removeSourceBuffer()
+- MediaSource: setLiveSeekableRange() method
+- MediaStream()
+- active
+- MediaStream.id
+- MediaStream.addTrack()
+- MediaStream: clone() method
+- getAudioTracks()
+- MediaStream: getTrackById() method
+- getTracks()
+- getVideoTracks()
+- MediaStream: removeTrack() method
+- MediaStream: addtrack event
+- MediaStream: removetrack event
+- MediaStreamAudioDestinationNode()
+- stream
+- MediaStreamAudioSourceNode()
+- mediaStream
+- MediaStreamEvent: MediaStreamEvent() constructor
+- MediaStreamEvent: stream property
+- MediaStreamTrack: contentHint property
+- enabled
+- id
+- kind
+- label
+- MediaStreamTrack: muted property
+- MediaStreamTrack.readyState
+- MediaStreamTrack: applyConstraints() method
+- MediaStreamTrack: clone() method
+- MediaStreamTrack.getCapabilities()
+- MediaStreamTrack.getConstraints()
+- MediaStreamTrack: getSettings() method
+- stop()
+- MediaStreamTrack: ended event
+- MediaStreamTrack: mute event
+- MediaStreamTrack: unmute event
+- MediaStreamTrackAudioSourceNode: MediaStreamTrackAudioSourceNode() constructor
+- MediaStreamTrackEvent: MediaStreamTrackEvent() constructor
+- MediaStreamTrackEvent: track property
+- MediaStreamTrackGenerator: MediaStreamTrackGenerator() constructor
+- MediaStreamTrackGenerator: writable property
+- MediaStreamTrackProcessor: MediaStreamTrackProcessor() constructor
+- MediaStreamTrackProcessor: readable property
+- MediaTrackConstraints: aspectRatio property
+- MediaTrackConstraints: autoGainControl property
+- MediaTrackConstraints: channelCount property
+- MediaTrackConstraints: deviceId property
+- MediaTrackConstraints: echoCancellation property
+- MediaTrackConstraints: facingMode property
+- MediaTrackConstraints: frameRate property
+- MediaTrackConstraints: groupId property
+- MediaTrackConstraints: height property
+- MediaTrackConstraints: latency property
+- MediaTrackConstraints: noiseSuppression property
+- MediaTrackConstraints: sampleRate property
+- MediaTrackConstraints: sampleSize property
+- MediaTrackConstraints: volume property
+- MediaTrackConstraints: width property
+- MediaTrackSettings: aspectRatio property
+- MediaTrackSettings: autoGainControl property
+- MediaTrackSettings: channelCount property
+- MediaTrackSettings: deviceId property
+- MediaTrackSettings: echoCancellation property
+- MediaTrackSettings: facingMode property
+- MediaTrackSettings: frameRate property
+- MediaTrackSettings: groupId property
+- MediaTrackSettings: height property
+- MediaTrackSettings: latency property
+- MediaTrackSettings: noiseSuppression property
+- MediaTrackSettings: sampleRate property
+- MediaTrackSettings: sampleSize property
+- MediaTrackSettings: volume property
+- MediaTrackSettings: width property
+- MediaTrackSupportedConstraints: aspectRatio property
+- MediaTrackSupportedConstraints: autoGainControl property
+- MediaTrackSupportedConstraints: channelCount property
+- MediaTrackSupportedConstraints: deviceId property
+- MediaTrackSupportedConstraints: echoCancellation property
+- MediaTrackSupportedConstraints: facingMode property
+- MediaTrackSupportedConstraints: frameRate property
+- MediaTrackSupportedConstraints: groupId property
+- MediaTrackSupportedConstraints: height property
+- MediaTrackSupportedConstraints: latency property
+- MediaTrackSupportedConstraints: noiseSuppression property
+- MediaTrackSupportedConstraints: sampleRate property
+- MediaTrackSupportedConstraints: sampleSize property
+- MediaTrackSupportedConstraints: volume property
+- MediaTrackSupportedConstraints: width property
+- MerchantValidationEvent: MerchantValidationEvent() constructor
+- MerchantValidationEvent: methodName property
+- MerchantValidationEvent: validationURL property
+- MerchantValidationEvent: complete() method
+- MessageChannel：MessageChannel() 构造函数
+- MessageChannel：port1 属性
+- MessageChannel：port2 属性
+- MessageEvent.MessageEvent()
+- MessageEvent: data property
+- MessageEvent: lastEventId property
+- MessageEvent: origin property
+- MessageEvent: ports property
+- MessageEvent: source property
+- MessagePort：close() 方法
+- MessagePort：postMessage() 方法
+- MessagePort：start() 方法
+- MessagePort：message 事件
+- messageerror
+- Metadata: modificationTime property
+- Metadata: size property
+- inputs
+- outputs
+- sysexEnabled
+- statechange
+- MIDIConnectionEvent()
+- port
+- midimessage
+- MIDIMessageEvent()
+- data
+- MIDIOutput: clear() method
+- send()
+- connection
+- id
+- manufacturer
+- name
+- state
+- type
+- version
+- close()
+- open()
+- statechange
+- MouseEvent()
+- MouseEvent: WEBKIT_FORCE_AT_FORCE_MOUSE_DOWN static property
+- MouseEvent: WEBKIT_FORCE_AT_MOUSE_DOWN static property
+- altKey
+- button
+- buttons
+- clientX
+- clientY
+- ctrlKey
+- MouseEvent: layerX property
+- MouseEvent: layerY property
+- metaKey
+- MouseEvent.mozInputSource
+- offsetX
+- offsetY
+- pageX
+- pageY
+- relatedTarget
+- screenX
+- screenY
+- shiftKey
+- MouseEvent: webkitForce property
+- x
+- y
+- getModifierState()
+- MouseEvent.initMouseEvent()
+- MutationEvent: attrChange property
+- MutationEvent: attrName property
+- MutationEvent: newValue property
+- MutationEvent: prevValue property
+- MutationEvent: relatedNode property
+- MutationEvent: initMutationEvent() method
+- MutationObserver.MutationObserver()
+- MutationObserver.disconnect()
+- MutationObserver.observe()
+- MutationObserver.takeRecords()
+- MutationRecord: addedNodes property
+- MutationRecord: attributeName property
+- MutationRecord: attributeNamespace property
+- MutationRecord: nextSibling property
+- MutationRecord: oldValue property
+- MutationRecord: previousSibling property
+- MutationRecord: removedNodes property
+- MutationRecord: target property
+- MutationRecord: type property
+- NamedNodeMap: length property
+- NamedNodeMap.getNamedItem()
+- NamedNodeMap: getNamedItemNS() method
+- NamedNodeMap: item() method
+- NamedNodeMap: removeNamedItem() method
+- NamedNodeMap: removeNamedItemNS() method
+- NamedNodeMap: setNamedItem() method
+- NamedNodeMap: setNamedItemNS() method
+- NavigateEvent()
+- NavigateEvent: canIntercept property
+- destination
+- downloadRequest
+- formData
+- hashChange
+- info
+- navigationType
+- signal
+- userInitiated
+- NavigateEvent: intercept() method
+- NavigateEvent: scroll() method
+- canGoBack
+- canGoForward
+- currentEntry
+- transition
+- back()
+- entries()
+- forward()
+- navigate()
+- reload()
+- traverseTo()
+- updateCurrentEntry()
+- currententrychange
+- navigate
+- navigateerror
+- navigatesuccess
+- NavigationActivation: entry property
+- NavigationActivation: from property
+- NavigationActivation: navigationType property
+- NavigationCurrentEntryChangeEvent()
+- from
+- navigationType
+- id
+- index
+- key
+- sameDocument
+- url
+- getState()
+- id
+- index
+- key
+- sameDocument
+- url
+- getState()
+- dispose
+- NavigationPreloadManager: disable() method
+- NavigationPreloadManager: enable() method
+- NavigationPreloadManager: getState() method
+- NavigationPreloadManager: setHeaderValue() method
+- finished
+- from
+- navigationType
+- Navigator：appCodeName 属性
+- Navigator：appName 属性
+- Navigator：appVersion 属性
+- Navigator：buildID 属性
+- Navigator：cookieEnabled 属性
+- Navigator：doNotTrack 属性
+- Navigator：globalPrivacyControl 属性
+- Navigator：hardwareConcurrency 属性
+- Navigator：language 属性
+- Navigator：languages 属性
+- Navigator：mimeTypes 属性
+- Navigator：onLine 属性
+- Navigator：oscpu 属性
+- Navigator：pdfViewerEnabled 属性
+- Navigator：platform 属性
+- Navigator：plugins 属性
+- Navigator：product 属性
+- Navigator：productSub 属性
+- userActivation
+- Navigator：userAgent 属性
+- Navigator：vendor 属性
+- Navigator：vendorSub 属性
+- Navigator：webdriver 属性
+- Navigator: getAutoplayPolicy() method
+- Navigator: getInstalledRelatedApps() method
+- navigator.getUserMedia
+- Navigator：javaEnabled() 方法
+- Navigator.registerProtocolHandler()
+- Navigator：taintEnabled() 方法
+- Navigator: unregisterProtocolHandler() method
+- NavigatorLogin: setStatus() method
+- NavigatorUAData：brands 属性
+- NavigatorUAData：mobile 属性
+- NavigatorUAData：platform 属性
+- NavigatorUAData：getHighEntropyValues() 方法
+- NavigatorUAData：toJSON() 方法
+- NDEFMessage()
+- records
+- NDEFReader()
+- scan()
+- write()
+- reading
+- readingerror
+- NDEFReadingEvent()
+- message
+- serialNumber
+- NDEFRecord()
+- data
+- encoding
+- id
+- lang
+- mediaType
+- recordType
+- toRecords()
+- NetworkInformation：downlink 属性
+- NetworkInformation：downlinkMax 属性
+- NetworkInformation：effectiveType 属性
+- NetworkInformation：rtt 属性
+- NetworkInformation：saveData 属性
+- NetworkInformation：type 属性
+- NetworkInformation：change 事件
+- Node.baseURI
+- Node.childNodes
+- Node.firstChild
+- Node：lastChild 属性
+- Node.nextSibling
+- Node.nodeName
+- Node：nodeType 属性
+- Node：nodeValue 属性
+- Node.ownerDocument
+- Node.parentElement
+- Node.parentNode
+- Node.previousSibling
+- Node.textContent
+- Node.appendChild
+- Node.cloneNode
+- Node.compareDocumentPosition
+- Node.contains()
+- Node.hasChildNodes
+- Node.insertBefore()
+- Node.isDefaultNamespace
+- Node.isEqualNode
+- Node.isSameNode
+- Node.lookupNamespaceURI
+- Node.lookupPrefix
+- Node：normalize() 方法
+- Node.removeChild
+- Node.replaceChild()
+- Node：selectstart 事件
+- NodeIterator: filter property
+- NodeIterator: pointerBeforeReferenceNode property
+- NodeIterator: referenceNode property
+- NodeIterator: root property
+- NodeIterator: whatToShow property
+- NodeIterator: detach() method
+- NodeIterator: nextNode() method
+- NodeIterator: previousNode() method
+- NodeList.length
+- NodeList.entries()
+- NodeList.prototype.forEach()
+- NodeList.item
+- NodeList.keys()
+- NodeList.values()
+- Notification：Notification() 构造函数
+- Notification：maxActions 静态属性
+- Notification：permission 静态属性
+- Notification：actions 属性
+- Notification：badge 属性
+- Notification：body 属性
+- Notification：data 属性
+- Notification：dir 属性
+- Notification：icon 属性
+- Notification：image 属性
+- Notification：lang 属性
+- Notification：renotify 属性
+- Notification：requireInteraction 属性
+- Notification：silent 属性
+- Notification：tag 属性
+- Notification：timestamp 属性
+- Notification：title 属性
+- Notification：vibrate 属性
+- Notification：requestPermission() 静态方法
+- Notification：close() 方法
+- Notification：click 事件
+- Notification：close 事件
+- Notification：error 事件
+- Notification：show 事件
+- NotificationEvent：NotificationEvent() 构造函数
+- NotificationEvent：action 属性
+- NotificationEvent：notification 属性
+- NotRestoredReasonDetails: reason property
+- NotRestoredReasonDetails: toJSON() method
+- NotRestoredReasons: children property
+- NotRestoredReasons: id property
+- NotRestoredReasons: name property
+- NotRestoredReasons: reasons property
+- NotRestoredReasons: src property
+- NotRestoredReasons: url property
+- NotRestoredReasons: toJSON() method
+- blendEquationiOES()
+- blendEquationSeparateiOES()
+- blendFunciOES()
+- blendFuncSeparateiOES()
+- colorMaskiOES()
+- disableiOES()
+- enableiOES()
+- OfflineAudioCompletionEvent()
+- renderedBuffer
+- OfflineAudioContext()
+- length
+- OfflineAudioContext: resume() method
+- startRendering()
+- suspend
+- complete
+- OffscreenCanvas()
+- height
+- width
+- convertToBlob()
+- getContext()
+- transferToImageBitmap()
+- contextlost
+- contextrestored
+- OffscreenCanvasRenderingContext2D: commit() method
+- quaternion
+- populateMatrix()
+- OscillatorNode()
+- detune
+- frequency
+- type
+- setPeriodicWave()
+- OTPCredential: code property
+- OverconstrainedError: OverconstrainedError() constructor
+- OverconstrainedError: constraint property
+- PageRevealEvent: PageRevealEvent() constructor
+- PageRevealEvent: viewTransition property
+- PageSwapEvent: PageSwapEvent() constructor
+- PageSwapEvent: activation property
+- PageSwapEvent: viewTransition property
+- PageTransitionEvent: PageTransitionEvent() constructor
+- PageTransitionEvent.persisted
+- PaintWorkletGlobalScope: devicePixelRatio property
+- PaintWorkletGlobalScope: registerPaint() method
+- PannerNode()
+- coneInnerAngle
+- coneOuterAngle
+- coneOuterGain
+- distanceModel
+- maxDistance
+- orientationX
+- orientationY
+- orientationZ
+- panningModel
+- positionX
+- positionY
+- positionZ
+- refDistance
+- rolloffFactor
+- PannerNode: setOrientation() method
+- PannerNode: setPosition() method
+- PasswordCredential: PasswordCredential() constructor
+- PasswordCredential: iconURL property
+- PasswordCredential: name property
+- PasswordCredential: password property
+- Path2D()
+- Path2D.addPath()
+- PaymentAddress: addressLine property
+- PaymentAddress: city property
+- PaymentAddress: country property
+- PaymentAddress: dependentLocality property
+- PaymentAddress: organization property
+- PaymentAddress: phone property
+- PaymentAddress: postalCode property
+- PaymentAddress: recipient property
+- PaymentAddress: region property
+- PaymentAddress: sortingCode property
+- PaymentAddress: toJSON() method
+- PaymentManager: userHint property
+- PaymentManager: enableDelegations() method
+- PaymentMethodChangeEvent: PaymentMethodChangeEvent() constructor
+- PaymentMethodChangeEvent: methodDetails property
+- PaymentMethodChangeEvent: methodName property
+- PaymentRequest: PaymentRequest() constructor
+- PaymentRequest: id property
+- PaymentRequest: shippingAddress property
+- PaymentRequest: shippingOption property
+- PaymentRequest: shippingType property
+- PaymentRequest: abort() method
+- PaymentRequest: canMakePayment() method
+- PaymentRequest: show() method
+- PaymentRequest: merchantvalidation event
+- PaymentRequest: paymentmethodchange event
+- PaymentRequest: shippingaddresschange event
+- PaymentRequest: shippingoptionchange event
+- PaymentRequestEvent: PaymentRequestEvent() constructor
+- PaymentRequestEvent: instrumentKey property
+- PaymentRequestEvent: methodData property
+- PaymentRequestEvent: modifiers property
+- PaymentRequestEvent: paymentRequestId property
+- PaymentRequestEvent: paymentRequestOrigin property
+- PaymentRequestEvent: topOrigin property
+- PaymentRequestEvent: total property
+- PaymentRequestEvent: changePaymentMethod() method
+- PaymentRequestEvent: openWindow() method
+- PaymentRequestEvent: respondWith() method
+- PaymentRequestUpdateEvent: PaymentRequestUpdateEvent() constructor
+- PaymentRequestUpdateEvent: updateWith() method
+- PaymentResponse: details property
+- PaymentResponse: methodName property
+- PaymentResponse: payerEmail property
+- PaymentRequest: payerName property
+- PayerResponse: payerPhone property
+- PaymentResponse: requestId property
+- PaymentResponse: shippingAddress property
+- PaymentResponse: shippingOption property
+- PaymentResponse: complete() method
+- PaymentResponse: retry() method
+- PaymentResponse: toJSON() method
+- PaymentResponse: payerdetailchange event
+- Performance: eventCounts property
+- Performance.memory
+- Performance.navigation
+- Performance.timeOrigin
+- Performance.timing
+- Performance.clearMarks()
+- Performance.clearMeasures()
+- Performance: clearResourceTimings() method
+- Performance.getEntries()
+- performance.getEntriesByName()
+- Performance: getEntriesByType() method
+- Performance.mark()
+- Performance.measure()
+- Performance: measureUserAgentSpecificMemory() method
+- Performance.now()
+- Performance: setResourceTimingBufferSize() method
+- Performance.toJSON()
+- Performance.onresourcetimingbufferfull
+- PerformanceElementTiming: element property
+- PerformanceElementTiming: id property
+- PerformanceElementTiming: identifier property
+- PerformanceElementTiming: intersectionRect property
+- PerformanceElementTiming: loadTime property
+- PerformanceElementTiming: naturalHeight property
+- PerformanceElementTiming: naturalWidth property
+- PerformanceElementTiming: renderTime property
+- PerformanceElementTiming: url property
+- PerformanceElementTiming: toJSON() method
+- PerformanceEntry: duration property
+- PerformanceEntry.entryType
+- PerformanceEntry.name
+- PerformanceEntry: startTime property
+- PerformanceEntry: toJSON() method
+- PerformanceEventTiming: cancelable property
+- PerformanceEventTiming: interactionId property
+- PerformanceEventTiming: processingEnd property
+- PerformanceEventTiming: processingStart property
+- PerformanceEventTiming: target property
+- PerformanceEventTiming: toJSON() method
+- PerformanceLongAnimationFrameTiming: blockingDuration property
+- PerformanceLongAnimationFrameTiming: firstUIEventTimestamp property
+- PerformanceLongAnimationFrameTiming: renderStart property
+- PerformanceLongAnimationFrameTiming: scripts property
+- PerformanceLongAnimationFrameTiming: styleAndLayoutStart property
+- PerformanceLongAnimationFrameTiming: toJSON() method
+- PerformanceMark: PerformanceMark() constructor
+- PerformanceMark: detail property
+- PerformanceMeasure: detail property
+- PerformanceNavigation: redirectCount property
+- PerformanceNavigation: type property
+- PerformanceNavigation: toJSON() method
+- PerformanceNavigationTiming: criticalCHRestart property
+- PerformanceNavigationTiming: domComplete property
+- PerformanceNavigationTiming: domContentLoadedEventEnd property
+- PerformanceNavigationTiming: domContentLoadedEventStart property
+- PerformanceNavigationTiming: domInteractive property
+- PerformanceNavigationTiming: loadEventEnd property
+- PerformanceNavigationTiming: loadEventStart property
+- PerformanceNavigationTiming: notRestoredReasons property
+- PerformanceNavigationTiming: redirectCount property
+- PerformanceNavigationTiming: type property
+- PerformanceNavigationTiming: unloadEventEnd property
+- PerformanceNavigationTiming: unloadEventStart property
+- PerformanceNavigationTiming: toJSON() method
+- PerformanceObserver()
+- PerformanceObserver: supportedEntryTypes static property
+- PerformanceObserver.disconnect()
+- PerformanceObserver.observe()
+- PerformanceObserver.takeRecords()
+- PerformanceObserverEntryList: getEntries() method
+- PerformanceObserverEntryList: getEntriesByName() method
+- PerformanceObserverEntryList: getEntriesByType() method
+- connectEnd
+- connectStart
+- PerformanceResourceTiming: contentType property
+- decodedBodySize
+- domainLookupEnd
+- domainLookupStart
+- encodedBodySize
+- fetchStart
+- PerformanceResourceTiming: firstInterimResponseStart property
+- initiatorType
+- PerformanceResourceTiming: nextHopProtocol property
+- redirectEnd
+- redirectStart
+- PerformanceResourceTiming: renderBlockingStatus property
+- requestStart
+- responseEnd
+- responseStart
+- PerformanceResourceTiming: responseStatus property
+- PerformanceResourceTiming: secureConnectionStart property
+- serverTiming
+- transferSize
+- PerformanceResourceTiming: workerStart property
+- PerformanceResourceTiming: toJSON() method
+- PerformanceScriptTiming: executionStart property
+- PerformanceScriptTiming: forcedStyleAndLayoutDuration property
+- PerformanceScriptTiming: invoker property
+- PerformanceScriptTiming: invokerType property
+- PerformanceScriptTiming: pauseDuration property
+- PerformanceScriptTiming: sourceCharPosition property
+- PerformanceScriptTiming: sourceFunctionName property
+- PerformanceScriptTiming: sourceURL property
+- PerformanceScriptTiming: window property
+- PerformanceScriptTiming: windowAttribution property
+- PerformanceScriptTiming: toJSON() method
+- description
+- duration
+- name
+- toJSON()
+- PerformanceTiming.connectEnd
+- PerformanceTiming.connectStart
+- PerformanceTiming.domainLookupEnd
+- PerformanceTiming.domainLookupStart
+- PerformanceTiming.domComplete
+- PerformanceTiming.domContentLoadedEventEnd
+- PerformanceTiming.domContentLoadedEventStart
+- PerformanceTiming.domInteractive
+- PerformanceTiming.domLoading
+- PerformanceTiming.fetchStart
+- PerformanceTiming.loadEventEnd
+- PerformanceTiming.loadEventStart
+- PerformanceTiming.navigationStart
+- PerformanceTiming.redirectEnd
+- PerformanceTiming.redirectStart
+- PerformanceTiming.requestStart
+- PerformanceTiming.responseEnd
+- PerformanceTiming.responseStart
+- PerformanceTiming.secureConnectionStart
+- PerformanceTiming.unloadEventEnd
+- PerformanceTiming.unloadEventStart
+- PerformanceTiming: toJSON() method
+- PeriodicSyncEvent: PeriodicSyncEvent() constructor
+- PeriodicSyncEvent: tag property
+- PeriodicSyncManager: getTags() method
+- PeriodicSyncManager: register() method
+- PeriodicSyncManager: unregister() method
+- PeriodicWave()
+- query()
+- Permissions：revoke() 方法
+- PermissionStatus：name 属性
+- state
+- PermissionStatus：change 事件
+- PictureInPictureEvent: PictureInPictureEvent() constructor
+- PictureInPictureEvent: pictureInPictureWindow property
+- height
+- width
+- resize
+- PointerEvent: PointerEvent() constructor
+- PointerEvent: altitudeAngle property
+- PointerEvent: azimuthAngle property
+- PointerEvent: height property
+- PointerEvent: isPrimary property
+- PointerEvent: pointerId property
+- PointerEvent: pointerType property
+- PointerEvent: pressure property
+- PointerEvent: tangentialPressure property
+- PointerEvent: tiltX property
+- PointerEvent: tiltY property
+- PointerEvent: twist property
+- PointerEvent: width property
+- PointerEvent: getCoalescedEvents() method
+- PointerEvent: getPredictedEvents() method
+- PopStateEvent: PopStateEvent() constructor
+- PopStateEvent: state property
+- PositionSensorVRDevice: getImmediateState() method
+- PositionSensorVRDevice: getState() method
+- PositionSensorVRDevice: resetSensor() method
+- Presentation: defaultRequest property
+- Presentation: receiver property
+- PresentationAvailability: value property
+- PresentationConnection: binaryType property
+- PresentationConnection: id property
+- PresentationConnection: state property
+- PresentationConnection: url property
+- PresentationConnection: close() method
+- PresentationConnection: send() method
+- PresentationConnection: terminate() method
+- PresentationConnectionAvailableEvent: PresentationConnectionAvailableEvent() constructor
+- PresentationConnectionAvailableEvent: connection property
+- PresentationRequest: PresentationRequest() constructor
+- PresentationRequest: getAvailability() method
+- PresentationRequest: reconnect() method
+- PresentationRequest: start() method
+- PressureObserver()
+- knownSources
+- disconnect()
+- observe()
+- takeRecords()
+- unobserve()
+- source
+- state
+- time
+- toJSON()
+- ProcessingInstruction：sheet 属性
+- ProcessingInstruction：target 属性
+- ProgressEvent()
+- lengthComputable
+- loaded
+- total
+- PromiseRejectionEvent.PromiseRejectionEvent()
+- PromiseRejectionEvent.promise
+- PromiseRejectionEvent: reason property
+- PublicKeyCredential: authenticatorAttachment property
+- PublicKeyCredential: id property
+- PublicKeyCredential: rawId property
+- PublicKeyCredential: response property
+- PublicKeyCredential: isConditionalMediationAvailable() static method
+- PublicKeyCredential: isUserVerifyingPlatformAuthenticatorAvailable() static method
+- PublicKeyCredential: parseCreationOptionsFromJSON() static method
+- PublicKeyCredential: parseRequestOptionsFromJSON() static method
+- PublicKeyCredential: getClientExtensionResults() method
+- PublicKeyCredential: toJSON() method
+- PushEvent()
+- data
+- PushManager.supportedContentEncodings
+- getSubscription()
+- PushManager: hasPermission() method
+- permissionState()
+- PushManager: register() method
+- PushManager: registrations() method
+- PushManager.subscribe()
+- PushManager: unregister() method
+- arrayBuffer()
+- blob()
+- PushMessageData: bytes() method
+- json()
+- text()
+- endpoint
+- PushSubscription: expirationTime property
+- PushSubscription: options property
+- PushSubscription: subscriptionId property
+- getKey()
+- toJSON()
+- unsubscribe()
+- PushSubscriptionOptions: applicationServerKey property
+- PushSubscriptionOptions: userVisibleOnly property
+- RadioNodeList: value property
+- Range()
+- Range：collapsed 属性
+- Range.commonAncestorContainer
+- Range.endContainer
+- Range.endOffset
+- Range.startContainer
+- Range.startOffset
+- Range.cloneContents()
+- Range.cloneRange()
+- Range.collapse()
+- Range: compareBoundaryPoints() method
+- Range: compareNode() method
+- Range: comparePoint() method
+- Range.createContextualFragment()
+- Range.deleteContents()
+- Range: detach() method
+- Range.extractContents()
+- Range.getBoundingClientRect()
+- Range.getClientRects()
+- Range.insertNode()
+- Range：intersectsNode() 方法
+- Range: isPointInRange() method
+- Range.selectNode()
+- Range.selectNodeContents()
+- Range.setEnd()
+- Range: setEndAfter() method
+- Range: setEndBefore() method
+- Range.setStart()
+- Range: setStartAfter() method
+- Range.setStartBefore()
+- Range.surroundContents
+- Range: toString() method
+- ReadableByteStreamController: byobRequest property
+- ReadableByteStreamController: desiredSize property
+- ReadableByteStreamController: close() method
+- ReadableByteStreamController: enqueue() method
+- ReadableByteStreamController: error() method
+- ReadableStream.ReadableStream()
+- ReadableStream.locked
+- ReadableStream：from() 静态方法
+- ReadableStream.cancel()
+- ReadableStream.getReader()
+- pipeThrough()
+- pipeTo()
+- ReadableStream.tee()
+- ReadableStreamBYOBReader: ReadableStreamBYOBReader() constructor
+- ReadableStreamBYOBReader: closed property
+- ReadableStreamBYOBReader: cancel() method
+- ReadableStreamBYOBReader: read() method
+- ReadableStreamBYOBReader: releaseLock() method
+- ReadableStreamBYOBRequest: view property
+- ReadableStreamBYOBRequest: respond() method
+- ReadableStreamBYOBRequest: respondWithNewView() method
+- ReadableStreamDefaultController.desiredSize
+- ReadableStreamDefaultController.close()
+- ReadableStreamDefaultController.enqueue()
+- ReadableStreamDefaultController.error()
+- ReadableStreamDefaultReader()
+- ReadableStreamDefaultReader.closed
+- ReadableStreamDefaultReader.cancel()
+- ReadableStreamDefaultReader.read()
+- ReadableStreamDefaultReader.releaseLock()
+- RelativeOrientationSensor()
+- RemotePlayback: state property
+- RemotePlayback: cancelWatchAvailability() method
+- RemotePlayback: prompt() method
+- RemotePlayback: watchAvailability() method
+- RemotePlayback: connect event
+- RemotePlayback: connecting event
+- RemotePlayback: disconnect event
+- Report: body property
+- Report: type property
+- Report: url property
+- ReportBody: toJSON() method
+- ReportingObserver: ReportingObserver() constructor
+- ReportingObserver: disconnect() method
+- ReportingObserver: observe() method
+- ReportingObserver: takeRecords() method
+- Request()
+- Request：body 属性
+- bodyUsed
+- Request.cache
+- credentials
+- Request: destination property
+- headers
+- Request: integrity property
+- method
+- mode
+- Request: redirect property
+- Request: referrer property
+- Request: referrerPolicy property
+- signal
+- url
+- arrayBuffer()
+- blob()
+- Request: bytes() method
+- clone()
+- Request.formData()
+- json()
+- text()
+- ResizeObserver()
+- ResizeObserver.disconnect()
+- ResizeObserver.observe()
+- ResizeObserver.unobserve()
+- ResizeObserverEntry.borderBoxSize
+- ResizeObserverEntry.contentBoxSize
+- ResizeObserverEntry.contentRect
+- ResizeObserverEntry.devicePixelContentBoxSize
+- ResizeObserverEntry.target
+- ResizeObserverSize: blockSize property
+- ResizeObserverSize: inlineSize property
+- Response()
+- bodyUsed
+- headers
+- ok
+- Response.redirected
+- status
+- statusText
+- type
+- url
+- Response.error()
+- Response: json() static method
+- Response.redirect()
+- arrayBuffer()
+- blob()
+- Response: bytes() method
+- clone()
+- Response.formData()
+- json()
+- text()
+- RTCAudioSourceStats: audioLevel property
+- RTCAudioSourceStats: id property
+- RTCAudioSourceStats: kind property
+- RTCAudioSourceStats: timestamp property
+- RTCAudioSourceStats: totalAudioEnergy property
+- RTCAudioSourceStats: totalSamplesDuration property
+- RTCAudioSourceStats: trackIdentifier property
+- RTCAudioSourceStats: type property
+- RTCCertificate: expires property
+- RTCCertificate: getFingerprints() method
+- RTCCertificateStats: base64Certificate property
+- RTCCertificateStats: fingerprint property
+- RTCCertificateStats: fingerprintAlgorithm property
+- RTCCertificateStats: id property
+- RTCCertificateStats: timestamp property
+- RTCCertificateStats: type property
+- RTCCodecStats: channels property
+- RTCCodecStats: clockRate property
+- RTCCodecStats: id property
+- RTCCodecStats: mimeType property
+- RTCCodecStats: payloadType property
+- RTCCodecStats: sdpFmtpLine property
+- RTCCodecStats: timestamp property
+- RTCCodecStats: transportId property
+- RTCCodecStats: type property
+- RTCDataChannel: binaryType property
+- RTCDataChannel: bufferedAmount property
+- RTCDataChannel: bufferedAmountLowThreshold property
+- RTCDataChannel: id property
+- RTCDataChannel: label property
+- RTCDataChannel: maxPacketLifeTime property
+- RTCDataChannel: maxRetransmits property
+- RTCDataChannel: negotiated property
+- RTCDataChannel: ordered property
+- RTCDataChannel: protocol property
+- RTCDataChannel: readyState property
+- RTCDataChannel: reliable property
+- RTCDataChannel: close() method
+- RTCDataChannel: send() method
+- RTCDataChannel: bufferedamountlow event
+- RTCDataChannel: close event
+- RTCDataChannel: closing event
+- RTCDataChannel: error event
+- RTCDataChannel: message event
+- RTCDataChannel: open event
+- RTCDataChannelEvent: RTCDataChannelEvent() constructor
+- RTCDataChannelEvent: channel property
+- RTCDataChannelStats: bytesReceived property
+- RTCDataChannelStats: bytesSent property
+- RTCDataChannelStats: dataChannelIdentifier property
+- RTCDataChannelStats: id property
+- RTCDataChannelStats: label property
+- RTCDataChannelStats: messagesReceived property
+- RTCDataChannelStats: messagesSent property
+- RTCDataChannelStats: protocol property
+- RTCDataChannelStats: state property
+- RTCDataChannelStats: timestamp property
+- RTCDataChannelStats: type property
+- RTCDtlsTransport: iceTransport property
+- RTCDtlsTransport: state property
+- RTCDtlsTransport: error event
+- RTCDTMFSender: canInsertDTMF property
+- RTCDTMFSender: toneBuffer property
+- RTCDTMFSender: insertDTMF() method
+- RTCDTMFSender: tonechange event
+- RTCDTMFToneChangeEvent: RTCDTMFToneChangeEvent() constructor
+- RTCDTMFToneChangeEvent: tone property
+- RTCEncodedAudioFrame: data property
+- RTCEncodedAudioFrame: timestamp property
+- RTCEncodedAudioFrame: getMetadata() method
+- RTCEncodedVideoFrame: data property
+- RTCEncodedVideoFrame: timestamp property
+- RTCEncodedVideoFrame: type property
+- RTCEncodedVideoFrame: getMetadata() method
+- RTCError: errorDetail property
+- RTCError: receivedAlert property
+- RTCError: sctpCauseCode property
+- RTCError: sdpLineNumber property
+- RTCError: sentAlert property
+- RTCErrorEvent: error property
+- RTCIceCandidate: RTCIceCandidate() constructor
+- RTCIceCandidate：address 属性
+- RTCIceCandidate：candidate 属性
+- RTCIceCandidate: component property
+- RTCIceCandidate：foundation 属性
+- RTCIceCandidate：port 属性
+- RTCIceCandidate：priority 属性
+- RTCIceCandidate：protocol 属性
+- RTCIceCandidate：relatedAddress 属性
+- RTCIceCandidate：relatedPort 属性
+- RTCIceCandidate：sdpMid 属性
+- RTCIceCandidate：sdpMLineIndex 属性
+- RTCIceCandidate：tcpType 属性
+- RTCIceCandidate：type 属性
+- RTCIceCandidate：usernameFragment 属性
+- RTCIceCandidate：toJSON() 方法
+- RTCIceCandidatePair: local property
+- RTCIceCandidatePair: remote property
+- RTCIceCandidatePairStats: availableIncomingBitrate property
+- RTCIceCandidatePairStats: availableOutgoingBitrate property
+- RTCIceCandidatePairStats: bytesReceived property
+- RTCIceCandidatePairStats: bytesSent property
+- RTCIceCandidatePairStats: currentRoundTripTime property
+- RTCIceCandidatePairStats: id property
+- RTCIceCandidatePairStats: lastPacketReceivedTimestamp property
+- RTCIceCandidateStats: lastPacketSentTimestamp property
+- RTCIceCandidateStats: localCandidateId property
+- RTCIceCandidatePairStats: nominated property
+- RTCIceCandidatePairStats: priority property
+- RTCIceCandidatePairStats: readable property
+- RTCIceCandidatePairStats: remoteCandidateId property
+- RTCIceCandidatePairStats: requestsReceived property
+- RTCIceCandidatePairStats: requestsSent property
+- RTCIceCandidatePairStats: responsesReceived property
+- RTCIceCandidatePairStats: responsesSent property
+- RTCIceCandidatePairStats: selected property
+- RTCIceCandidatePairStats: state property
+- RTCIceCandidatePairStats: timestamp property
+- RTCIceCandidatePairStats: totalRoundTripTime property
+- RTCIceCandidatePairStats: transportId property
+- RTCIceCandidatePairStats: type property
+- RTCIceCandidatePairStats: writable property
+- RTCIceCandidateStats: address property
+- RTCIceCandidateStats: candidateType property
+- RTCIceCandidateStats: deleted property
+- RTCIceCandidateStats: id property
+- RTCIceCandidateStats: port property
+- RTCIceCandidateStats: priority property
+- RTCIceCandidateStats: protocol property
+- RTCIceCandidateStats: relayProtocol property
+- RTCIceCandidateStats: timestamp property
+- RTCIceCandidateStats: transportId property
+- RTCIceCandidateStats: type property
+- RTCIceCandidateStats: url property
+- RTCIceParameters: password property
+- RTCIceParameters: usernameFragment property
+- RTCIceTransport: component property
+- RTCIceTransport: gatheringState property
+- RTCIceTransport: role property
+- RTCIceTransport: state property
+- RTCIceTransport: getLocalCandidates() method
+- RTCIceTransport: getLocalParameters() method
+- RTCIceTransport: getRemoteCandidates() method
+- RTCIceTransport: getRemoteParameters() method
+- RTCIceTransport: getSelectedCandidatePair() method
+- RTCIceTransport: gatheringstatechange event
+- RTCIceTransport: selectedcandidatepairchange event
+- RTCIceTransport: statechange event
+- RTCInboundRtpStreamStats: averageRtcpInterval property
+- RTCInboundRtpStreamStats: bytesReceived property
+- RTCInboundRtpStreamStats: fecPacketsDiscarded property
+- RTCInboundRtpStreamStats: fecPacketsReceived property
+- RTCInboundRtpStreamStats: firCount property
+- RTCInboundRtpStreamStats: framesDecoded property
+- RTCInboundRtpStreamStats: id property
+- RTCInboundRtpStreamStats: lastPacketReceivedTimestamp property
+- RTCInboundRtpStreamStats: nackCount property
+- RTCInboundRtpStreamStats: packetsDuplicated property
+- RTCInboundRtpStreamStats: packetsFailedDecryption property
+- RTCInboundRtpStreamStats: perDscpPacketsReceived property
+- RTCInboundRtpStreamStats: pliCount property
+- RTCInboundRtpStreamStats: qpSum property
+- RTCInboundRtpStreamStats: receiverId property
+- RTCInboundRtpStreamStats: remoteId property
+- RTCInboundRtpStreamStats: sliCount property
+- RTCInboundRtpStreamStats: timestamp property
+- RTCInboundRtpStreamStats: trackId property
+- RTCInboundRtpStreamStats: type property
+- RTCOutboundRtpStreamStats: averageRtcpInterval property
+- RTCOutboundRtpStreamStats: firCount property
+- RTCOutboundRtpStreamStats: framesEncoded property
+- RTCOutboundRtpStreamStats: id property
+- RTCOutboundRtpStreamStats: nackCount property
+- RTCOutboundRtpStreamStats: perDscpPacketsSent property
+- RTCOutboundRtpStreamStats: pliCount property
+- RTCOutboundRtpStreamStats: qpSum property
+- RTCOutboundRtpStreamStats: qualityLimitationReason property
+- RTCOutboundRtpStreamStats: remoteId property
+- RTCOutboundRtpStreamStats: sliCount property
+- RTCOutboundRtpStreamStats: timestamp property
+- RTCOutboundRtpStreamStats: trackId property
+- RTCOutboundRtpStreamStats: type property
+- RTCPeerConnection()
+- RTCPeerConnection.canTrickleIceCandidates
+- RTCPeerConnection.connectionState
+- RTCPeerConnection.currentLocalDescription
+- RTCPeerConnection: currentRemoteDescription property
+- RTCPeerConnection.iceConnectionState
+- RTCPeerConnection.iceGatheringState
+- RTCPeerConnection: localDescription property
+- RTCPeerConnection.peerIdentity
+- RTCPeerConnection: pendingLocalDescription property
+- RTCPeerConnection: pendingRemoteDescription property
+- RTCPeerConnection.remoteDescription
+- sctp
+- RTCPeerConnection: signalingState property
+- RTCPeerConnection: generateCertificate() static method
+- RTCPeerConnection：addIceCandidate 方法
+- RTCPeerConnection: addStream() method
+- RTCPeerConnection：addTrack() 方法
+- RTCPeerConnection: addTransceiver() method
+- RTCPeerConnection: close() method
+- RTCPeerConnection: createAnswer() method
+- RTCPeerConnection.createDataChannel()
+- RTCPeerConnection.createOffer()
+- RTCPeerConnection: getConfiguration() method
+- RTCPeerConnection: getIdentityAssertion() method
+- RTCPeerConnection.getReceivers()
+- RTCPeerConnection: getSenders() method
+- RTCPeerConnection: getStats() method
+- RTCPeerConnection: getTransceivers() method
+- RTCPeerConnection.removeStream()
+- RTCPeerConnection: removeTrack() method
+- RTCPeerConnection: restartIce() method
+- RTCPeerConnection: setConfiguration() method
+- RTCPeerConnection: setIdentityProvider() method
+- RTCPeerConnection: setLocalDescription() method
+- RTCPeerConnection.setRemoteDescription()
+- RTCPeerConnection.onaddstream
+- RTCPeerConnection: connectionstatechange event
+- RTCPeerConnection.ondatachannel
+- RTCPeerConnection: icecandidate 事件
+- RTCPeerConnection: icecandidateerror event
+- RTCPeerConnection: iceconnectionstatechange event
+- RTCPeerConnection: icegatheringstatechange event
+- RTCPeerConnection: negotiationneeded event
+- RTCPeerConnection: removestream event
+- RTCPeerConnection: signalingstatechange event
+- RTCPeerConnection.ontrack
+- RTCPeerConnectionIceErrorEvent: address property
+- RTCPeerConnectionIceEvent: RTCPeerConnectionIceEvent() constructor
+- RTCPeerConnectionIceEvent: candidate property
+- RTCPeerConnectionStats: dataChannelsClosed property
+- RTCPeerConnectionStats: dataChannelsOpened property
+- RTCPeerConnectionStats: id property
+- RTCPeerConnectionStats: timestamp property
+- RTCPeerConnectionStats: type property
+- RTCRemoteInboundRtpStreamStats: codecId property
+- RTCRemoteInboundRtpStreamStats: fractionLost property
+- RTCRemoteInboundRtpStreamStats: id property
+- RTCRemoteInboundRtpStreamStats: jitter property
+- RTCRemoteInboundRtpStreamStats: kind property
+- RTCRemoteInboundRtpStreamStats: localId property
+- RTCRemoteInboundRtpStreamStats: packetsLost property
+- RTCRemoteInboundRtpStreamStats: packetsReceived property
+- RTCRemoteInboundRtpStreamStats: roundTripTime property
+- RTCRemoteInboundRtpStreamStats: roundTripTimeMeasurements property
+- RTCRemoteInboundRtpStreamStats: ssrc property
+- RTCRemoteInboundRtpStreamStats: timestamp property
+- RTCRemoteInboundRtpStreamStats: totalRoundTripTime property
+- RTCRemoteInboundRtpStreamStats: transportId property
+- RTCRemoteInboundRtpStreamStats: type property
+- RTCRemoteOutboundRtpStreamStats: codecId property
+- RTCRemoteOutboundRtpStreamStats: id property
+- RTCRemoteOutboundRtpStreamStats: kind property
+- RTCRemoteOutboundRtpStreamStats: localId property
+- RTCRemoteOutboundRtpStreamStats: remoteTimestamp property
+- RTCRemoteOutboundRtpStreamStats: roundTripTimeMeasurements property
+- RTCRemoteOutboundRtpStreamStats: ssrc property
+- RTCRemoteOutboundRtpStreamStats: timestamp property
+- RTCRemoteOutboundRtpStreamStats: totalRoundTripTime property
+- RTCRemoteOutboundRtpStreamStats: transportId property
+- RTCRemoteOutboundRtpStreamStats: type property
+- RTCRtpReceiver: jitterBufferTarget property
+- RTCRtpReceiver: track property
+- RTCRtpReceiver: transport property
+- RTCRtpReceiver: getCapabilities() static method
+- RTCRtpReceiver: getContributingSources() method
+- RTCRtpReceiver: getParameters() method
+- RTCRtpReceiver: getStats() method
+- RTCRtpReceiver: getSynchronizationSources() method
+- RTCRtpScriptTransform()
+- options
+- readable
+- writable
+- generateKeyFrame()
+- sendKeyFrameRequest()
+- RTCRtpSender: dtmf property
+- RTCRtpSender: track property
+- RTCRtpSender: transport property
+- RTCRtpSender: getCapabilities() static method
+- RTCRtpSender: getParameters() method
+- RTCRtpSender: getStats() method
+- RTCRtpSender: replaceTrack() method
+- RTCRtpSender: setParameters() method
+- RTCRtpSender: setStreams() method
+- RTCRtpStreamStats: codecId property
+- RTCRtpStreamStats: firCount property
+- RTCRtpStreamStats: kind property
+- RTCRtpStreamStats: nackCount property
+- RTCRtpStreamStats: pliCount property
+- RTCRtpStreamStats: qpSum property
+- RTCRtpStreamStats: ssrc property
+- RTCRtpStreamStats: trackId property
+- RTCRtpStreamStats: transportId property
+- RTCRtpTransceiver: currentDirection property
+- RTCRtpTransceiver: direction property
+- RTCRtpTransceiver: mid property
+- RTCRtpTransceiver: receiver property
+- RTCRtpTransceiver: sender property
+- RTCRtpTransceiver: stopped property
+- RTCRtpTransceiver: setCodecPreferences() method
+- RTCRtpTransceiver: stop() method
+- maxChannels
+- maxMessageSize
+- state
+- transport
+- statechange
+- RTCSessionDescription: RTCSessionDescription() constructor
+- RTCSessionDescription: sdp property
+- RTCSessionDescription: type property
+- RTCSessionDescription: toJSON() method
+- RTCStatsReport: size property
+- RTCStatsReport: [Symbol.iterator]() method
+- RTCStatsReport: entries() method
+- RTCStatsReport: forEach() method
+- RTCStatsReport: get() method
+- RTCStatsReport: has() method
+- RTCStatsReport: keys() method
+- RTCStatsReport: values() method
+- RTCTrackEvent: RTCTrackEvent() constructor
+- RTCTrackEvent: receiver property
+- RTCTrackEvent: streams property
+- RTCTrackEvent: track property
+- RTCTrackEvent: transceiver property
+- transformer
+- RTCTransportStats: id property
+- RTCTransportStats: timestamp property
+- RTCTransportStats: type property
+- RTCVideoSourceStats: frames property
+- RTCVideoSourceStats: framesPerSecond property
+- RTCVideoSourceStats: height property
+- RTCVideoSourceStats: id property
+- RTCVideoSourceStats: kind property
+- RTCVideoSourceStats: timestamp property
+- RTCVideoSourceStats: trackIdentifier property
+- RTCVideoSourceStats: type property
+- RTCVideoSourceStats: width property
+- postTask()
+- Scheduling: isInputPending() method
+- Screen.availHeight
+- Screen.availWidth
+- Screen.colorDepth
+- Screen.height
+- Screen: mozBrightness property
+- Screen: mozEnabled property
+- Screen.pixelDepth
+- Screen.width
+- Screen.lockOrientation()
+- Screen: unlockOrientation() method
+- Screen: change event
+- Screen: orientationchange event
+- ScreenDetailed: availLeft property
+- ScreenDetailed: availTop property
+- ScreenDetailed: devicePixelRatio property
+- ScreenDetailed: isInternal property
+- ScreenDetailed: isPrimary property
+- ScreenDetailed: label property
+- ScreenDetailed: left property
+- ScreenDetailed: top property
+- ScreenDetails: currentScreen property
+- ScreenDetails: screens property
+- ScreenDetails: currentscreenchange event
+- ScreenDetails: screenschange event
+- angle
+- type
+- lock()
+- unlock()
+- change
+- ScriptProcessorNode: bufferSize property
+- ScriptProcessorNode: audioprocess event
+- ScrollTimeline()
+- axis
+- source
+- SecurityPolicyViolationEvent: SecurityPolicyViolationEvent() constructor
+- SecurityPolicyViolationEvent: blockedURI property
+- SecurityPolicyViolationEvent: columnNumber property
+- SecurityPolicyViolationEvent: disposition property
+- SecurityPolicyViolationEvent: documentURI property
+- SecurityPolicyViolationEvent: effectiveDirective property
+- SecurityPolicyViolationEvent: lineNumber property
+- SecurityPolicyViolationEvent: originalPolicy property
+- SecurityPolicyViolationEvent: referrer property
+- SecurityPolicyViolationEvent: sample property
+- SecurityPolicyViolationEvent: sourceFile property
+- SecurityPolicyViolationEvent: statusCode property
+- SecurityPolicyViolationEvent: violatedDirective property
+- Selection.anchorNode
+- Selection.anchorOffset
+- Selection: direction property
+- Selection.focusNode
+- Selection.focusOffset
+- Selection.isCollapsed
+- Selection.rangeCount
+- Selection.type
+- Selection.addRange()
+- Selection.collapse()
+- Selection.collapseToEnd()
+- Selection.collapseToStart()
+- Selection.containsNode()
+- Selection: deleteFromDocument() method
+- Selection: empty() method
+- Selection.extend()
+- Selection: getComposedRanges() method
+- Selection.getRangeAt()
+- Selection.modify()
+- Selection.removeAllRanges()
+- Selection.removeRange()
+- Selection.selectAllChildren()
+- Selection.setBaseAndExtent()
+- Selection: setPosition() method
+- Selection.toString()
+- Sensor: activated property
+- Sensor: hasReading property
+- Sensor: timestamp property
+- Sensor: start() method
+- Sensor: stop() method
+- Sensor: activate event
+- Sensor: error event
+- Sensor: reading event
+- SensorErrorEvent: SensorErrorEvent() constructor
+- SensorErrorEvent: error property
+- Serial: getPorts() method
+- Serial: requestPort() method
+- SerialPort: readable property
+- SerialPort: writable property
+- SerialPort: close() method
+- SerialPort: forget() method
+- SerialPort: getInfo() method
+- SerialPort: getSignals() method
+- SerialPort: open() method
+- SerialPort: setSignals() method
+- SerialPort: connect event
+- SerialPort: disconnect event
+- ServiceWorker.scriptURL
+- ServiceWorker.state
+- ServiceWorker: postMessage() method
+- ServiceWorker: error event
+- ServiceWorker.onstatechange
+- ServiceWorkerContainer.controller
+- ServiceWorkerContainer: ready property
+- ServiceWorkerContainer: getRegistration() method
+- ServiceWorkerContainer: getRegistrations() method
+- ServiceWorkerContainer.register()
+- ServiceWorkerContainer: startMessages() method
+- ServiceWorkerContainer: controllerchange event
+- ServiceWorkerContainer: error event
+- ServiceWorkerContainer: message event
+- messageerror
+- ServiceWorkerGlobalScope: clients property
+- ServiceWorkerGlobalScope: registration property
+- ServiceWorkerGlobalScope: serviceWorker property
+- ServiceWorkerGlobalScope.skipWaiting()
+- ServiceWorkerGlobalScope: activate event
+- backgroundfetchabort
+- backgroundfetchclick
+- backgroundfetchfail
+- backgroundfetchsuccess
+- ServiceWorkerGlobalScope: canmakepayment event
+- ServiceWorkerGlobalScope: contentdelete event
+- ServiceWorkerGlobalScope：cookiechange 事件
+- ServiceWorkerGlobalScope: fetch event
+- ServiceWorkerGlobalScope: install event
+- ServiceWorkerGlobalScope: message event
+- ServiceWorkerGlobalScope: messageerror event
+- ServiceWorkerGlobalScope：notificationclick 事件
+- ServiceWorkerGlobalScope：notificationclose 事件
+- ServiceWorkerGlobalScope: paymentrequest event
+- ServiceWorkerGlobalScope: periodicsync event
+- push
+- ServiceWorkerGlobalScope: pushsubscriptionchange event
+- sync
+- ServiceWorkerRegistration: active property
+- ServiceWorkerRegistration: installing property
+- ServiceWorkerRegistration: navigationPreload property
+- ServiceWorkerRegistration: scope property
+- ServiceWorkerRegistration: updateViaCache property
+- ServiceWorkerRegistration: waiting property
+- ServiceWorkerRegistration.unregister()
+- ServiceWorkerRegistration.update()
+- ServiceWorkerRegistration: updatefound event
+- ShadowRoot: activeElement property
+- adoptedStyleSheets
+- ShadowRoot: clonable property
+- ShadowRoot.delegatesFocus
+- fullscreenElement
+- host
+- ShadowRoot：innerHTML 属性
+- mode
+- pictureInPictureElement
+- ShadowRoot: serializable property
+- slotAssignment
+- ShadowRoot: styleSheets property
+- ShadowRoot: getAnimations() method
+- ShadowRoot: getHTML() method
+- setHTMLUnsafe()
+- SharedStorage: append() method
+- SharedStorage: clear() method
+- SharedStorage: delete() method
+- SharedStorage: set() method
+- SharedStorageRunOperation: run() method
+- SharedStorageSelectURLOperation: run() method
+- SharedStorageWorkletGlobalScope: sharedStorage property
+- SharedStorageWorkletGlobalScope: register() method
+- SharedWorker()
+- SharedWorker: port property
+- SharedWorker: error event
+- SharedWorkerGlobalScope: name property
+- SharedWorkerGlobalScope: close() method
+- SharedWorkerGlobalScope: connect event
+- SourceBuffer: appendWindowEnd property
+- SourceBuffer: appendWindowStart property
+- SourceBuffer: audioTracks property
+- SourceBuffer.buffered
+- SourceBuffer.mode
+- SourceBuffer: textTracks property
+- SourceBuffer.timestampOffset
+- SourceBuffer.updating
+- SourceBuffer: videoTracks property
+- SourceBuffer: abort() method
+- SourceBuffer.appendBuffer()
+- SourceBuffer: appendBufferAsync() method
+- SourceBuffer: changeType() method
+- SourceBuffer.remove()
+- SourceBuffer: removeAsync() method
+- SourceBufferList.length
+- SpeechGrammar：SpeechGrammar() 构造函数
+- SpeechGrammar：src 属性
+- SpeechGrammar：weight 属性
+- SpeechGrammarList: SpeechGrammarList() constructor
+- SpeechGrammarList: length property
+- SpeechGrammarList: addFromString() method
+- SpeechGrammarList: addFromURI() method
+- SpeechGrammarList: item() method
+- SpeechRecognition: SpeechRecognition() constructor
+- SpeechRecognition: continuous property
+- SpeechRecognition: grammars property
+- SpeechRecognition: interimResults property
+- SpeechRecognition: lang property
+- SpeechRecognition: maxAlternatives property
+- SpeechRecognition: abort() method
+- SpeechRecognition: start() method
+- SpeechRecognition: stop() method
+- SpeechRecognition: audioend event
+- SpeechRecognition: audiostart event
+- SpeechRecognition: end event
+- SpeechRecognition: error event
+- SpeechRecognition: nomatch event
+- SpeechRecognition: result event
+- SpeechRecognition: soundend event
+- SpeechRecognition: soundstart event
+- SpeechRecognition: speechend event
+- SpeechRecognition: speechstart event
+- SpeechRecognition: start event
+- SpeechRecognitionAlternative: confidence property
+- SpeechRecognitionAlternative: transcript property
+- SpeechRecognitionErrorEvent: error property
+- SpeechRecognitionErrorEvent: message property
+- SpeechRecognitionEvent: emma property
+- SpeechRecognitionEvent: interpretation property
+- SpeechRecognitionEvent: resultIndex property
+- SpeechRecognitionEvent: results property
+- SpeechRecognitionResult: isFinal property
+- SpeechRecognitionResult: length property
+- SpeechRecognitionResult: item() method
+- SpeechRecognitionResultList: length property
+- SpeechRecognitionResultList: item() method
+- paused
+- pending
+- speaking
+- cancel()
+- getVoices()
+- pause()
+- resume()
+- speak()
+- SpeechSynthesis: voiceschanged event
+- SpeechSynthesisErrorEvent: SpeechSynthesisErrorEvent() constructor
+- SpeechSynthesisErrorEvent: error property
+- SpeechSynthesisEvent: SpeechSynthesisEvent() constructor
+- charIndex
+- SpeechSynthesisEvent: charLength property
+- elapsedTime
+- name
+- utterance
+- SpeechSynthesisUtterance()
+- lang
+- pitch
+- rate
+- text
+- voice
+- volume
+- SpeechSynthesisUtterance: boundary event
+- end
+- error
+- mark
+- pause
+- resume
+- start
+- default
+- lang
+- localService
+- name
+- voiceURI
+- StaticRange: StaticRange() constructor
+- StaticRange: collapsed property
+- StaticRange: endContainer property
+- StaticRange: endOffset property
+- StaticRange: startContainer property
+- StaticRange: startOffset property
+- StereoPannerNode()
+- pan
+- Storage.length
+- Storage.clear()
+- Storage.getItem()
+- Storage.key()
+- Storage.removeItem()
+- Storage.setItem()
+- StorageAccessHandle: caches property
+- StorageAccessHandle: indexedDB property
+- StorageAccessHandle: localStorage property
+- StorageAccessHandle: locks property
+- StorageAccessHandle: sessionStorage property
+- StorageAccessHandle: BroadcastChannel() property
+- StorageAccessHandle: createObjectURL() property
+- StorageAccessHandle: estimate() property
+- StorageAccessHandle: getDirectory() property
+- StorageAccessHandle: revokeObjectURL() property
+- StorageAccessHandle: SharedWorker() property
+- StorageEvent: StorageEvent() constructor
+- StorageEvent: key property
+- StorageEvent: newValue property
+- StorageEvent: oldValue property
+- StorageEvent: storageArea property
+- StorageEvent: url property
+- StorageEvent: initStorageEvent() method
+- StorageManager.estimate()
+- StorageManager.persist()
+- StorageManager.persisted()
+- StylePropertyMap: append() method
+- StylePropertyMap: clear() method
+- StylePropertyMap: delete() method
+- StylePropertyMap: set() method
+- StylePropertyMapReadOnly: size property
+- StylePropertyMapReadOnly: entries() method
+- StylePropertyMapReadOnly: forEach() method
+- StylePropertyMapReadOnly: get() method
+- StylePropertyMapReadOnly: getAll() method
+- StylePropertyMapReadOnly: has() method
+- StylePropertyMapReadOnly: keys() method
+- StylePropertyMapReadOnly: values() method
+- StyleSheet：disabled 属性
+- StyleSheet：href 属性
+- StyleSheet：media 属性
+- StyleSheet：ownerNode 属性
+- StyleSheet：parentStyleSheet 属性
+- StyleSheet：title 属性
+- StyleSheet：type 属性
+- StyleSheetList: length property
+- StyleSheetList: item() method
+- SubmitEvent: SubmitEvent() constructor
+- SubmitEvent: submitter property
+- SubtleCrypto.decrypt()
+- SubtleCrypto.deriveBits()
+- SubtleCrypto.deriveKey()
+- SubtleCrypto.digest()
+- SubtleCrypto.encrypt()
+- SubtleCrypto.exportKey()
+- SubtleCrypto.generateKey()
+- SubtleCrypto.importKey()
+- SubtleCrypto.sign()
+- SubtleCrypto.unwrapKey()
+- SubtleCrypto.verify()
+- SubtleCrypto：wrapKey() 方法
+- SVGAElement: target property
+- SVGAnimatedEnumeration: animVal property
+- SVGAnimatedEnumeration: baseVal property
+- SVGAnimatedLength: animVal property
+- SVGAnimatedLength: baseVal property
+- SVGAnimatedString: animVal property
+- SVGAnimatedString: baseVal property
+- SVGAnimationElement: targetElement property
+- SVGAnimationElement: beginEvent event
+- SVGAnimationElement: endEvent event
+- SVGAnimationElement: repeatEvent event
+- SVGCircleElement: cx property
+- SVGCircleElement: cy property
+- SVGCircleElement: r property
+- SVGClipPathElement: clipPathUnits property
+- SVGClipPathElement: transform property
+- SVGElement: attributeStyleMap property
+- SVGElement: dataset property
+- SVGElement: style property
+- SVGElement: error event
+- SVGElement: load event
+- SVGGeometryElement: pathLength property
+- SVGGeometryElement: getPointAtLength() method
+- SVGGeometryElement: getTotalLength() method
+- SVGGeometryElement: isPointInFill() method
+- SVGGeometryElement: isPointInStroke() method
+- getBBox
+- SVGGraphicsElement: copy event
+- SVGGraphicsElement: cut event
+- SVGGraphicsElement: paste event
+- SVGImageElement: decoding property
+- SVGImageElement: height property
+- SVGImageElement: preserveAspectRatio property
+- SVGImageElement: width property
+- SVGImageElement: x property
+- SVGImageElement: y property
+- SVGImageElement: decode() method
+- SVGMarkerElement: markerHeight property
+- SVGMarkerElement: markerUnits property
+- SVGMarkerElement: markerWidth property
+- SVGMarkerElement: orientAngle property
+- SVGMarkerElement: orientType property
+- SVGMarkerElement: preserveAspectRatio property
+- SVGMarkerElement: refX property
+- SVGMarkerElement: refY property
+- SVGMarkerElement: viewBox property
+- SVGMarkerElement: setOrientToAngle() method
+- SVGMarkerElement: setOrientToAuto() method
+- SVGMaskElement: height property
+- SVGMaskElement: maskContentUnits property
+- SVGMaskElement: maskUnits property
+- SVGMaskElement: width property
+- SVGMaskElement: x property
+- SVGMaskElement: y property
+- SVGPointList: length property
+- SVGPointList: numberOfItems property
+- SVGPointList: appendItem() method
+- SVGPointList: clear() method
+- SVGPointList: getItem() method
+- SVGPointList: initialize() method
+- SVGPointList: insertItemBefore() method
+- SVGPointList: removeItem() method
+- SVGPointList: replaceItem() method
+- SVGRect: x property
+- SVGStyleElement: disabled property
+- SVGStyleElement: media property
+- SVGStyleElement: sheet property
+- SVGStyleElement: title property
+- SVGStyleElement: type property
+- SyncEvent()
+- lastChance
+- tag
+- getTags()
+- register()
+- TaskAttributionTiming: containerId property
+- TaskAttributionTiming: containerName property
+- TaskAttributionTiming: containerSrc property
+- TaskAttributionTiming: containerType property
+- TaskAttributionTiming: toJSON() method
+- TaskController()
+- setPriority()
+- TaskPriorityChangeEvent()
+- previousPriority
+- priority
+- TaskSignal: any() static method
+- TaskSignal: prioritychange event
+- Text：Text() 构造函数
+- assignedSlot
+- Text：wholeText 属性
+- Text.splitText()
+- TextDecoder()
+- TextDecoder.encoding
+- TextDecoder.fatal
+- TextDecoder.ignoreBOM
+- TextDecoder.decode()
+- TextDecoderStream()
+- TextDecoderStream.encoding
+- TextDecoderStream.fatal
+- TextDecoderStream.ignoreBOM
+- TextDecoderStream.readable
+- TextDecoderStream.writable
+- TextEncoder()
+- TextEncoder.encoding
+- TextEncoder.encode()
+- TextEncoder.encodeInto()
+- TextEncoderStream()
+- TextEncoderStream.encoding
+- TextEncoderStream.readable
+- TextEncoderStream.writable
+- TextEvent: data property
+- TextEvent: initTextEvent() method
+- TextFormat()
+- rangeEnd
+- rangeStart
+- underlineStyle
+- underlineThickness
+- TextFormatUpdateEvent()
+- getTextFormats()
+- TextMetrics: actualBoundingBoxAscent property
+- TextMetrics: actualBoundingBoxDescent property
+- TextMetrics: actualBoundingBoxLeft property
+- TextMetrics: actualBoundingBoxRight property
+- alphabeticBaseline
+- TextMetrics: emHeightAscent property
+- TextMetrics: emHeightDescent property
+- TextMetrics: fontBoundingBoxAscent property
+- TextMetrics: fontBoundingBoxDescent property
+- hangingBaseline
+- ideographicBaseline
+- width
+- activeCues
+- cues
+- id
+- inBandMetadataTrackDispatchType
+- kind
+- label
+- language
+- mode
+- addCue()
+- removeCue()
+- cuechange
+- endTime
+- id
+- pauseOnExit
+- startTime
+- track
+- enter
+- exit
+- length
+- getCueById()
+- length
+- getTrackById()
+- addtrack
+- change
+- removeTrack
+- TextUpdateEvent()
+- selectionEnd
+- selectionStart
+- text
+- updateRangeEnd
+- updateRangeStart
+- TimeRanges.length
+- TimeRanges.end()
+- TimeRanges.start()
+- ToggleEvent()
+- newState
+- oldState
+- Touch()
+- Touch.clientX
+- Touch.clientY
+- Touch.force
+- Touch.identifier
+- Touch.pageX
+- Touch：pageY 属性
+- Touch.radiusX
+- Touch.radiusY
+- Touch.rotationAngle
+- Touch：screenX 属性
+- Touch：screenY 属性
+- Touch.target
+- TouchEvent: TouchEvent() constructor
+- TouchEvent: altKey property
+- TouchEvent.changedTouches
+- TouchEvent: ctrlKey property
+- TouchEvent: metaKey property
+- TouchEvent: shiftKey property
+- TouchEvent.targetTouches
+- TouchEvent.touches
+- TouchList: length property
+- TouchList: item() method
+- TrackEvent: TrackEvent() constructor
+- TrackEvent: track property
+- TransformStream()
+- TransformStream.readable
+- TransformStream.writable
+- TransitionEvent: TransitionEvent() constructor
+- TransitionEvent: elapsedTime property
+- TransitionEvent: propertyName property
+- TransitionEvent: pseudoElement property
+- TreeWalker: currentNode property
+- TreeWalker: filter property
+- TreeWalker: root property
+- TreeWalker: whatToShow property
+- TreeWalker: firstChild() method
+- TreeWalker: lastChild() method
+- TreeWalker: nextNode() method
+- TreeWalker: nextSibling() method
+- TreeWalker: parentNode() method
+- TreeWalker: previousNode() method
+- TreeWalker: previousSibling() method
+- toJSON()
+- toString()
+- toJSON()
+- toString()
+- toJSON()
+- toString()
+- name
+- createHTML()
+- createScript()
+- createScriptURL()
+- defaultPolicy
+- emptyHTML
+- emptyScript
+- createPolicy()
+- getAttributeType()
+- getPropertyType()
+- isHTML()
+- isScript()
+- isScriptURL()
+- UIEvent()
+- UIEvent.detail
+- 用户界面项目视图
+- KeyboardEvent.which
+- UIEvent: initUIEvent() method
+- URL()
+- URL：hash 属性
+- URL：host 属性
+- URL：hostname 属性
+- URL：href 属性
+- URL：origin 属性
+- URL：password 属性
+- URL：pathname 属性
+- URL：port 属性
+- URL：protocol 属性
+- URL：search 属性
+- URL：searchParams 属性
+- URL：username 属性
+- canParse()
+- URL：parse() 静态方法
+- URL：toJSON() 方法
+- URL：toString() 方法
+- URLPattern()
+- hash
+- hostname
+- password
+- pathname
+- port
+- protocol
+- search
+- username
+- exec()
+- test()
+- URLSearchParams：URLSearchParams() 构造函数
+- URLSearchParams：size 属性
+- URLSearchParams：append() 方法
+- URLSearchParams：delete() 方法
+- URLSearchParams：entries() 方法
+- URLSearchParams：forEach() 方法
+- URLSearchParams：get() 方法
+- URLSearchParams：getAll() 方法
+- URLSearchParams：has() 方法
+- URLSearchParams：keys() 方法
+- URLSearchParams：set() 方法
+- URLSearchParams：sort() 方法
+- URLSearchParams：toString() 方法
+- URLSearchParams：values() 方法
+- getDevices()
+- requestDevice()
+- connect
+- disconnect
+- USBConfiguration()
+- configurationName
+- configurationValue
+- interfaces
+- USBConnectionEvent()
+- device
+- configuration
+- configurations
+- deviceClass
+- deviceProtocol
+- deviceSubclass
+- deviceVersionMajor
+- deviceVersionMinor
+- deviceVersionSubminor
+- manufacturerName
+- opened
+- productId
+- productName
+- serialNumber
+- usbVersionMajor
+- usbVersionMinor
+- usbVersionSubminor
+- vendorId
+- claimInterface()
+- clearHalt()
+- close()
+- controlTransferIn()
+- controlTransferOut()
+- USBDevice: forget() method
+- isochronousTransferIn()
+- isochronousTransferOut()
+- open()
+- releaseInterface()
+- reset()
+- selectAlternateInterface()
+- selectConfiguration()
+- transferIn()
+- transferOut()
+- hasBeenActive
+- isActive
+- badInput
+- customError
+- patternMismatch
+- rangeOverflow
+- rangeUnderflow
+- stepMismatch
+- tooLong
+- tooShort
+- typeMismatch
+- valid
+- valueMissing
+- VideoColorSpace()
+- fullRange
+- matrix
+- primaries
+- transfer
+- toJSON()
+- VideoDecoder()
+- decodeQueueSize
+- state
+- isConfigSupported()
+- close()
+- configure()
+- decode()
+- flush()
+- reset()
+- dequeue
+- VideoEncoder()
+- encodeQueueSize
+- state
+- isConfigSupported()
+- close()
+- configure()
+- encode()
+- flush()
+- reset()
+- dequeue
+- VideoFrame()
+- codedHeight
+- codedRect
+- codedWidth
+- colorSpace
+- displayHeight
+- displayWidth
+- duration
+- format
+- timestamp
+- visibleRect
+- allocationSize()
+- clone()
+- close()
+- copyTo()
+- VideoPlaybackQuality: corruptedVideoFrames property
+- VideoPlaybackQuality: creationTime property
+- VideoPlaybackQuality: droppedVideoFrames property
+- VideoPlaybackQuality: totalFrameDelay property
+- VideoPlaybackQuality.totalVideoFrames
+- id
+- kind
+- label
+- language
+- selected
+- length
+- selectedIndex
+- getTrackById()
+- addtrack
+- change
+- removetrack
+- ViewTimeline()
+- endOffset
+- startOffset
+- subject
+- finished
+- ready
+- updateCallbackDone
+- skipTransition()
+- VirtualKeyboard：boundingRect 属性
+- VirtualKeyboard：overlaysContent 属性
+- VirtualKeyboard：hide() 方法
+- VirtualKeyboard：show() 方法
+- VirtualKeyboard：geometrychange 事件
+- height
+- offsetLeft
+- offsetTop
+- pageLeft
+- pageTop
+- scale
+- width
+- VisualViewport: resize event
+- VisualViewport: scroll event
+- VRDisplay: capabilities property
+- VRDisplay: depthFar property
+- VRDisplay: depthNear property
+- VRDisplay: displayId property
+- VRDisplay: displayName property
+- VRDisplay: isConnected property
+- VRDisplay: isPresenting property
+- VRDisplay: stageParameters property
+- VRDisplay: cancelAnimationFrame() method
+- VRDisplay: exitPresent() method
+- VRDisplay: getEyeParameters() method
+- VRDisplay: getFrameData() method
+- VRDisplay: getImmediatePose() method
+- VRDisplay: getLayers() method
+- VRDisplay: getPose() method
+- VRDisplay.requestAnimationFrame()
+- VRDisplay: requestPresent() method
+- VRDisplay: resetPose() method
+- VRDisplay: submitFrame() method
+- VRDisplayCapabilities: canPresent property
+- VRDisplayCapabilities: hasExternalDisplay property
+- VRDisplayCapabilities: hasOrientation property
+- VRDisplayCapabilities: hasPosition property
+- VRDisplayCapabilities: maxLayers property
+- VRDisplayEvent: VRDisplayEvent() constructor
+- VRDisplayEvent: display property
+- VRDisplayEvent: reason property
+- VREyeParameters: fieldOfView property
+- VREyeParameters: maximumFieldOfView property
+- VREyeParameters: minimumFieldOfView property
+- VREyeParameters: offset property
+- VREyeParameters: renderHeight property
+- VREyeParameters: renderWidth property
+- VRFieldOfView: downDegrees property
+- VRFieldOfView: leftDegrees property
+- VRFieldOfView: rightDegrees property
+- VRFieldOfView: upDegrees property
+- VRFrameData: VRFrameData() constructor
+- VRFrameData: leftProjectionMatrix property
+- VRFrameData: leftViewMatrix property
+- VRFrameData: pose property
+- VRFrameData: rightProjectionMatrix property
+- VRFrameData: rightViewMatrix property
+- VRFrameData: timestamp property
+- VRLayerInit: leftBounds property
+- VRLayerInit: rightBounds property
+- VRLayerInit: source property
+- VRPose: angularAcceleration property
+- VRPose: angularVelocity property
+- VRPose: linearAcceleration property
+- VRPose: linearVelocity property
+- VRPose: orientation property
+- VRPose: position property
+- VRStageParameters: sittingToStandingTransform property
+- VRStageParameters: sizeX property
+- VRStageParameters: sizeY property
+- VTTCue: VTTCue() constructor
+- VTTCue: align property
+- VTTCue: line property
+- lineAlign
+- VTTCue: position property
+- positionAlign
+- VTTCue: region property
+- VTTCue: size property
+- VTTCue: snapToLines property
+- text
+- VTTCue: vertical property
+- getCueAsHTML()
+- request()
+- released
+- type
+- release()
+- release
+- WaveShaperNode()
+- curve
+- oversample
+- WebGL2RenderingContext.beginQuery()
+- WebGL2RenderingContext.beginTransformFeedback()
+- WebGL2RenderingContext.bindBufferBase()
+- WebGL2RenderingContext: bindBufferRange() method
+- WebGL2RenderingContext: bindSampler() method
+- WebGL2RenderingContext: bindTransformFeedback() method
+- WebGL2RenderingContext: bindVertexArray() method
+- WebGL2RenderingContext: blitFramebuffer() method
+- WebGL2RenderingContext: bufferData() method
+- WebGL2RenderingContext: bufferSubData() method
+- WebGL2RenderingContext: clearBuffer[fiuv]() method
+- WebGL2RenderingContext: clientWaitSync() method
+- WebGL2RenderingContext: compressedTexSubImage3D() method
+- WebGL2RenderingContext: copyBufferSubData() method
+- WebGL2RenderingContext: copyTexSubImage3D() method
+- WebGL2RenderingContext: createQuery() method
+- WebGL2RenderingContext.createSampler()
+- WebGL2RenderingContext: createTransformFeedback() method
+- WebGL2RenderingContext.createVertexArray()
+- WebGL2RenderingContext: deleteQuery() method
+- WebGL2RenderingContext: deleteSampler() method
+- WebGL2RenderingContext: deleteSync() method
+- WebGL2RenderingContext: deleteTransformFeedback() method
+- WebGL2RenderingContext: deleteVertexArray() method
+- WebGL2RenderingContext: drawArraysInstanced() method
+- WebGL2RenderingContext.drawBuffers()
+- WebGL2RenderingContext: drawElementsInstanced() method
+- WebGL2RenderingContext: drawRangeElements() method
+- WebGL2RenderingContext: endQuery() method
+- WebGL2RenderingContext: endTransformFeedback() method
+- WebGL2RenderingContext: fenceSync() method
+- WebGL2RenderingContext: framebufferTextureLayer() method
+- WebGL2RenderingContext: getActiveUniformBlockName() method
+- WebGL2RenderingContext: getActiveUniformBlockParameter() method
+- WebGL2RenderingContext: getActiveUniforms() method
+- WebGL2RenderingContext: getBufferSubData() method
+- WebGL2RenderingContext: getFragDataLocation() method
+- WebGL2RenderingContext: getIndexedParameter() method
+- WebGL2RenderingContext: getInternalformatParameter() method
+- WebGL2RenderingContext: getQuery() method
+- WebGL2RenderingContext: getQueryParameter() method
+- WebGL2RenderingContext: getSamplerParameter() method
+- WebGL2RenderingContext: getSyncParameter() method
+- WebGL2RenderingContext: getTransformFeedbackVarying() method
+- WebGL2RenderingContext: getUniformBlockIndex() method
+- WebGL2RenderingContext: getUniformIndices() method
+- WebGL2RenderingContext: invalidateFramebuffer() method
+- WebGL2RenderingContext: invalidateSubFramebuffer() method
+- WebGL2RenderingContext: isQuery() method
+- WebGL2RenderingContext: isSampler() method
+- WebGL2RenderingContext: isSync() method
+- WebGL2RenderingContext: isTransformFeedback() method
+- WebGL2RenderingContext: isVertexArray() method
+- WebGL2RenderingContext: pauseTransformFeedback() method
+- WebGL2RenderingContext: readBuffer() method
+- WebGL2RenderingContext: renderbufferStorageMultisample() method
+- WebGL2RenderingContext: resumeTransformFeedback() method
+- WebGL2RenderingContext: samplerParameter[if]() method
+- WebGL2RenderingContext.texImage3D()
+- WebGL2RenderingContext: texStorage2D() method
+- WebGL2RenderingContext: texStorage3D() method
+- WebGL2RenderingContext: texSubImage3D() method
+- WebGL2RenderingContext: transformFeedbackVaryings() method
+- WebGL2RenderingContext.uniform[1234][uif][v]()
+- WebGL2RenderingContext: uniformBlockBinding() method
+- WebGL2RenderingContext.uniformMatrix[234]x[234]fv()
+- WebGL2RenderingContext: vertexAttribDivisor() method
+- WebGL2RenderingContext: vertexAttribI4[u]i[v]() method
+- WebGL2RenderingContext: vertexAttribIPointer() method
+- WebGL2RenderingContext: waitSync() method
+- WebGLActiveInfo: name property
+- WebGLActiveInfo: size property
+- WebGLActiveInfo: type property
+- WebGLContextEvent: WebGLContextEvent() constructor
+- WebGLContextEvent: statusMessage property
+- WebGLRenderingContext.canvas
+- WebGLRenderingContext: drawingBufferColorSpace property
+- WebGLRenderingContext.drawingBufferHeight
+- WebGLRenderingContext.drawingBufferWidth
+- WebGLRenderingContext: unpackColorSpace property
+- WebGLRenderingContext.activeTexture()
+- WebGLRenderingContext.attachShader()
+- WebGLRenderingContext.bindAttribLocation()
+- WebGLRenderingContext.bindBuffer()
+- WebGLRenderingContext.bindFramebuffer()
+- WebGLRenderingContext.bindRenderbuffer()
+- WebGLRenderingContext.bindTexture()
+- WebGLRenderingContext.blendColor()
+- WebGLRenderingContext.blendEquation()
+- WebGLRenderingContext: blendEquationSeparate() method
+- WebGLRenderingContext.blendFunc()
+- WebGLRenderingContext: blendFuncSeparate() method
+- WebGLRenderingContext.bufferData()
+- WebGLRenderingContext: bufferSubData() method
+- WebGLRenderingContext: checkFramebufferStatus() method
+- WebGLRenderingContext.clear()
+- WebGLRenderingContext.clearColor()
+- WebGLRenderingContext：clearDepth() 方法
+- WebGLRenderingContext: clearStencil() method
+- WebGLRenderingContext: colorMask() method
+- WebGLRenderingContext.compileShader()
+- WebGLRenderingContext: compressedTexImage[23]D() method
+- WebGLRenderingContext: compressedTexSubImage2D() method
+- WebGLRenderingContext: copyTexImage2D() method
+- WebGLRenderingContext: copyTexSubImage2D() method
+- WebGLRenderingContext.createBuffer()
+- WebGLRenderingContext：createFramebuffer() 方法
+- WebGLRenderingContext.createProgram()
+- WebGLRenderingContext：createRenderbuffer() 方法
+- WebGLRenderingContext.createShader()
+- WebGLRenderingContext：createTexture() 方法
+- WebGLRenderingContext.cullFace()
+- WebGLRenderingContext.deleteBuffer()
+- WebGLRenderingContext.deleteFramebuffer()
+- WebGLRenderingContext.deleteProgram()
+- WebGLRenderingContext.deleteRenderbuffer()
+- WebGLRenderingContext：deleteShader() 方法
+- WebGLRenderingContext.deleteTexture()
+- WebGLRenderingContext.depthFunc()
+- WebGLRenderingContext.depthMask()
+- WebGLRenderingContext: depthRange() method
+- WebGLRenderingContext.detachShader()
+- WebGLRenderingContext: disable() method
+- WebGLRenderingContext: disableVertexAttribArray() method
+- WebGLRenderingContext.drawArrays()
+- WebGLRenderingContext.drawElements()
+- WebGLRenderingContext：enable() 方法
+- WebGLRenderingContext.enableVertexAttribArray()
+- WebGLRenderingContext: finish() method
+- WebGLRenderingContext: flush() method
+- WebGLRenderingContext: framebufferRenderbuffer() method
+- WebGLRenderingContext: framebufferTexture2D() method
+- WebGLRenderingContext: frontFace() method
+- WebGLRenderingContext: generateMipmap() method
+- WebGLRenderingContext: getActiveAttrib() method
+- WebGLRenderingContext: getActiveUniform() method
+- WebGLRenderingContext: getAttachedShaders() method
+- WebGLRenderingContext.getAttribLocation()
+- WebGLRenderingContext: getBufferParameter() method
+- WebGLRenderingContext.getContextAttributes()
+- WebGLRenderingContext: getError() method
+- WebGLRenderingContext.getExtension()
+- WebGLRenderingContext: getFramebufferAttachmentParameter() method
+- WebGLRenderingContext.getParameter()
+- WebGLRenderingContext.getProgramInfoLog()
+- WebGLRenderingContext: getProgramParameter() method
+- WebGLRenderingContext: getRenderbufferParameter() method
+- WebGLRenderingContext: getShaderInfoLog() method
+- WebGLRenderingContext.getShaderParameter()
+- WebGLRenderingContext: getShaderPrecisionFormat() method
+- WebGLRenderingContext.getShaderSource()
+- WebGLRenderingContext.getSupportedExtensions()
+- WebGLRenderingContext.getTexParameter()
+- WebGLRenderingContext.getUniform()
+- WebGLRenderingContext: getUniformLocation() method
+- WebGLRenderingContext: getVertexAttrib() method
+- WebGLRenderingContext: getVertexAttribOffset() method
+- WebGLRenderingContext: hint() method
+- WebGLRenderingContext.isBuffer()
+- WebGLRenderingContext.isContextLost()
+- WebGLRenderingContext.isEnabled()
+- WebGLRenderingContext: isFramebuffer() method
+- WebGLRenderingContext：isProgram() 方法
+- WebGLRenderingContext: isRenderbuffer() method
+- WebGLRenderingContext.isShader()
+- WebGLRenderingContext: isTexture() method
+- WebGLRenderingContext: lineWidth() method
+- WebGLRenderingContext.linkProgram()
+- WebGLRenderingContext.pixelStorei()
+- WebGLRenderingContext.polygonOffset()
+- WebGLRenderingContext.readPixels()
+- WebGLRenderingContext.renderbufferStorage()
+- WebGLRenderingContext: sampleCoverage() method
+- WebGLRenderingContext.scissor()
+- WebGLRenderingContext.shaderSource()
+- WebGLRenderingContext: stencilFunc() method
+- WebGLRenderingContext: stencilFuncSeparate() method
+- WebGLRenderingContext: stencilMask() method
+- WebGLRenderingContext: stencilMaskSeparate() method
+- WebGLRenderingContext: stencilOp() method
+- WebGLRenderingContext: stencilOpSeparate() method
+- WebGLRenderingContext.texImage2D()
+- WebGLRenderingContext.texParameter[fi]()
+- WebGLRenderingContext: texSubImage2D() method
+- WebGLRenderingContext.uniform[1234][fi][v]()
+- WebGLRenderingContext.uniformMatrix[234]fv()
+- WebGLRenderingContext.useProgram()
+- WebGLRenderingContext.validateProgram()
+- WebGLRenderingContext.vertexAttrib[1234]f[v]()
+- WebGLRenderingContext.vertexAttribPointer()
+- WebGLRenderingContext.viewport()
+- WebGLShaderPrecisionFormat: precision property
+- WebGLShaderPrecisionFormat: rangeMax property
+- WebGLShaderPrecisionFormat: rangeMin property
+- WebSocket()
+- binaryType
+- bufferedAmount
+- extensions
+- protocol
+- readyState
+- url
+- close()
+- send()
+- close
+- error
+- message
+- open
+- WebTransport()
+- closed
+- WebTransport: congestionControl property
+- datagrams
+- incomingBidirectionalStreams
+- incomingUnidirectionalStreams
+- ready
+- WebTransport: reliability property
+- close()
+- createBidirectionalStream()
+- createUnidirectionalStream()
+- WebTransport: getStats() method
+- readable
+- writable
+- incomingHighWaterMark
+- incomingMaxAge
+- maxDatagramSize
+- outgoingHighWaterMark
+- outgoingMaxAge
+- readable
+- writable
+- WebTransportError()
+- source
+- streamErrorCode
+- WebTransportReceiveStream: getStats() method
+- WebTransportSendStream: sendOrder property
+- WebTransportSendStream: getStats() method
+- WheelEvent: WheelEvent() constructor
+- WheelEvent：deltaMode 属性
+- WheelEvent：deltaX 属性
+- WheelEvent：deltaY 属性
+- WheelEvent：deltaZ 属性
+- Window.closed
+- credentialless
+- Window：crossOriginIsolated 属性
+- Window.devicePixelRatio
+- Window：document 属性
+- Window.event
+- Window：external 属性
+- Window：frameElement 属性
+- Window.frames
+- Window.fullScreen
+- Window.innerHeight
+- Window.innerWidth
+- Window：isSecureContext 属性
+- window.length
+- Window：location 属性
+- Window：locationbar 属性
+- Window：menubar 属性
+- Window.mozInnerScreenX
+- Window.mozInnerScreenY
+- Window.name
+- window：navigator 属性
+- window.opener
+- Window: orientation property
+- Window：origin 属性
+- Window: originAgentCluster property
+- Window.outerHeight
+- Window.outerWidth
+- window.parent
+- Window：personalbar 属性
+- Window.screen
+- Window.screenLeft
+- Window.screenTop
+- Window.screenX
+- Window.screenY
+- Window：scrollbars 属性
+- Window.scrollMaxX
+- Window.scrollMaxY
+- Window.scrollX
+- Window.scrollY
+- Window.self
+- speechSynthesis
+- Window: status property
+- Window：statusbar 属性
+- Window：toolbar 属性
+- Window.top
+- Window.window
+- Window：alert() 方法
+- Window：atob() 方法
+- Window.back()
+- Window.blur()
+- Window：btoa() 方法
+- cancelAnimationFrame()
+- Window: captureEvents() method
+- window.clearImmediate
+- Window.close()
+- Window：confirm() 方法
+- Window：dump() 方法
+- Window：find() 方法
+- Window：focus() 方法
+- Window: forward() method
+- Window.getComputedStyle()
+- Window.getDefaultComputedStyle()
+- Window.matchMedia()
+- Window.moveBy()
+- window.moveTo
+- window.postMessage
+- print()
+- Window：prompt() 方法
+- Window: releaseEvents() method
+- requestAnimationFrame()
+- Window.requestFileSystem()
+- Window.resizeBy()
+- Window.resizeTo
+- Window.scroll()
+- Window.scrollBy()
+- Window.scrollByLines()
+- window.scrollByPages
+- Window：scrollTo() 方法
+- window.setImmediate
+- Window: setResizable() method
+- Window.showModalDialog()
+- Window.sizeToContent()
+- Window.stop()
+- Window.updateCommands()
+- Window: webkitConvertPointFromNodeToPage() method
+- Window: webkitConvertPointFromPageToNode() method
+- afterprint
+- Window.onappinstalled
+- Window.onbeforeinstallprompt
+- beforeprint
+- Window：beforeunload 事件
+- Window: blur event
+- Window：copy 事件
+- Window：cut 事件
+- devicemotion
+- deviceorientation
+- Window: deviceorientationabsolute event
+- Window: error event
+- Window：focus 事件
+- gamepadconnected
+- Window: gamepaddisconnected event
+- Window：hashchange 事件
+- Window：languagechange 事件
+- Window：load 事件
+- onmessage
+- messageerror
+- Window：offline 事件
+- Window：online 事件
+- orientationchange
+- Window：pagehide 事件
+- Window: pagereveal event
+- pageshow
+- Window: pageswap event
+- Window：paste 事件
+- WindowEventHandlers.onpopstate
+- Window: rejectionhandled event
+- Window：resize 事件
+- storage
+- unhandledrejection
+- unload
+- Window: vrdisplayactivate event
+- Window: vrdisplayconnect event
+- Window: vrdisplaydeactivate event
+- Window: vrdisplaydisconnect event
+- Window: vrdisplaypresentchange event
+- WindowClient: ancestorOrigins property
+- WindowClient: focused property
+- WindowClient: visibilityState property
+- WindowClient: focus() method
+- WindowClient: navigate() method
+- WindowControlsOverlay: visible property
+- WindowControlsOverlay: getTitlebarAreaRect() method
+- WindowControlsOverlay: geometrychange event
+- WindowControlsOverlayGeometryChangeEvent: WindowControlsOverlayGeometryChangeEvent() constructor
+- WindowControlsOverlayGeometryChangeEvent: titlebarAreaRect property
+- WindowControlsOverlayGeometryChangeEvent: visible property
+- WindowSharedStorage: worklet property
+- WindowSharedStorage: run() method
+- WindowSharedStorage: selectURL() method
+- Worker()
+- Worker.postMessage()
+- Worker.terminate()
+- Worker：error 事件
+- Worker：message 事件
+- Worker：messageerror 事件
+- WorkerGlobalScope：crossOriginIsolated 属性
+- WorkerGlobalScope：isSecureContext 属性
+- WorkerGlobalScope: location property
+- WorkerGlobalScope: navigator property
+- WorkerGlobalScope：origin 属性
+- WorkerGlobalScope.self
+- WorkerGlobalScope：atob() 方法
+- WorkerGlobalScope：btoa() 方法
+- WorkerGlobalScope: dump() method
+- WorkerGlobalScope：importScripts() 方法
+- WorkerGlobalScope: error event
+- WorkerGlobalScope: languagechange event
+- WorkerGlobalScope: offline event
+- WorkerGlobalScope: online event
+- WorkerGlobalScope: rejectionhandled event
+- WorkerGlobalScope: securitypolicyviolation event
+- WorkerGlobalScope: unhandledrejection event
+- WorkerLocation: hash property
+- WorkerLocation: host property
+- WorkerLocation: hostname property
+- WorkerLocation: href property
+- WorkerLocation: origin property
+- WorkerLocation: pathname property
+- WorkerLocation: port property
+- WorkerLocation: protocol property
+- WorkerLocation: search property
+- WorkerLocation: toString() method
+- WorkerNavigator：appCodeName 属性
+- WorkerNavigator：appName 属性
+- WorkerNavigator：appVersion 属性
+- WorkerNavigator：globalPrivacyControl 属性
+- WorkerNavigator: hardwareConcurrency property
+- WorkerNavigator: language property
+- WorkerNavigator: languages property
+- WorkerNavigator: onLine property
+- WorkerNavigator: platform property
+- WorkerNavigator: product property
+- WorkerNavigator: userAgent property
+- WorkletSharedStorage: context property
+- WorkletSharedStorage: entries() method
+- WorkletSharedStorage: get() method
+- WorkletSharedStorage: keys() method
+- WorkletSharedStorage: length() method
+- WorkletSharedStorage: remainingBudget() method
+- WritableStream()
+- locked
+- abort()
+- WritableStream: close() method
+- getWriter()
+- WritableStreamDefaultController: signal property
+- error()
+- WritableStreamDefaultWriter()
+- closed
+- desiredSize
+- ready
+- abort()
+- close()
+- releaseLock()
+- write()
+- abort
+- error
+- load
+- loadend
+- loadstart
+- progress
+- timeout
+- XMLSerializer()
+- serializeToString()
+- XPathEvaluator: XPathEvaluator() constructor
+- XPathEvaluator: createExpression() method
+- XPathEvaluator: createNSResolver() method
+- XPathEvaluator: evaluate() method
+- XPathException: code property
+- XPathExpression: evaluate() method
+- XPathResult: booleanValue property
+- XPathResult: invalidIteratorState property
+- XPathResult: numberValue property
+- XPathResult: resultType property
+- XPathResult: singleNodeValue property
+- XPathResult: snapshotLength property
+- XPathResult: stringValue property
+- XPathResult: iterateNext() method
+- XPathResult: snapshotItem() method
+- XRAnchor：anchorSpace 属性
+- XRAnchor：delete() 方法
+- XRBoundedReferenceSpace: boundsGeometry property
+- XRCompositionLayer: blendTextureSourceAlpha property
+- XRCompositionLayer: layout property
+- XRCompositionLayer: mipLevels property
+- XRCompositionLayer: needsRedraw property
+- XRCompositionLayer: destroy() method
+- XRCPUDepthInformation: data property
+- XRCPUDepthInformation: getDepthInMeters() method
+- XRCubeLayer: orientation property
+- XRCubeLayer: space property
+- XRCubeLayer: redraw event
+- XRCylinderLayer: aspectRatio property
+- XRCylinderLayer: centralAngle property
+- XRCylinderLayer: radius property
+- XRCylinderLayer: space property
+- XRCylinderLayer: transform property
+- XRCylinderLayer: redraw event
+- XRDepthInformation: height property
+- XRDepthInformation: normDepthBufferFromNormView property
+- XRDepthInformation: rawValueToMeters property
+- XRDepthInformation: width property
+- XREquirectLayer: centralHorizontalAngle property
+- XREquirectLayer: lowerVerticalAngle property
+- XREquirectLayer: radius property
+- XREquirectLayer: space property
+- XREquirectLayer: transform property
+- XREquirectLayer: upperVerticalAngle property
+- XREquirectLayer: redraw event
+- XRFrame: session property
+- XRFrame: trackedAnchors property
+- XRFrame: createAnchor() method
+- XRFrame: fillJointRadii() method
+- XRFrame: fillPoses() method
+- XRFrame: getDepthInformation() method
+- XRFrame: getHitTestResults() method
+- XRFrame: getHitTestResultsForTransientInput() method
+- XRFrame: getJointPose() method
+- XRFrame: getLightEstimate() method
+- XRFrame: getPose() method
+- XRFrame: getViewerPose() method
+- XRHitTestResult: createAnchor() method
+- XRHitTestResult: getPose() method
+- XRHitTestSource: cancel() method
+- XRInputSource: gamepad property
+- XRInputSource: gripSpace property
+- XRInputSource: hand property
+- XRInputSource: handedness property
+- XRInputSource: profiles property
+- XRInputSource: targetRayMode property
+- XRInputSource: targetRaySpace property
+- XRInputSourceArray: length property
+- XRInputSourceArray: entries() method
+- XRInputSourceArray: forEach() method
+- XRInputSourceArray: keys() method
+- XRInputSourceArray: values() method
+- XRInputSourceEvent: XRInputSourceEvent() constructor
+- XRInputSourceEvent: frame property
+- XRInputSourceEvent: inputSource property
+- XRInputSourcesChangeEvent: XRInputSourcesChangeEvent() constructor
+- XRInputSourcesChangeEvent: added property
+- XRInputSourcesChangeEvent: removed property
+- XRInputSourcesChangeEvent: session property
+- XRJointPose: radius property
+- XRJointSpace: jointName property
+- XRLayerEvent: XRLayerEvent() constructor
+- XRLayerEvent: layer property
+- XRLightEstimate: primaryLightDirection property
+- XRLightEstimate: primaryLightIntensity property
+- XRLightEstimate: sphericalHarmonicsCoefficients property
+- XRLightProbe: probeSpace property
+- XRLightProbe: reflectionchange event
+- XRMediaBinding: XRMediaBinding() constructor
+- XRMediaBinding: createCylinderLayer() method
+- XRMediaBinding: createEquirectLayer() method
+- XRMediaBinding: createQuadLayer() method
+- XRPose: angularVelocity property
+- XRPose: emulatedPosition property
+- XRPose: linearVelocity property
+- XRPose: transform property
+- XRProjectionLayer: fixedFoveation property
+- XRProjectionLayer: ignoreDepthValues property
+- XRProjectionLayer: textureArrayLength property
+- XRProjectionLayer: textureHeight property
+- XRProjectionLayer: textureWidth property
+- XRQuadLayer: height property
+- XRQuadLayer: space property
+- XRQuadLayer: transform property
+- XRQuadLayer: width property
+- XRQuadLayer: redraw event
+- XRRay: XRRay() constructor
+- XRRay: direction property
+- XRRay: matrix property
+- XRRay: origin property
+- XRReferenceSpace: getOffsetReferenceSpace() method
+- XRReferenceSpace: reset event
+- XRReferenceSpaceEvent: XRReferenceSpaceEvent() constructor
+- XRReferenceSpaceEvent: referenceSpace property
+- XRReferenceSpaceEvent: transform property
+- XRRenderState: baseLayer property
+- XRRenderState: depthFar property
+- XRRenderState: depthNear property
+- XRRenderState: inlineVerticalFieldOfView property
+- XRRenderState: layers property
+- XRRigidTransform: XRRigidTransform() constructor
+- XRRigidTransform: inverse property
+- XRRigidTransform: matrix property
+- XRRigidTransform: orientation property
+- XRRigidTransform: position property
+- XRSession: depthDataFormat property
+- XRSession: depthUsage property
+- XRSession: domOverlayState property
+- XRSession: environmentBlendMode property
+- XRSession: inputSources property
+- XRSession: interactionMode property
+- XRSession: preferredReflectionFormat property
+- XRSession: renderState property
+- XRSession: visibilityState property
+- XRSession: cancelAnimationFrame() method
+- XRSession: end() method
+- XRSession: requestAnimationFrame() method
+- XRSession: requestHitTestSource() method
+- XRSession: requestHitTestSourceForTransientInput() method
+- XRSession: requestLightProbe() method
+- XRSession: requestReferenceSpace() method
+- XRSession: updateRenderState() method
+- XRSession: end event
+- XRSession: inputsourceschange event
+- XRSession: select event
+- XRSession: selectend event
+- XRSession: selectstart event
+- XRSession: squeeze event
+- XRSession: squeezeend event
+- XRSession: squeezestart event
+- XRSession: visibilitychange event
+- XRSessionEvent: XRSessionEvent() constructor
+- XRSessionEvent: session property
+- XRSubImage: viewport property
+- XRSystem: isSessionSupported() method
+- XRSystem: requestSession() method
+- XRSystem: devicechange event
+- XRTransientInputHitTestResult: inputSource property
+- XRTransientInputHitTestResult: results property
+- XRTransientInputHitTestSource: cancel() method
+- XRView: eye property
+- XRView: isFirstPersonObserver property
+- XRView: projectionMatrix property
+- XRView: recommendedViewportScale property
+- XRView: transform property
+- XRView: requestViewportScale() method
+- XRViewerPose: views property
+- XRViewport: height property
+- XRViewport: width property
+- XRViewport: x property
+- XRViewport: y property
+- XRWebGLBinding: XRWebGLBinding() constructor
+- XRWebGLBinding: nativeProjectionScaleFactor property
+- XRWebGLBinding: createCubeLayer() method
+- XRWebGLBinding: createCylinderLayer() method
+- XRWebGLBinding: createEquirectLayer() method
+- XRWebGLBinding: createProjectionLayer() method
+- XRWebGLBinding: createQuadLayer() method
+- XRWebGLBinding: getDepthInformation() method
+- XRWebGLBinding: getReflectionCubeMap() method
+- XRWebGLBinding: getSubImage() method
+- XRWebGLBinding: getViewSubImage() method
+- XRWebGLDepthInformation: texture property
+- XRWebGLLayer: XRWebGLLayer() constructor
+- XRWebGLLayer: antialias property
+- XRWebGLLayer: fixedFoveation property
+- XRWebGLLayer: framebuffer property
+- XRWebGLLayer: framebufferHeight property
+- XRWebGLLayer: framebufferWidth property
+- XRWebGLLayer: ignoreDepthValues property
+- XRWebGLLayer: getNativeFramebufferScaleFactor() static method
+- XRWebGLLayer: getViewport() method
+- XRWebGLSubImage: colorTexture property
+- XRWebGLSubImage: colorTextureHeight property
+- XRWebGLSubImage: colorTextureWidth property
+- XRWebGLSubImage: depthStencilTexture property
+- XRWebGLSubImage: imageIndex property
+- XSLTProcessor: XSLTProcessor() constructor
+- XSLTProcessor: clearParameters() method
+- XSLTProcessor: getParameter() method
+- XSLTProcessor: importStylesheet() method
+- XSLTProcessor: removeParameter() method
+- XSLTProcessor: reset() method
+- XSLTProcessor: setParameter() method
+- XSLTProcessor: transformToDocument() method
+- XSLTProcessor: transformToFragment() method
+- XMLHttpRequest()
+- XMLHttpRequest: channel property
+- XMLHttpRequest: mozAnon property
+- XMLHttpRequest: mozBackgroundRequest property
+- XMLHttpRequest: mozSystem property
+- readyState
+- response
+- responseText
+- XMLHttpRequest: responseType property
+- XMLHttpRequest: responseURL property
+- responseXML
+- status
+- statusText
+- timeout
+- upload
+- withCredentials
+- abort()
+- getAllResponseHeaders()
+- getResponseHeader()
+- open()
+- overrideMimeType()
+- send()
+- setRequestHeader()
+- abort
+- error
+- load
+- loadend
+- loadstart
+- progress
+- readystatechange
+- timeout
