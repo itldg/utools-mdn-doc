@@ -12,41 +12,49 @@ npm i
 
 ### JavaScript 文档生成
 
-```
- npm run javascript
+```shell
+npm run javascript
 ```
 
 ### Html 文档生成
 
-```
- npm run html
+```shell
+npm run html
 ```
 
 ### Web API/DOM 文档生成
 
-```
- npm run api
+```shell
+npm run api
 ```
 
 ### CSS 文档生成
 
-```
- npm run css
+```shell
+npm run css
 ```
 
 ### HTTP 文档生成
 
-```
- npm run http
+```shell
+npm run http
 ```
 
 ### 全部生成
 
-```
- npm run all
+```shell
+npm run all
 ```
 
 ## 更新记录
+
+### 1.0.6
+
+-   所有文档页面都获取更多文档信息,增加更多可爬取的文档
+-   文档顺序按照文档发现顺序,关联的文档尽量相连
+-   整理文档文件时跳过不存在的文档链接
+-   修复代码没有高亮的问题
+-   代码文件拆分,优化代码结构
 
 ### 1.0.5
 

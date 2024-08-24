@@ -4,8 +4,8 @@
 
 插件代码改自 https://github.com/in3102/utools-mdn-doc
 
-最后更新: 2023-10-14
+最后更新: 2024-08-24
 
-文档数量: 197 篇
+文档数量: 230 篇
 
 > 若您发现官方文档已更新,可提交问题来告知我 https://github.com/itldg/utools-mdn-doc/issues

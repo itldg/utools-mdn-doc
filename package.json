@@ -1,6 +1,6 @@
 {
 	"name": "utools-mdn-doc",
-	"version": "1.0.2",
+	"version": "1.0.6",
 	"description": "MDN 文档",
 	"scripts": {
 		"javascript": "node work.js JavaScript",
@@ -13,6 +13,6 @@
 	"author": "beta",
 	"license": "MIT",
 	"devDependencies": {
-		"highlight.js": "^9.15.10"
+		"highlight.js": "^11.10.0"
 	}
 }
