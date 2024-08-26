@@ -40,6 +40,12 @@ npm run css
 npm run http
 ```
 
+### XPath 文档生成
+
+```shell
+npm run xpath
+```
+
 ### 全部生成
 
 ```shell

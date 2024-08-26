@@ -8,7 +8,8 @@
 		"css": "node work.js CSS",
 		"html": "node work.js HTML",
 		"http": "node work.js HTTP",
-		"all": "node work.js JavaScript && node work.js API && node work.js CSS && node work.js HTML && node work.js HTTP"
+		"xpath": "node work.js XPath",
+		"all": "node work.js JavaScript && node work.js API && node work.js CSS && node work.js HTML && node work.js HTTP && node work.js XPath"
 	},
 	"author": "beta",
 	"license": "MIT",
